@@ -2,12 +2,12 @@ project:
   type: website
 
 website:
-  site-url: "https://ubvu.github.io/open-handbook"
+  site-url: "https://rdm-os-cs-vu.github.com/open-handbook"
   title: "{{< var title >}}"
   description: "A place for all things open research at the VU."
   favicon: public/favicon.png
-  repo-url: https://github.com/ubvu/open-handbook
-  issue-url: https://github.com/ubvu/open-handbook/issues/new/choose
+  repo-url: https://github.com/rdm-os-cs-vu/open-handbook
+  issue-url: https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose
   repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
@@ -28,7 +28,7 @@ website:
       - contributing.qmd
     tools:
       - icon: github
-        href: https://github.com/ubvu/open-handbook
+        href: https://github.com/rdm-os-cs-vu/open-handbook
         text: GitHub VU Open Handbook
       # - icon: rss
       #   href: https://quarto.org/docs/blog/index.xml
