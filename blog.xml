@@ -6,8 +6,8 @@
       version="2.0">
 <channel>
 <title>{{&lt; var title &gt;}}</title>
-<link>https://rdm-os-cs-vu.github.com/open-handbook/blog.html</link>
-<atom:link href="https://rdm-os-cs-vu.github.com/open-handbook/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://rdm-os-cs-vu.github.io/open-handbook/blog.html</link>
+<atom:link href="https://rdm-os-cs-vu.github.io/open-handbook/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A place for all things open research at the VU.</description>
 <generator>quarto-1.5.57</generator>
 <lastBuildDate>Mon, 21 Oct 2024 22:00:00 GMT</lastBuildDate>
@@ -15,7 +15,7 @@
   <title>Why was rdm.vu.nl down for ten hours?</title>
   <dc:creator>Chris Hartgerink</dc:creator>
   <dc:creator>Lena Karvovskaya</dc:creator>
-  <link>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-10-22post-mortem.html</link>
+  <link>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-10-22post-mortem.html</link>
   <description><![CDATA[ 
 
 
@@ -68,7 +68,7 @@
 </ol>
 </section></div> ]]></description>
   <category>downtime</category>
-  <guid>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-10-22post-mortem.html</guid>
+  <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-10-22post-mortem.html</guid>
   <pubDate>Mon, 21 Oct 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
@@ -82,7 +82,7 @@
   <dc:creator>Lena Karvovskaya, UBVU</dc:creator>
   <dc:creator>Stephanie van de Sandt, UBVU</dc:creator>
   <dc:creator>Tycho Hofstra, UBVU</dc:creator>
-  <link>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-09-30hackathon.html</link>
+  <link>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-09-30hackathon.html</link>
   <description><![CDATA[ 
 
 
@@ -114,7 +114,7 @@
 Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">A collection of AI generated images visualising various RDM aspects</span>.”</span> Zenodo. <a href="https://doi.org/10.5281/zenodo.11147887">https://doi.org/10.5281/zenodo.11147887</a>.
 </div>
 </div></section></div> ]]></description>
-  <guid>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-09-30hackathon.html</guid>
+  <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-09-30hackathon.html</guid>
   <pubDate>Sun, 29 Sep 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
@@ -130,7 +130,7 @@ Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">
   <dc:creator>Peter Vos</dc:creator>
   <dc:creator>Stephanie van de Sandt</dc:creator>
   <dc:creator>Tycho Hofstra</dc:creator>
-  <link>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-09-05hackathon.html</link>
+  <link>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-09-05hackathon.html</link>
   <description><![CDATA[ 
 
 
@@ -169,7 +169,7 @@ Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">
 </section>
 
  ]]></description>
-  <guid>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-09-05hackathon.html</guid>
+  <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-09-05hackathon.html</guid>
   <pubDate>Wed, 04 Sep 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
@@ -186,7 +186,7 @@ Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">
   <dc:creator>Meron Vermaas</dc:creator>
   <dc:creator>Peter Vos</dc:creator>
   <dc:creator>Stephanie van de Sandt</dc:creator>
-  <link>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-06-27hackathon.html</link>
+  <link>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-06-27hackathon.html</link>
   <description><![CDATA[ 
 
 
@@ -202,12 +202,12 @@ Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">
 
 
  ]]></description>
-  <guid>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-06-27hackathon.html</guid>
+  <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-06-27hackathon.html</guid>
   <pubDate>Wed, 26 Jun 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Hello world!</title>
-  <link>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-05-23welcome.html</link>
+  <link>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-05-23welcome.html</link>
   <description><![CDATA[ 
 
 
@@ -219,7 +219,7 @@ Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">
 
 
  ]]></description>
-  <guid>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-05-23welcome.html</guid>
+  <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-05-23welcome.html</guid>
   <pubDate>Wed, 22 May 2024 22:00:00 GMT</pubDate>
 </item>
 </channel>
