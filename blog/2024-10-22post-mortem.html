@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Chris Hartgerink">
+<meta name="author" content="Lena Karvovskaya">
+<meta name="dcterms.date" content="2024-10-22">
 
-<title>Finding Existing Data – Research Support Handbook</title>
+<title>Why was rdm.vu.nl down for ten hours? – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,25 +124,47 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#re-using-existing-data" id="toc-re-using-existing-data" class="nav-link active" data-scroll-target="#re-using-existing-data">Re-using Existing Data</a></li>
-  <li><a href="#sources-for-finding-existing-datasets" id="toc-sources-for-finding-existing-datasets" class="nav-link" data-scroll-target="#sources-for-finding-existing-datasets">Sources for Finding Existing Datasets</a></li>
-  <li><a href="#data-sources-for-vu-researchers" id="toc-data-sources-for-vu-researchers" class="nav-link" data-scroll-target="#data-sources-for-vu-researchers">Data Sources for VU Researchers</a></li>
+  <li><a href="#root-cause" id="toc-root-cause" class="nav-link active" data-scroll-target="#root-cause">Root cause</a></li>
+  <li><a href="#how-could-the-downtime-happen-if-the-fix-was-clear" id="toc-how-could-the-downtime-happen-if-the-fix-was-clear" class="nav-link" data-scroll-target="#how-could-the-downtime-happen-if-the-fix-was-clear">How could the downtime happen if the fix was clear?</a>
+  <ul class="collapse">
+  <li><a href="#reason-1" id="toc-reason-1" class="nav-link" data-scroll-target="#reason-1">Reason 1</a></li>
+  <li><a href="#reason-2" id="toc-reason-2" class="nav-link" data-scroll-target="#reason-2">Reason 2</a></li>
+  </ul></li>
+  <li><a href="#improvements" id="toc-improvements" class="nav-link" data-scroll-target="#improvements">Improvements</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/topics/finding-existing-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/blog/2024-10-22post-mortem.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Finding Existing Data</h1>
-</div>
+<h1 class="title">Why was rdm.vu.nl down for ten hours?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">downtime</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Chris Hartgerink </p>
+             <p>Lena Karvovskaya </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 22, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -149,44 +174,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="re-using-existing-data" class="level2">
-<h2 class="anchored" data-anchor-id="re-using-existing-data">Re-using Existing Data</h2>
-<p>Anything that can be used for analysis can be considered “data(sets)”. Many national and international organisations provide access to large datasets free of charge: this is called <a href="https://opendefinition.org/">Open Data</a>.</p>
-<p>Datasets may contain different kinds of data files, e.g.&nbsp;raw or edited/cleaned data, and macro or micro data. <strong>Raw data</strong> refers to the data as they are primarily collected, and includes all data, even the missed or mismatched pieces in the data file. <strong>Edited or cleaned data</strong> refers to data that have been tidied up for analysis and publication. <strong>Macro data</strong> and statistics are results based on <strong>micro data</strong> units and provide a general overview of the micro data. Although datasets can contain data of varying type or aggregation level, and there may be overlap between these definitions, each element can contain very important information.</p>
-<p>When re-using research data, scientists must be familiar with the rules and regulations governing data copyright, intellectual property rights, and laws governing sensitive or personal information. SURF has compiled a <a href="https://www.surf.nl/en/report-the-legal-status-of-raw-data-a-guide-for-research-practice">report on the legal status of raw data</a> including information on the types of consent required for the re-use of data. Your 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> can answer questions about the use of personal data. <a href="https://www.ixa.nl/for-researchers/">IXA</a> can provide legal help with the re-use of data.</p>
-<p>See also the ZonMw explanation of <a href="https://www.zonmw.nl/sites/zonmw/files/typo3-migrated-files/TTD_Toelichting_verschillende_eigendomsrechten.pdf">different kinds of property rights in the Netherlands</a> (text available in Dutch only).</p>
+<p>On Friday October 18th 2024, we experienced around ten hours of downtime on the <code>rdm.vu.nl</code> website. The downtime started around 10AM after merging changes to the handbook and was resolved the same day, by 8PM.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<section id="root-cause" class="level2">
+<h2 class="anchored" data-anchor-id="root-cause">Root cause</h2>
+<p>The downtime started after merging changes to the handbook in commit <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced">669b065</a>. These changes themselves, did not cause the downtime. The root cause was an incorrect configuration in the deployment of the webpage, which inadvertently removed the <code>rdm.vu.nl</code> domain name from the GitHub settings every time we made changes in the handbook and redeployed the website. This resulted in 404 errors that the page could not be found.</p>
+<p>We first observed this issue on Thursday, one day prior to the downtime, in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">678ff88</a>. We proposed a fix for this issue in <a href="https://github.com/ubvu/open-handbook/pull/220">#220</a>, before the downtime started.</p>
 </section>
-<section id="sources-for-finding-existing-datasets" class="level2">
-<h2 class="anchored" data-anchor-id="sources-for-finding-existing-datasets">Sources for Finding Existing Datasets</h2>
-<p>The number of datasets that are available grows rapidly. Datasets are made available in many formats, by many people or organizations. Some datasets are raw files and some are specifically organised and formatted as databases that require a licence or subscription to use them. The library of the Vrije Universiteit Amsterdam has collected links to some of the data repositories used and has licensed several databases.</p>
-<ol type="1">
-<li><strong>Popular Free and Licensed Databases</strong>: These can be found with <a href="https://vu.on.worldcat.org/advancedsearch">LibSearch Advanced</a>.</li>
-</ol>
-<p>If you need help finding &amp; using free or licensed sources you can contact the <a href="https://www.ub.vu.nl/RDS">Research Data Services Helpdesk</a>. For students and personnel in the fields of economics, finance, or organisation science a <a href="https://libguides.vu.nl/finding-data">separate LibGuide</a> has been created to help them find and use/re-use data.</p>
-<p>You can also start looking for data in these four places:</p>
-<ol type="1">
-<li><strong>The literature</strong>. Research articles may point you to the data that they are based on. Sometimes, (part of) the data are added to the article as supplementary files, and sometimes the data are published separately in a data repository. In the latter case, the article usually provides a clear reference to the published dataset. Some datasets may even be specifically published in <a href="../guides/publish-and-share.html#data-publication">Data Journals</a>.</li>
-<li><strong>Scientific data repositories</strong>. Data repositories are platforms used to access and archive research data. Universities often provide a repository for data archiving, but other platforms arranged by discipline or by country also exist. Some repositories are only accessible to consortium members, whereas others are free of charge. Many universities in the Netherlands&nbsp;use <a href="https://dataverse.nl/">DataverseNL</a> to archive datasets for the mid-term. Long-term archiving&nbsp;is provided by the national research data archives&nbsp;<a href="https://easy.dans.knaw.nl/ui/home">DANS</a>&nbsp;and <a href="https://data.4tu.nl">4TU.Research Data</a>.&nbsp;In Europe, <a href="https://b2share.eudat.eu/">B2SHARE</a>&nbsp;and <a href="https://zenodo.org/">Zenodo</a>&nbsp;are platforms used&nbsp;to access research data. Data repositories can be accessed by searching by topic or country using <a href="https://www.re3data.org/search?query=">Re3data</a>, a data repository registry. The VU has its own research portal, <a href="https://research.vu.nl/en/">PURE</a>, where researchers register their datasets. You can find instructions on how to register your own dataset in PURE on the <a href="../guides/publish-and-share.html#dataset-registration">Dataset Registration</a> page of this LibGuide.</li>
-<li><strong>Data search engines</strong>. Search engines allow you to quickly browse data sets and supplementary data files published by researchers. They cover data sets from many sources. This makes them useful for quick orientation on a topic. Example of a search engines are: <a href="https://search.datacite.org/">DataCite</a>, <a href="https://toolbox.google.com/datasetsearch">Google DataSet Search</a>.</li>
-<li><strong>Data portals of (governmental) organisations</strong>. Organisations that regularly collect (statistical) data sometimes offer these data through their own portal. An example is <a href="https://ec.europa.eu/eurostat/data/database">Eurostat</a>, which collects and disseminates statistics at the European level, by country and by theme. Some of these websites have been linked in the <a href="https://libguides.vu.nl/finding-data/international-organizations">Finding data LibGuide</a>.</li>
-</ol>
+<section id="how-could-the-downtime-happen-if-the-fix-was-clear" class="level2">
+<h2 class="anchored" data-anchor-id="how-could-the-downtime-happen-if-the-fix-was-clear">How could the downtime happen if the fix was clear?</h2>
+<p>The fix for the domain specification was not merged in time for two reasons.</p>
+<section id="reason-1" class="level3">
+<h3 class="anchored" data-anchor-id="reason-1">Reason 1</h3>
+<p>At this time, we require two reviews before merging changes to the handbook. The fix was proposed at 1.11PM on Thursday, and did not receive the required reviews by the time the downtime happened (reason 1). However, this was a technical administration task and could have been merged immediately, as this supercedes regular review procedures.</p>
 </section>
-<section id="data-sources-for-vu-researchers" class="level2">
-<h2 class="anchored" data-anchor-id="data-sources-for-vu-researchers">Data Sources for VU Researchers</h2>
-<p>Researchers from the Vrije Universiteit Amsterdam have also developed some databases containing data collected during research. See here for some examples:</p>
+<section id="reason-2" class="level3">
+<h3 class="anchored" data-anchor-id="reason-2">Reason 2</h3>
+<p>The domain specification fix was not immediately merged to allow time to pass and ensure the fix was appropriate upon further reflection. This is because administrator <span class="citation" data-cites="chartgerink">(<a href="#ref-chartgerink" role="doc-biblioref"><strong>chartgerink?</strong></a>)</span> both proposed the fix and would also be the one to supercede the “two reviews” requirement. Due to travel, the administrator forgot about it in the morning, and only saw the messages about the downtime at 8PM. At that time, the fix was quickly merged and the downtime resolved.</p>
+</section>
+</section>
+<section id="improvements" class="level2">
+<h2 class="anchored" data-anchor-id="improvements">Improvements</h2>
+<p>The domain configuration is corrected and the deployment ensures the domain name is re-added to the GitHub settings every time there are changes to the handbook. This is now automated, which ensures that the domain name will not be removed inadvertently when future changes are incorporated.</p>
+<p>However, we also learned that critical administration fixes should not be left open for longer than is absolutely necessary. Here it was left open for longer than absolutely necessary due to travel, and a second administrator could have caught this issue sooner. This means we should work towards resilient reporting mechanisms to escalate such critical issues, and build capacity in the editor team to ensure no one person is responsible for merging critical fixes that are already available.</p>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>We would like to thank the editors for dealing with the stress from this inadvertent issue. We also thank the community for their patience as we only recently migrated to <code>rdm.vu.nl</code> and figure out these initial unexpected hurdles.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 <ul>
-<li><a href="https://tweelingenregister.vu.nl/">Nederlands Tweelingenregister</a> (Netherlands Twin Register) The database contains data on twins and their families and was created to do research on the relationship between genetics and growth, development, personality, behaviour, diseases, mental health and all kinds of risks.</li>
-<li><a href="https://geoplaza.vu.nl/cms/">Geoplaza VU</a> - the portal for all matters related to GIS (Geographical Information Systems) and geodata at the VU University Amsterdam. It offers students and employers a platform to exchange, examine and download digital map material.</li>
-<li><a href="https://www2.fgw.vu.nl/oz/kloosterlijst/kform.php">Dutch monasteries</a>&nbsp;- database with information about Dutch monasteries&nbsp;of the Middle Ages.</li>
-<li><a href="https://geoplaza.vu.nl/cms/maps/198-slaveneigenaren-in-amsterdam-1863">Slave owners in Amsterdam 1863</a>&nbsp;- the place of living of owners of slaves in Amsterdam in 1863, visualized in GeoPlaza.</li>
-<li><a href="https://www.borderdeaths.org/">Deaths at the Borders Database</a>&nbsp;- collection of official, state-produced evidence on people who died while attempting to reach southern EU countries from the Balkans, the Middle East, and North &amp; West Africa, and whose bodies were found in or brought to Europe.</li>
-<li>Datasets published by VU Researchers can be found at the <a href="https://research.vu.nl/en/datasets/">VU Research Portal</a>.</li>
+<li>Root cause for the downtime first observed in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">678ff88</a></li>
+<li>Proposed a fix for the root cause in <a href="https://github.com/ubvu/open-handbook/pull/220">pull Request #220</a></li>
+<li>Downtime started at <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced">commit 669b065</a> is where the</li>
+<li>Resolved downtime in <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">commit 678ff88</a></li>
 </ul>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><code>ubvu.github.io/open-handbook</code> remained online during this entire time, and functions indirectly as a backup.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -637,7 +670,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/topics/finding-existing-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/blog/2024-10-22post-mortem.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

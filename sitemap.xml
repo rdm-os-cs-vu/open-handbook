@@ -2,146 +2,158 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rdm-os-cs-vu.github.com/open-handbook/blog.html</loc>
-    <lastmod>2024-10-14T14:37:01.716Z</lastmod>
+    <lastmod>2024-11-02T20:05:42.184Z</lastmod>
   </url>
   <url>
     <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/research-data-management.html</loc>
-    <lastmod>2024-10-14T14:37:01.883Z</lastmod>
+    <lastmod>2024-11-02T20:05:42.303Z</lastmod>
   </url>
   <url>
     <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/data-storage.html</loc>
-    <lastmod>2024-10-14T14:37:01.882Z</lastmod>
+    <lastmod>2024-11-02T20:05:42.302Z</lastmod>
   </url>
   <url>
     <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/persistent-identifier.html</loc>
-    <lastmod>2024-10-14T14:37:01.882Z</lastmod>
+    <lastmod>2024-11-02T20:05:42.303Z</lastmod>
   </url>
   <url>
     <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/trainings.html</loc>
-    <lastmod>2024-10-14T14:37:01.883Z</lastmod>
+    <lastmod>2024-11-02T20:05:42.303Z</lastmod>
   </url>
   <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/metadata.html</loc>
-    <lastmod>2024-10-14T14:37:01.882Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/data-publication.html</loc>
-    <lastmod>2024-10-14T14:37:01.881Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/data-collection.html</loc>
-    <lastmod>2024-10-14T14:37:01.880Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/selecting-data.html</loc>
-    <lastmod>2024-10-14T14:37:01.883Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/finding-existing-data.html</loc>
-    <lastmod>2024-10-14T14:37:01.882Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/collect-and-store.html</loc>
-    <lastmod>2024-10-14T14:37:01.718Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/publish-and-share.html</loc>
-    <lastmod>2024-10-14T14:37:01.721Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/process-and-analyze.html</loc>
-    <lastmod>2024-10-14T14:37:01.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides.html</loc>
-    <lastmod>2024-10-14T14:37:01.718Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-09-05hackathon.html</loc>
-    <lastmod>2024-10-14T14:37:01.716Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-09-30hackathon.html</loc>
-    <lastmod>2024-10-14T14:37:01.716Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/index.html</loc>
-    <lastmod>2024-10-14T14:37:01.721Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/contributing.html</loc>
-    <lastmod>2024-10-14T14:37:01.717Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics.html</loc>
-    <lastmod>2024-10-14T14:37:01.879Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/editors-guide.html</loc>
-    <lastmod>2024-10-14T14:37:01.717Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-05-23welcome.html</loc>
-    <lastmod>2024-10-14T14:37:01.716Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-06-27hackathon.html</loc>
-    <lastmod>2024-10-14T14:37:01.716Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/about.html</loc>
-    <lastmod>2024-10-14T14:37:01.716Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/document-and-preserve.html</loc>
-    <lastmod>2024-10-14T14:37:01.718Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/plan-and-design.html</loc>
-    <lastmod>2024-10-14T14:37:01.719Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/data-lifecycle.html</loc>
-    <lastmod>2024-10-14T14:37:01.718Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/discover-and-initiate.html</loc>
-    <lastmod>2024-10-14T14:37:01.718Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/data-management-plan.html</loc>
-    <lastmod>2024-10-14T14:37:01.881Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/bazis.html</loc>
-    <lastmod>2024-10-14T14:37:01.879Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/fair-principles.html</loc>
-    <lastmod>2024-10-14T14:37:01.882Z</lastmod>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/safe-data-transfer.html</loc>
+    <lastmod>2024-11-02T20:05:42.303Z</lastmod>
   </url>
   <url>
     <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/data-documentation.html</loc>
-    <lastmod>2024-10-14T14:37:01.880Z</lastmod>
+    <lastmod>2024-11-02T20:05:42.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/fair-principles.html</loc>
+    <lastmod>2024-11-02T20:05:42.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/qualtrics.html</loc>
+    <lastmod>2024-11-02T20:05:42.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/selecting-data.html</loc>
+    <lastmod>2024-11-02T20:05:42.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/finding-existing-data.html</loc>
+    <lastmod>2024-11-02T20:05:42.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/collect-and-store.html</loc>
+    <lastmod>2024-11-02T20:05:42.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/publish-and-share.html</loc>
+    <lastmod>2024-11-02T20:05:42.187Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/process-and-analyze.html</loc>
+    <lastmod>2024-11-02T20:05:42.187Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides.html</loc>
+    <lastmod>2024-11-02T20:05:42.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-09-05hackathon.html</loc>
+    <lastmod>2024-11-02T20:05:42.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-09-30hackathon.html</loc>
+    <lastmod>2024-11-02T20:05:42.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-05-23welcome.html</loc>
+    <lastmod>2024-11-02T20:05:42.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/editors-guide.html</loc>
+    <lastmod>2024-11-02T20:05:42.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics.html</loc>
+    <lastmod>2024-11-02T20:05:42.301Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/contributing.html</loc>
+    <lastmod>2024-11-02T20:05:42.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/index.html</loc>
+    <lastmod>2024-11-02T20:05:42.187Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-10-22post-mortem.html</loc>
+    <lastmod>2024-11-02T20:05:42.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/blog/2024-06-27hackathon.html</loc>
+    <lastmod>2024-11-02T20:05:42.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/about.html</loc>
+    <lastmod>2024-11-02T20:05:42.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/document-and-preserve.html</loc>
+    <lastmod>2024-11-02T20:05:42.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/plan-and-design.html</loc>
+    <lastmod>2024-11-02T20:05:42.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/data-lifecycle.html</loc>
+    <lastmod>2024-11-02T20:05:42.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/guides/discover-and-initiate.html</loc>
+    <lastmod>2024-11-02T20:05:42.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/data-management-plan.html</loc>
+    <lastmod>2024-11-02T20:05:42.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/bazis.html</loc>
+    <lastmod>2024-11-02T20:05:42.301Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/data-collection.html</loc>
+    <lastmod>2024-11-02T20:05:42.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/data-publication.html</loc>
+    <lastmod>2024-11-02T20:05:42.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/metadata.html</loc>
+    <lastmod>2024-11-02T20:05:42.302Z</lastmod>
   </url>
   <url>
     <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/data-protection.html</loc>
-    <lastmod>2024-10-14T14:37:01.881Z</lastmod>
+    <lastmod>2024-11-02T20:05:42.302Z</lastmod>
   </url>
   <url>
     <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/data-citation.html</loc>
-    <lastmod>2024-10-14T14:37:01.880Z</lastmod>
+    <lastmod>2024-11-02T20:05:42.301Z</lastmod>
   </url>
   <url>
     <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/cff.html</loc>
-    <lastmod>2024-10-14T14:37:01.880Z</lastmod>
+    <lastmod>2024-11-02T20:05:42.301Z</lastmod>
   </url>
   <url>
     <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/data-management-section.html</loc>
-    <lastmod>2024-10-14T14:37:01.881Z</lastmod>
+    <lastmod>2024-11-02T20:05:42.302Z</lastmod>
   </url>
   <url>
     <loc>https://rdm-os-cs-vu.github.com/open-handbook/topics/data-and-software-licensing.html</loc>
-    <lastmod>2024-10-14T14:37:01.880Z</lastmod>
+    <lastmod>2024-11-02T20:05:42.301Z</lastmod>
   </url>
 </urlset>
