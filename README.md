@@ -1,3 +1,10 @@
+# The Computer Science Department Handbook for Research Data Management and Open Science.
+
+This is the handbook for the computer science department of the Vrije Universiteit Amsterdam about research data management and open science. It is made to be aligned with the university handbook. 
+
+The handbook is currently maintained by Shuai Wang and Kees Verstoep. The template is from the university library. See below for more details.
+
+
 # VU Research Support Handbook
 
 Welcome to the source code for the VU Research Support Handbook! If you want to report a problem or suggest a new page, [you can do so using our contribution portal](https://ez-github-contributor.netlify.app/).
