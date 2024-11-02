@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  site-url: "https://rdm-os-cs-vu.github.com/open-handbook"
+  site-url: "https://rdm-os-cs-vu.github.io/open-handbook"
   title: "{{< var title >}}"
   description: "A place for all things open research at the VU."
   favicon: public/favicon.png
