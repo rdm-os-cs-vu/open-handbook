@@ -25,6 +25,12 @@ website:
         file: guides.qmd
       - text: "Blog"
         file: blog.qmd
+      - text: "Guidelines"
+        file: guidelines.qmd
+      - text: "Downloads"
+        file: downloads.qmd
+      - text: "Groups"
+        file: group-guidelines.qmd
       - contributing.qmd
     tools:
       - icon: github

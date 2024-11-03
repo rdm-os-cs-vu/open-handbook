@@ -8,11 +8,11 @@ function Cta() {
             CONTACTS
           </h2>
           
-            {/* 
+        
           <p className="tw-mx-auto tw-mt-6 tw-max-w-xl tw-text-lg tw-leading-8 tw-text-sky-200">
-            Contribute by exploring. The rest will follow. 
+            For your convinience, we have the contacts summarized in <a href="https://drive.google.com/drive/folders/1Hq3tOWhmOsgLTCIcv6oWAOX_jTmFqdqf?usp=sharing">this</a> file. Please check the following links for updated contacts. 
           </p>
-          */}
+          
           
 
     <h3 className="tw-mx-auto tw-mt-6 tw-max-w-xl tw-text-lg tw-leading-8 tw-text-sky-200" >Department & Faculty Data Stewards</h3>
@@ -28,7 +28,7 @@ function Cta() {
 
     <p>For the contact of the <b>university RDM and open science team</b>, please check <a href="https://vu.nl/en/about-vu/divisions/university-library/teams/contact-research-data-support">this</a> page.</p>
     <p>For the contact of the <b>faculty/university knowledge security team</b>, please check <a href="https://vu.nl/en/employee/onderwijs-en-onderzoeksbeleid/knowledge-security-for-vu-amsterdam-employees">this</a> page.</p>
-    <p>For the contact of the <b>university legal support team</b>, please check <a href="https://vu.nl/en/research/portal/research-impact-support-portal/check-legal-support">this</a> page.</p>
+    <p>For the contact of the <b>university legal support team</b>, please check <a href="https://vu.nl/en/research/portal/research-impact-support-portal/check-legal-support" >this</a> page.</p>
     <p>For the contact of the <b>faculty ethics team</b>, please check <a href="https://vu.nl/en/about-vu/faculties/faculty-of-science/more-about/research-ethics-review-committee-beta">this</a> page.</p>
 
         </div>
