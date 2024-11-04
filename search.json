@@ -560,6 +560,13 @@
     "text": "Footnotes\n\n\nEach editor chooses which of these they want to focus on. Editors get auto-invited to review the changes. Timely means within a week.↩︎"
   },
   {
+    "objectID": "index.html#what-is-happening-here",
+    "href": "index.html#what-is-happening-here",
+    "title": "{{< var title >}}",
+    "section": "What is happening here",
+    "text": "What is happening here\n\n##Why"
+  },
+  {
     "objectID": "blog/2024-10-22post-mortem.html",
     "href": "blog/2024-10-22post-mortem.html",
     "title": "Why was rdm.vu.nl down for ten hours?",
