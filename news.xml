@@ -10,23 +10,24 @@
 <atom:link href="https://rdm-os-cs-vu.github.io/open-handbook/news.xml" rel="self" type="application/rss+xml"/>
 <description>A place for all things open research at the VU.</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Sun, 03 Nov 2024 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 03 Jun 2024 22:00:00 GMT</lastBuildDate>
 <item>
-  <title>Hello world!</title>
-  <link>https://rdm-os-cs-vu.github.io/open-handbook/news/2024-11-04welcome.html</link>
+  <title>Shuai Wang and colleagues won the Open Science Community Amsterdam Award (OSCA)!</title>
+  <link>https://rdm-os-cs-vu.github.io/open-handbook/news/2024-06-04OSCAR.html</link>
   <description><![CDATA[ 
 
 
 
 
-<p>This is the first CS news entry on this Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.</p>
-<p>We will follow up with more details later.</p>
+<p>Through the OSCAWARDS, open science in Amsterdam is highlighted. All groups and projects with open science related aspects or challenges can be nominated for the awards.</p>
+<p>A project by Shuai Wang, Ronald Siebes, Jacco van Ossenbruggen, Tobias Kuhn, a bachelor student Navroop K Singh, together with colleagues from the Open Science team in the university library won the Open Science Community Amsterdam Awards (OSCA). They received a grant of 400 euros. In the project, they studied the use of FAIR Implementation Profiles for making suggestions while researchers write their Data Management Plans.</p>
+<p>The paper has been accepted for publication at the MTSR conference. A preprint is available <a href="https://shuai.ai/static/files/paper/mtsr-fip2dmp.pdf">here</a>.</p>
 
 
 
  ]]></description>
-  <guid>https://rdm-os-cs-vu.github.io/open-handbook/news/2024-11-04welcome.html</guid>
-  <pubDate>Sun, 03 Nov 2024 23:00:00 GMT</pubDate>
+  <guid>https://rdm-os-cs-vu.github.io/open-handbook/news/2024-06-04OSCAR.html</guid>
+  <pubDate>Mon, 03 Jun 2024 22:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
