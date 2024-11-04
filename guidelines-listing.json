@@ -1,0 +1,12 @@
+{
+  "listing": "/guidelines.html",
+  "items": [
+    "/guides/discover-and-initiate.html",
+    "/guides/collect-and-store.html",
+    "/guides/process-and-analyze.html",
+    "/guides/document-and-preserve.html",
+    "/guides/plan-and-design.html",
+    "/guides/publish-and-share.html",
+    "/guides/data-lifecycle.html"
+  ]
+}

@@ -17,7 +17,7 @@ function Hero() {
             The VU-CS handbook on RDM & Open Science. 
           </h2>
           <p className="tw-mt-6 tw-text-base tw-leading-8 tw-text-gray-600">
-            This handbook guides researchers and PhD students in the Computer Science department of the VU through issues related to research data management and open science. This handbook is based on a template offered by the university library and extends the university research support handbook. 
+            <strong>This handbook guides researchers and PhD students in the Computer Science department of the VU through issues related to research data management and open science.</strong>
           </p>
           {/* <div className="tw-mt-10 tw-flex tw-items-center tw-justify-center tw-gap-x-6">
             <a
@@ -34,6 +34,14 @@ function Hero() {
             </a>
           </div>
           */}
+          <p className="tw-mt-6 tw-text-base tw-leading-8 tw-text-gray-600" text-align="left">  
+          This handbook serves as an extension of the University Library's <a href="https://rdm.vu.nl/">Handbook</a> and we try to stay consistent with their guidelines and suggestions. 
+          This handbook provides researchers (including PhD students) in the CS department with more detailed guidance and examples that can be considered complementary material for the existing <a href="https://libguides.vu.nl/rdm/dmp">LibGuides</a>.
+          Existing resources such as the <a href="https://vu.nl/en/employee/research-data-support">Research Data Support</a> will be referenced. 
+          Given that there are many documents and guidelines, this handbook aims to provide a uniformed entry point for CS researchers to find them easily. 
+          </p>
+          
+          <p>This handbook is brought to you by Shuai Wang and Kees Verstoep with the help of colleagues from the university library. </p>
         </div>
       </div>
     </>

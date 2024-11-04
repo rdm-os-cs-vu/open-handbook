@@ -10,7 +10,7 @@ function Cta() {
           
         
           <p className="tw-mx-auto tw-mt-6 tw-max-w-xl tw-text-lg tw-leading-8 tw-text-sky-200">
-            For your convinience, we have the contacts summarized in <a href="https://drive.google.com/drive/folders/1Hq3tOWhmOsgLTCIcv6oWAOX_jTmFqdqf?usp=sharing">this</a> file. Please check the following links for updated contacts. 
+            For your convinience, we have the contacts summarized in <a href="https://docs.google.com/document/d/1JpZHOWmoWRCyrlIHImXn-w32q7WUWv-YMuXtQzNu4lA/edit?usp=sharing">this</a> file. Please check the following links for updated contacts. 
           </p>
           
           

@@ -1,0 +1,24 @@
+---
+title: What research resources are available for VU researchers related to research data management?
+description: "A page that summarized all the links."
+---
+
+{{< video https://www.youtube.com/embed/-AaSNZzL_KQ >}}
+
+## Support
+
+### Research Data Services
+
+![Image showing the relations between VU Research Data Support Offices, at the center with grants, legal, library, security, IT for Research, and IXA around it.](../public/VU-research-data-service-offices.png)
+
+Research Data Management is supported by various departments at the VU. These departments will help all VU researchers. There are also faculty specific support departments for research data support; they support their own faculty members.
+
+Here you find references to other organisational units and departments that can help you with matters related to collecting and managing data.
+
+**VU research data support (for all researchers)*** 
+
+* [Grant office](https://vu.nl/en/about-vu/more-about/vu-grants-office)
+* [Library](https://vu.nl/en/about-vu/more-about/rdm-support-desk)
+* [Legal](https://vu.nl/en/employee/board-and-strategy/institutional-and-legal-affairs)
+* 🔒 [IT for Research](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=4cb138ee97fa0950e553359fe153afff)
+* [IXA](https://www.ixa.nl/)

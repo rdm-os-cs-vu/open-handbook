@@ -38,7 +38,7 @@ const features = [
     ),
   },
   {
-    name: <p className="tw-inline"><a href="https://rdm-os-cs-vu.github.io/open-handbook/guidlines.html">Guidelines</a></p>,
+    name: <p className="tw-inline"><a href="https://rdm-os-cs-vu.github.io/open-handbook/RDM-guidelines.html">RDM Guidelines</a></p>,
     description: "The university, faculty, department guidelines about RDM and Open Science.",
     icon: () => (
       <svg

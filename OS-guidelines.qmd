@@ -1,7 +1,7 @@
 ---
-title: "Guides"
+title: "Open Science"
 listing:
-  contents: guides
+  contents: OS-guidelines
   type: grid
   categories: true
 include-in-header:

@@ -1,0 +1,7 @@
+---
+title: "News"
+listing:
+  contents: news
+  feed: true
+  sort: "date desc"
+---

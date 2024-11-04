@@ -21,12 +21,14 @@ website:
     left:
       - text: "Topics"
         file: topics.qmd
-      - text: "Guides"
+      - text: "UB's Guides"
         file: guides.qmd
-      - text: "Blog"
-        file: blog.qmd
-      - text: "Guidelines"
-        file: guidelines.qmd
+      - text: "CS News"
+        file: news.qmd
+      - text: "RDM Guidelines"
+        file: RDM-guidelines.qmd
+      - text: "Open Science"
+        file: OS-guidelines.qmd
       - text: "Downloads"
         file: downloads.qmd
       - text: "Groups"

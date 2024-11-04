@@ -1,7 +1,7 @@
 ---
-title: "Guides"
+title: "Group-specific Guidelines"
 listing:
-  contents: guides
+  contents: group-guidelines
   type: grid
   categories: true
 include-in-header:
@@ -15,9 +15,8 @@ include-in-header:
 
 ::: {.callout-tip}
 
-## What is a guide?
+## What is this page about?
 
-These guides help you find answers to questions that come up while doing research. They help guide you through various topics at once.
+The CS department is one of the largest departments of the VU featuring research of all kinds. Here you can find group-specific guidelines that the dept. data stewards wrote in collabration with the RDM contact person of each group. 
 
-Missing a guide? You can [submit questions you are dealing with using the Contribution portal](https://ez-github-contributor.netlify.app/).
 :::
