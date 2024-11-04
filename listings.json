@@ -10,25 +10,11 @@
     ]
   },
   {
-    "listing": "/guides.html",
-    "items": [
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyze.html",
-      "/guides/document-and-preserve.html",
-      "/guides/plan-and-design.html",
-      "/guides/publish-and-share.html",
-      "/guides/data-lifecycle.html"
-    ]
+    "listing": "/RDM-guidelines.html",
+    "items": []
   },
   {
-    "listing": "/news.html",
-    "items": [
-      "/news/2024-11-04welcome.html"
-    ]
-  },
-  {
-    "listing": "/OS-guidelines.html",
+    "listing": "/downloads.html",
     "items": [
       "/guides/discover-and-initiate.html",
       "/guides/collect-and-store.html",
@@ -65,7 +51,19 @@
     ]
   },
   {
-    "listing": "/downloads.html",
+    "listing": "/OS-guidelines.html",
+    "items": [
+      "/OS-guidelines/open-science-resources.html"
+    ]
+  },
+  {
+    "listing": "/news.html",
+    "items": [
+      "/news/2024-11-04welcome.html"
+    ]
+  },
+  {
+    "listing": "/guides.html",
     "items": [
       "/guides/discover-and-initiate.html",
       "/guides/collect-and-store.html",
@@ -75,10 +73,6 @@
       "/guides/publish-and-share.html",
       "/guides/data-lifecycle.html"
     ]
-  },
-  {
-    "listing": "/RDM-guidelines.html",
-    "items": []
   },
   {
     "listing": "/group-guidelines.html",
