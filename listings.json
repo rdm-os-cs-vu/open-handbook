@@ -10,6 +10,22 @@
     ]
   },
   {
+    "listing": "/RDM-guidelines.html",
+    "items": []
+  },
+  {
+    "listing": "/downloads.html",
+    "items": [
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyze.html",
+      "/guides/document-and-preserve.html",
+      "/guides/plan-and-design.html",
+      "/guides/publish-and-share.html",
+      "/guides/data-lifecycle.html"
+    ]
+  },
+  {
     "listing": "/topics.html",
     "items": [
       "/topics/cff.html",
@@ -35,19 +51,7 @@
     ]
   },
   {
-    "listing": "/downloads.html",
-    "items": [
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyze.html",
-      "/guides/document-and-preserve.html",
-      "/guides/plan-and-design.html",
-      "/guides/publish-and-share.html",
-      "/guides/data-lifecycle.html"
-    ]
-  },
-  {
-    "listing": "/RDM-guidelines.html",
+    "listing": "/OS-guidelines.html",
     "items": [
       "/guides/discover-and-initiate.html",
       "/guides/collect-and-store.html",
