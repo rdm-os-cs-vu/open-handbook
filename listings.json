@@ -10,11 +10,25 @@
     ]
   },
   {
-    "listing": "/RDM-guidelines.html",
-    "items": []
+    "listing": "/guides.html",
+    "items": [
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyze.html",
+      "/guides/document-and-preserve.html",
+      "/guides/plan-and-design.html",
+      "/guides/publish-and-share.html",
+      "/guides/data-lifecycle.html"
+    ]
   },
   {
-    "listing": "/downloads.html",
+    "listing": "/news.html",
+    "items": [
+      "/news/2024-11-04welcome.html"
+    ]
+  },
+  {
+    "listing": "/OS-guidelines.html",
     "items": [
       "/guides/discover-and-initiate.html",
       "/guides/collect-and-store.html",
@@ -51,7 +65,7 @@
     ]
   },
   {
-    "listing": "/OS-guidelines.html",
+    "listing": "/downloads.html",
     "items": [
       "/guides/discover-and-initiate.html",
       "/guides/collect-and-store.html",
@@ -63,20 +77,8 @@
     ]
   },
   {
-    "listing": "/news.html",
+    "listing": "/RDM-guidelines.html",
     "items": []
-  },
-  {
-    "listing": "/guides.html",
-    "items": [
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyze.html",
-      "/guides/document-and-preserve.html",
-      "/guides/plan-and-design.html",
-      "/guides/publish-and-share.html",
-      "/guides/data-lifecycle.html"
-    ]
   },
   {
     "listing": "/group-guidelines.html",

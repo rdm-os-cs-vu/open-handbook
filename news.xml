@@ -10,6 +10,23 @@
 <atom:link href="https://rdm-os-cs-vu.github.io/open-handbook/news.xml" rel="self" type="application/rss+xml"/>
 <description>A place for all things open research at the VU.</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Mon, 04 Nov 2024 15:40:58 GMT</lastBuildDate>
+<lastBuildDate>Sun, 03 Nov 2024 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Hello world!</title>
+  <link>https://rdm-os-cs-vu.github.io/open-handbook/news/2024-11-04welcome.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This is the first CS news entry on this Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.</p>
+<p>We will follow up with more details later.</p>
+
+
+
+ ]]></description>
+  <guid>https://rdm-os-cs-vu.github.io/open-handbook/news/2024-11-04welcome.html</guid>
+  <pubDate>Sun, 03 Nov 2024 23:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>
