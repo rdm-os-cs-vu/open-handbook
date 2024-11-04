@@ -10,30 +10,6 @@
     ]
   },
   {
-    "listing": "/downloads.html",
-    "items": [
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyze.html",
-      "/guides/document-and-preserve.html",
-      "/guides/plan-and-design.html",
-      "/guides/publish-and-share.html",
-      "/guides/data-lifecycle.html"
-    ]
-  },
-  {
-    "listing": "/guidelines.html",
-    "items": [
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyze.html",
-      "/guides/document-and-preserve.html",
-      "/guides/plan-and-design.html",
-      "/guides/publish-and-share.html",
-      "/guides/data-lifecycle.html"
-    ]
-  },
-  {
     "listing": "/topics.html",
     "items": [
       "/topics/cff.html",
@@ -57,6 +33,34 @@
       "/topics/selecting-data.html",
       "/topics/trainings.html"
     ]
+  },
+  {
+    "listing": "/downloads.html",
+    "items": [
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyze.html",
+      "/guides/document-and-preserve.html",
+      "/guides/plan-and-design.html",
+      "/guides/publish-and-share.html",
+      "/guides/data-lifecycle.html"
+    ]
+  },
+  {
+    "listing": "/RDM-guidelines.html",
+    "items": [
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyze.html",
+      "/guides/document-and-preserve.html",
+      "/guides/plan-and-design.html",
+      "/guides/publish-and-share.html",
+      "/guides/data-lifecycle.html"
+    ]
+  },
+  {
+    "listing": "/news.html",
+    "items": []
   },
   {
     "listing": "/guides.html",
