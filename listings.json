@@ -1,18 +1,5 @@
 [
   {
-    "listing": "/RDM-guidelines.html",
-    "items": [
-      "/RDM-guidelines/VU-CS-RDM-Storage-Selection.html",
-      "/RDM-guidelines/RDM-resources.html"
-    ]
-  },
-  {
-    "listing": "/news.html",
-    "items": [
-      "/news/2024-06-04OSCAR.html"
-    ]
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/blog/2024-11-01hackathon.html",
@@ -30,21 +17,15 @@
     ]
   },
   {
-    "listing": "/OS-guidelines.html",
+    "listing": "/news.html",
     "items": [
-      "/OS-guidelines/open-science-resources.html"
+      "/news/2024-06-04OSCAR.html"
     ]
   },
   {
-    "listing": "/guides.html",
+    "listing": "/OS-guidelines.html",
     "items": [
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyze.html",
-      "/guides/document-and-preserve.html",
-      "/guides/plan-and-design.html",
-      "/guides/publish-and-share.html",
-      "/guides/data-lifecycle.html"
+      "/OS-guidelines/open-science-resources.html"
     ]
   },
   {
@@ -75,6 +56,25 @@
       "/topics/selecting-data.html",
       "/topics/trainings.html",
       "/topics/yoda.html"
+    ]
+  },
+  {
+    "listing": "/RDM-guidelines.html",
+    "items": [
+      "/RDM-guidelines/VU-CS-RDM-Storage-Selection.html",
+      "/RDM-guidelines/RDM-resources.html"
+    ]
+  },
+  {
+    "listing": "/guides.html",
+    "items": [
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyze.html",
+      "/guides/document-and-preserve.html",
+      "/guides/plan-and-design.html",
+      "/guides/publish-and-share.html",
+      "/guides/data-lifecycle.html"
     ]
   }
 ]
