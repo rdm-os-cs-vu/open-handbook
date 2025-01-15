@@ -1,23 +1,5 @@
 [
   {
-    "listing": "/RDM-guidelines.html",
-    "items": [
-      "/RDM-guidelines/RDM-resources.html"
-    ]
-  },
-  {
-    "listing": "/OS-guidelines.html",
-    "items": [
-      "/OS-guidelines/open-science-resources.html"
-    ]
-  },
-  {
-    "listing": "/group-guidelines.html",
-    "items": [
-      "/group-guidelines/UCDS.html"
-    ]
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/blog/2024-11-01hackathon.html",
@@ -29,9 +11,9 @@
     ]
   },
   {
-    "listing": "/news.html",
+    "listing": "/group-guidelines.html",
     "items": [
-      "/news/2024-06-04OSCAR.html"
+      "/group-guidelines/UCDS.html"
     ]
   },
   {
@@ -44,6 +26,12 @@
       "/guides/plan-and-design.html",
       "/guides/publish-and-share.html",
       "/guides/data-lifecycle.html"
+    ]
+  },
+  {
+    "listing": "/RDM-guidelines.html",
+    "items": [
+      "/RDM-guidelines/RDM-resources.html"
     ]
   },
   {
@@ -74,6 +62,18 @@
       "/topics/selecting-data.html",
       "/topics/trainings.html",
       "/topics/yoda.html"
+    ]
+  },
+  {
+    "listing": "/OS-guidelines.html",
+    "items": [
+      "/OS-guidelines/open-science-resources.html"
+    ]
+  },
+  {
+    "listing": "/news.html",
+    "items": [
+      "/news/2024-06-04OSCAR.html"
     ]
   }
 ]
