@@ -17,21 +17,15 @@
     ]
   },
   {
-    "listing": "/guides.html",
+    "listing": "/news.html",
     "items": [
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyze.html",
-      "/guides/document-and-preserve.html",
-      "/guides/plan-and-design.html",
-      "/guides/publish-and-share.html",
-      "/guides/data-lifecycle.html"
+      "/news/2024-06-04OSCAR.html"
     ]
   },
   {
-    "listing": "/RDM-guidelines.html",
+    "listing": "/OS-guidelines.html",
     "items": [
-      "/RDM-guidelines/RDM-resources.html"
+      "/OS-guidelines/open-science-resources.html"
     ]
   },
   {
@@ -65,15 +59,22 @@
     ]
   },
   {
-    "listing": "/OS-guidelines.html",
+    "listing": "/RDM-guidelines.html",
     "items": [
-      "/OS-guidelines/open-science-resources.html"
+      "/RDM-guidelines/VU-CS-RDM-Storage-Selection.html",
+      "/RDM-guidelines/RDM-resources.html"
     ]
   },
   {
-    "listing": "/news.html",
+    "listing": "/guides.html",
     "items": [
-      "/news/2024-06-04OSCAR.html"
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyze.html",
+      "/guides/document-and-preserve.html",
+      "/guides/plan-and-design.html",
+      "/guides/publish-and-share.html",
+      "/guides/data-lifecycle.html"
     ]
   }
 ]

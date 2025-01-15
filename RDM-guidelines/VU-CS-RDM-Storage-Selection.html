@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>VU Computer Science Data Storage Platforms – VU CS Department RDM and Open Science Handbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-543461330d1ab7c9290b28baa7d61037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../topics.html"> 
+<span class="menu-text">Topics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../guides.html"> 
+<span class="menu-text">Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../RDM-guidelines.html"> 
+<span class="menu-text">CS RDM Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../group-guidelines.html"> 
+<span class="menu-text">CS Groups</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../news.html"> 
+<span class="menu-text">CS News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contributing.html"> 
+<span class="menu-text">Contributing</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/rdm-os-cs-vu/open-handbook" title="GitHub VU Open Handbook" class="quarto-navigation-tool px-1" aria-label="GitHub VU Open Handbook"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#selecting-the-right-data-storage-platform-for-research-projects" id="toc-selecting-the-right-data-storage-platform-for-research-projects" class="nav-link active" data-scroll-target="#selecting-the-right-data-storage-platform-for-research-projects"><span class="header-section-number">1</span> Selecting the Right Data Storage Platform for Research Projects</a></li>
+  <li><a href="#survey-results-on-the-current-use-of-data-storage" id="toc-survey-results-on-the-current-use-of-data-storage" class="nav-link" data-scroll-target="#survey-results-on-the-current-use-of-data-storage"><span class="header-section-number">2</span> Survey results on the current use of Data Storage</a></li>
+  <li><a href="#data-storage-suggestions" id="toc-data-storage-suggestions" class="nav-link" data-scroll-target="#data-storage-suggestions"><span class="header-section-number">3</span> Data Storage Suggestions</a>
+  <ul class="collapse">
+  <li><a href="#most-suitable" id="toc-most-suitable" class="nav-link" data-scroll-target="#most-suitable"><span class="header-section-number">3.1</span> Most suitable</a></li>
+  <li><a href="#suitable-only-for-specific-purposes" id="toc-suitable-only-for-specific-purposes" class="nav-link" data-scroll-target="#suitable-only-for-specific-purposes"><span class="header-section-number">3.2</span> Suitable only for specific purposes</a></li>
+  <li><a href="#typically-less-suitable" id="toc-typically-less-suitable" class="nav-link" data-scroll-target="#typically-less-suitable"><span class="header-section-number">3.3</span> Typically less suitable</a></li>
+  <li><a href="#legacy-storage-options" id="toc-legacy-storage-options" class="nav-link" data-scroll-target="#legacy-storage-options"><span class="header-section-number">3.4</span> Legacy storage options</a></li>
+  </ul></li>
+  <li><a href="#detailed-overviews" id="toc-detailed-overviews" class="nav-link" data-scroll-target="#detailed-overviews"><span class="header-section-number">4</span> Detailed overviews</a>
+  <ul class="collapse">
+  <li><a href="#research-drive" id="toc-research-drive" class="nav-link" data-scroll-target="#research-drive"><span class="header-section-number">4.1</span> Research Drive</a></li>
+  <li><a href="#yoda" id="toc-yoda" class="nav-link" data-scroll-target="#yoda"><span class="header-section-number">4.2</span> YODA</a></li>
+  <li><a href="#scistor" id="toc-scistor" class="nav-link" data-scroll-target="#scistor"><span class="header-section-number">4.3</span> SciStor</a></li>
+  <li><a href="#google-drive-vu" id="toc-google-drive-vu" class="nav-link" data-scroll-target="#google-drive-vu"><span class="header-section-number">4.4</span> Google Drive VU</a></li>
+  <li><a href="#microsoft-sharepoint-teams" id="toc-microsoft-sharepoint-teams" class="nav-link" data-scroll-target="#microsoft-sharepoint-teams"><span class="header-section-number">4.5</span> Microsoft Sharepoint (Teams)</a></li>
+  <li><a href="#open-science-framework" id="toc-open-science-framework" class="nav-link" data-scroll-target="#open-science-framework"><span class="header-section-number">4.6</span> Open Science Framework</a></li>
+  <li><a href="#encrypted-portable-storage" id="toc-encrypted-portable-storage" class="nav-link" data-scroll-target="#encrypted-portable-storage"><span class="header-section-number">4.7</span> Encrypted portable storage</a></li>
+  <li><a href="#onedrive" id="toc-onedrive" class="nav-link" data-scroll-target="#onedrive"><span class="header-section-number">4.8</span> OneDrive</a></li>
+  <li><a href="#surfdrive" id="toc-surfdrive" class="nav-link" data-scroll-target="#surfdrive"><span class="header-section-number">4.9</span> SURFdrive</a></li>
+  <li><a href="#custom-solutions" id="toc-custom-solutions" class="nav-link" data-scroll-target="#custom-solutions"><span class="header-section-number">4.10</span> Custom solutions</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/RDM-guidelines/VU-CS-RDM-Storage-Selection.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="VU-CS-RDM-Storage-Selection.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="VU-CS-RDM-Storage-Selection.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">VU Computer Science Data Storage Platforms</h1>
+<p class="subtitle lead">version v0.4, November 5, 2024</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kees Verstoep <a href="mailto:c.verstoep@vu.nl" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+             <p>Shuai Wang <a href="mailto:shuai.wang@vu.nl" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="selecting-the-right-data-storage-platform-for-research-projects" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Selecting the Right Data Storage Platform for Research Projects</h1>
+<p>This document is created as a guideline for the selection of storage platform for the research projects in the Computer Science department of the Vrije Universiteit Amsterdam. This guideline makes concrete suggestions for our department based on the 2020 university <a href="https://drive.google.com/file/d/1f8wqi_PIsJTCjWooXPlR7V2Hy83XG-u2/view?usp=sharing">RDM policy</a> and information provided by the UBVU (University Library) RDM team and VU/IT department. The guideline takes into account the current state of several ongoing and recently completed projects in our department, based on a department-wide survey held in 2023.</p>
+<p>The document provides an overview of available options for data storage, explains how they are suggested for use in our department, and helps researchers choose the most suitable storage option for projects. While this document covers only data storage, the data stewards are aware that in practice, there could be much more to take into consideration. Feel free to consult the data stewards in specific cases.</p>
+<p>Using many different storage options can lead to fragmentation and operational overheads when working with multiple data sources. Therefore, in our department we want to limit the commonly used storage options to a preferred shortlist. This document serves as a guideline for this convergence.</p>
+<p>The online VU tool <a href="https://vu.nl/en/research/storagefinder">Data Storage Finder</a> has no less than 10 storage options listed. More detailed information and metrics about these options can be found on the <a href="https://libguides.vu.nl/rdm/data-storage">University Library’s Data Storage guide</a>.</p>
+<p>The data storage options are classified as appropriate or not according to the following criteria:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Data classification (sensitivity)</td>
+<td>low / medium / high / very high</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Data sharing</td>
+<td>not needed / with VU colleagues / with anyone</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Data volume</td>
+<td>below 500 GB / above 500 GB</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Possible features</td>
+<td><ul>
+<li>Basic storage</li>
+<li>Compute/HPC</li>
+<li>Fine-grained access rights</li>
+<li>Collaboration tools</li>
+<li>Archiving/Publishing</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p>Note: these classifications are per “project”. The formal status, scale, type and personal participation of projects can differ significantly:</p>
+<ul>
+<li>some large projects have budgets of their own (with partial external funding);<br>
+</li>
+<li>smaller projects might be fully supported via the “zero-cost” base resources available per project;<br>
+</li>
+<li>in between are projects that are supported by a contribution from the budget of the PI.</li>
+</ul>
+<p>Apart from the options mentioned, personal laptops and storage tied to data processing resources like HPC clusters are also important data storage resources for research. However, these should only be used to work on (copies of) the actual datasets that are stored on and shared via the selected primary storage platform.</p>
+<p><em>Version management</em> of primary and derived research data is an important topic in itself, which needs to be addressed in a project’s data management plan, and which should be made explicit in operational guidelines which can also include suitable synchronization mechanisms. It is orthogonal to the selection of the storage platform.</p>
+<p>Closely related to data storage is data <em>sharing</em> and data <em>archiving</em>. This will be addressed in future versions of the guidelines.</p>
+<p>Another important aspect to consider is the <em>backup</em> of the data, to be able to retrieve data that was lost or that was somehow corrupted. A general rule for backup is the 3-2-1 rule and does scale depending on how backups are structured: 3 copies (1 original, two backup), on 2 different types of media, with at least 1 off-site (physically) or in separate, dedicated cloud storage.</p>
+<p>Typically each of the storage platforms discussed below will have some mechanism to restore a previous version of a specific file from backup, but the extent to which this is possible may vary significantly. Being able to retrieve a single file version from a week ago should not be a problem, but for many projects it is necessary to be able to retrieve a <em>consistent snapshot</em> of a large number of files (see the discussion of version management above). Where requirements for retrieval of previous file versions are higher than offered by the storage platform directly, additional versioning functionality will have to be designed and implemented (e.g., daily/weekly consistent snapshots of the project data). This should be made explicit in the project’s data management plan.</p>
+</section>
+<section id="survey-results-on-the-current-use-of-data-storage" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Survey results on the current use of Data Storage</h1>
+<p>In our survey of 2023, it was reported that during the development of the projects, most data was stored on researchers’ own laptops. Interaction with GitHub and similar version control tools was common. Nation-wide servers such as the SURF compute clusters and the DAS compute clusters are well used in the department, but it should be noted these are not (or should not be) primary storage platforms as such.</p>
+<p>While designing and compiling the results of the survey, we also encountered some storage services that we were not aware of. Some respondents reported using additional group-specific servers. These customised storage solutions were typically developed as part of a particular research project or to support a specific research domain. This does lead to the question if it is necessary to maintain additional services which also have a data storage role. To properly deal with these special use cases, there should be procedures in place where the data stored on specific servers is still backed up by standard storage solutions, thus guaranteeing long term data safety.</p>
+<p>The YODA platform has been promoted at a university level. However, it is not yet very actively used in the department. We are now building up more experience with it, but it is clear that changing storage platforms midway during an active project can be problematic.</p>
+</section>
+<section id="data-storage-suggestions" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Data Storage Suggestions</h1>
+<p>Here we group the storage options available in three categories regarding suitability for research in our department: <strong>most suitable</strong>, <strong>suitable for specific purposes</strong>, and <strong>typically less suitable</strong>; finally, there are some <strong>legacy options</strong> worth mentioning.</p>
+<section id="most-suitable" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="most-suitable"><span class="header-section-number">3.1</span> Most suitable</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 70%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Research Drive</td>
+<td><ul>
+<li>SURF supported</li>
+<li>sharing data inside and outside VU</li>
+<li>suitable for potentially sensitive data</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>YODA</td>
+<td><ul>
+<li>SURF supported</li>
+<li>sharing data inside and outside VU</li>
+<li>suitable for potentially sensitive data</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>SciStor</td>
+<td><ul>
+<li>VU/IT supported</li>
+<li>low latency high throughput access at VU</li>
+<li>good for quickly synchronizing many files</li>
+<li>the department has pre-paid 40 TB SciStor capacity, so many projects can benefit from this without project-specific funding</li>
+<li>BUT: only possible to share data within VU</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p>Here are a few important differences between YODA and Research Drive:</p>
+<ul>
+<li>YODA has a basic classification that is higher than Research Drive (Research Drive can hold data with classification High, but needs additional measures);<br>
+</li>
+<li>Research Drive enables fine-grained access permissions: you can give collaborators access to only one folder and not the entire project (this is not possible with YODA, and quite useful when e.g.&nbsp;working with students or external project partners);<br>
+</li>
+<li>YODA includes a vault for archiving while ResearchDrive does not;<br>
+</li>
+<li>YODA enables adding metadata as you go; Research Drive does not.</li>
+</ul>
+</section>
+<section id="suitable-only-for-specific-purposes" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="suitable-only-for-specific-purposes"><span class="header-section-number">3.2</span> Suitable only for specific purposes</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 60%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Google Drive VU</td>
+<td><ul>
+<li>useful for quick ad hoc sharing, including online editing shared contents</li>
+<li>can store datasets with high data volume (many TB) without privacy concerns, for which no project budget is available</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Sharepoint (Teams)</td>
+<td><ul>
+<li>useful for quick ad hoc sharing, including online editing shared contents</li>
+<li>BUT: Use only if Microsoft-based document sharing is the best match for a small scale project. Sharepoint is a relatively new option supported by VU/IT, but the functionality is quite diverse and partially overlaps with the Google option, just in a Microsoft flavor.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Open Science Framework</td>
+<td><ul>
+<li>specifically suitable when collaborating with external partners in Open Science contexts, where widely sharing data, analysis techniques and results are the primary goal.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Encrypted portable storage (SSD)</td>
+<td><ul>
+<li>useful for regular laptop backups</li>
+<li>BUT: Do not use this to store research datasets, given the risks of losing the only physical copy, and the challenges to share the data</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Github, GitLab, Bitbucket</td>
+<td><ul>
+<li>very useful for software development and sharing</li>
+<li>might be used for small scale data sharing, e.g., as part of a publication whose focus is on a developed algorithm or system</li>
+<li>BUT: less suitable for large scale data sharing, given the limits on file size and data volume</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="typically-less-suitable" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="typically-less-suitable"><span class="header-section-number">3.3</span> Typically less suitable</h2>
+<p>If possible, best avoid the next options since they usually have little benefits compared<br>
+to the suitable options above, but do have some downsides, and we would like to avoid<br>
+fragmentation and interoperability problems for projects.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 60%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>OneDrive</td>
+<td>– Tied to personal VU-relation of owner, so not suitable for long term project storage</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>SURFdrive</td>
+<td>– Basically a more limited precursor of ResearchDrive, so use that instead.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Custom solutions</td>
+<td>– E.g., group/project-specific RAID systems. Typically there are hidden costs maintaining the setup. If there are very specific reasons why none of the standard solutions seem to match, best talk with the RDM advisors before introducing a custom solution.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="legacy-storage-options" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="legacy-storage-options"><span class="header-section-number">3.4</span> Legacy storage options</h2>
+<p>In the past, some more storage options were available. They are not mentioned in the online storage selector, and their use should be limited as much as possible. Preferably they should be phased out, by migrating them to preferable options listed above. New projects should not be started using these “legacy” storage options.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 60%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Legacy Home folder, or “H drive”</td>
+<td><ul>
+<li>The old home folders are still accessible when logging in to the SSH stepstone, or when accessing the BAZIS cluster. However, capacity is limited, costs are high, and it is not possible to share this data directly with other users, at the VU or elsewhere. It is currently (early 2024) actively being phased out, with VU/IT suggesting to use OneDrive instead. For our department, SciStor will actually be a more suitable alternative since it preserves almost all the existing functionality.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Legacy Group/Projects folder</td>
+<td><ul>
+<li>The old group/projects folders are also still available via the SSH stepstone, but capacity is limited, and costs per gigabyte are high. This data should also be migrated, and no projects should be added anymore.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Dropbox</td>
+<td><ul>
+<li>Dropbox has useful syncing options between various devices, and can be used for ad hoc file sharing, but the costs are relatively high. Dropbox is not a VU/IT supported storage platform and it should not be used for research datasets.</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p>More guidelines on data archiving will be provided in future guidelines.</p>
+</section>
+</section>
+<section id="detailed-overviews" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Detailed overviews</h1>
+<p>The descriptions in this overview are mostly copied from the VU <a href="https://vu.nl/en/research/storagefinder">Data Storage Finder</a> which is provided by the RDM support department of the VU Library; they are included here for easy reference.</p>
+<section id="research-drive" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="research-drive"><span class="header-section-number">4.1</span> Research Drive</h2>
+<p>Research Drive enables you to easily store and share files with other users, inside and outside the VU. Please note: storing data with a ‘high’ classification in Research Drive is permissible, but may require taking extra security measures. Please get in touch with the Research Data Management Support Desk via rdm@vu.nl if you want to store high-classification data in Research Drive.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Research Drive details</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Max. storage size</td>
+<td>Terabytes of data</td>
+</tr>
+<tr class="even">
+<td>Costs</td>
+<td><ul>
+<li>below 500 GB: free of charge</li>
+<li>500 GB to 2 TB: €200 per year</li>
+<li>above 2 TB: €200 + €250 for every TB above 2 TB</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Sharing and collaboration</td>
+<td>With anyone</td>
+</tr>
+<tr class="even">
+<td>Location</td>
+<td>SURFsara (NL)</td>
+</tr>
+<tr class="odd">
+<td>File recovery</td>
+<td>Via versioning, Deleted files or file restore request</td>
+</tr>
+<tr class="even">
+<td>Data classification</td>
+<td>Medium, but with additional steps: High</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="yoda" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="yoda"><span class="header-section-number">4.2</span> YODA</h2>
+<p>YODA is a platform that supports research data management throughout the entire research cycle: from safe and easy storage and sharing of data during the research process, to sharing of data within research groups and projects and, ultimately, to research data archiving and publication.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>YODA details</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Max. storage size</td>
+<td>Terabytes of data</td>
+</tr>
+<tr class="even">
+<td>Costs basic storage</td>
+<td><ul>
+<li>below 500 GB: free of charge</li>
+<li>500 GB to 2 TB: €200 per year</li>
+<li>above 2 TB: €200 + €250 for every TB above 2 TB</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Costs archiving</td>
+<td><ul>
+<li>below 500 GB: free of charge</li>
+<li>500 GB to 2TB: €25 per year</li>
+<li>above 2TB: €25 + €25 for every TB above 2 TB</li>
+</ul>
+<p>NOTE: Archiving will be billed for a 10-year period</p></td>
+</tr>
+<tr class="even">
+<td>Sharing and collaboration</td>
+<td>With anyone</td>
+</tr>
+<tr class="odd">
+<td>Location</td>
+<td>SURFsara (NL)</td>
+</tr>
+<tr class="even">
+<td>File recovery</td>
+<td>Via versioning or file restore request</td>
+</tr>
+<tr class="odd">
+<td>Data classification</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="scistor" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="scistor"><span class="header-section-number">4.3</span> SciStor</h2>
+<p>Besides basic storage, SciStor is best suited for over-the-network use with lab<br>
+instruments and high-performance computing (HPC/BAZIS), either via SMB or NFS.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>SciStor details</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Max. storage size</td>
+<td>Terabytes of data</td>
+</tr>
+<tr class="even">
+<td>Costs</td>
+<td>€0,10 per GB per year for reserved space (price doubles with backup for file recovery)</td>
+</tr>
+<tr class="odd">
+<td>Sharing and collaboration</td>
+<td>VU employees and students</td>
+</tr>
+<tr class="even">
+<td>Location</td>
+<td>VU Campus (NL)</td>
+</tr>
+<tr class="odd">
+<td>File recovery</td>
+<td>Via file restore request or versioning</td>
+</tr>
+<tr class="even">
+<td>Data classification</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="google-drive-vu" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="google-drive-vu"><span class="header-section-number">4.4</span> Google Drive VU</h2>
+<p>This is the well known Google Drive, only with a VU license allowing storing more data. Besides Google Drive, most applications within the Google Workspace environment, such as Google Docs, Google Sheets and Google Slides, are also available and accessible on any device.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Google Drive VU details</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Max. storage size</td>
+<td>Terabytes of data</td>
+</tr>
+<tr class="even">
+<td>Costs</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td>Sharing and collaboration</td>
+<td>With anyone</td>
+</tr>
+<tr class="even">
+<td>Location</td>
+<td>Google (WORLD)</td>
+</tr>
+<tr class="odd">
+<td>File recovery</td>
+<td>Via versioning</td>
+</tr>
+<tr class="even">
+<td>Data classification</td>
+<td>Low</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="microsoft-sharepoint-teams" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="microsoft-sharepoint-teams"><span class="header-section-number">4.5</span> Microsoft Sharepoint (Teams)</h2>
+<p>Microsoft 365 cloud storage and collaboration.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Microsoft Sharepoint/Teams details</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Max. storage size</td>
+<td>1TB, up to 25TB</td>
+</tr>
+<tr class="even">
+<td>Costs</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td>Sharing and collaboration</td>
+<td>With anyone (A Microsoft account may be required.)</td>
+</tr>
+<tr class="even">
+<td>Location</td>
+<td>Microsoft Cloud (EU)</td>
+</tr>
+<tr class="odd">
+<td>File recovery</td>
+<td>Via versioning or Recycle Bin</td>
+</tr>
+<tr class="even">
+<td>Data classification</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="open-science-framework" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="open-science-framework"><span class="header-section-number">4.6</span> Open Science Framework</h2>
+<p>The OSF is an open-source collaboration tool geared towards Open Science.</p>
+<p>Although not primarily a storage tool, OSF can be a very useful and easy to use way<br>
+to share and publish your data, project documentation, or pre-registrations.<br>
+It is possible to connect Research Drive or Dataverse storage to OSF if your data volume is<br>
+larger than what OSF offers.</p>
+<p>The OSF is developed by the Center for Open Science (COS) that strives to increase<br>
+openness, integrity, and reproducibility of research.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Open Science Framework details</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Max. storage size</td>
+<td><ul>
+<li>Private project: 5 GB</li>
+<li>Public project: 50 GB (Extra storage possible on request)</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Costs</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td>Sharing and collaboration</td>
+<td>With anyone</td>
+</tr>
+<tr class="even">
+<td>Location</td>
+<td>Google (EU)</td>
+</tr>
+<tr class="odd">
+<td>File recovery</td>
+<td>Via versioning or Recycle Bin</td>
+</tr>
+<tr class="even">
+<td>Data classification</td>
+<td>Low</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="encrypted-portable-storage" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="encrypted-portable-storage"><span class="header-section-number">4.7</span> Encrypted portable storage</h2>
+<p>Encrypted USB drive/disk or USB flash drive (USB stick).<br>
+You can order a drive or disk via the Order accessories form found in the service portal.</p>
+<p>Please note that it is highly recommended to always use encryption with portable<br>
+storage, even if your data is classified as low.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Encrypted portable storage details</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Max. storage size</td>
+<td>Depends on the device chosen</td>
+</tr>
+<tr class="even">
+<td>Costs</td>
+<td>Depends on the device chosen (about EUR 100 per TB)</td>
+</tr>
+<tr class="odd">
+<td>Sharing and collaboration</td>
+<td>Not applicable</td>
+</tr>
+<tr class="even">
+<td>Location</td>
+<td>Local, direct connection</td>
+</tr>
+<tr class="odd">
+<td>File recovery</td>
+<td>Can be configured</td>
+</tr>
+<tr class="even">
+<td>Data classification</td>
+<td>Medium (with encryption), Low (without encryption)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="onedrive" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="onedrive"><span class="header-section-number">4.8</span> OneDrive</h2>
+<p>OneDrive for Business is part of VU Microsoft 365 cloud - also referred to as Digital@VU - and is available for employees and students. Please note that this is personal storage that is linked to the existence of your account at the VU. If you disappear, your data in OneDrive<br>
+also disappear.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>OneDrive details</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Max. storage size</td>
+<td>1TB</td>
+</tr>
+<tr class="even">
+<td>Costs</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td>Sharing and collaboration</td>
+<td>With anyone</td>
+</tr>
+<tr class="even">
+<td>Location</td>
+<td>Microsoft Cloud (EU)</td>
+</tr>
+<tr class="odd">
+<td>File recovery</td>
+<td>Via versioning or Recycle Bin</td>
+</tr>
+<tr class="even">
+<td>Data classification</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="surfdrive" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="surfdrive"><span class="header-section-number">4.9</span> SURFdrive</h2>
+<p>SURFdrive is a personal cloud storage service for the Dutch education and research community, offering staff and researchers a secure and easy way to store, synchronize and share files in the SURF community cloud. Please note that SURFdrive is not available for students. However, it is possible to share files with students and others.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>SURFdrive details</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Max. storage size</td>
+<td>500GB</td>
+</tr>
+<tr class="even">
+<td>Costs</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td>Sharing and collaboration</td>
+<td>With anyone</td>
+</tr>
+<tr class="even">
+<td>Location</td>
+<td>SURFsara (NL)</td>
+</tr>
+<tr class="odd">
+<td>File recovery</td>
+<td>Via versioning or Deleted files</td>
+</tr>
+<tr class="even">
+<td>Data classification</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="custom-solutions" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="custom-solutions"><span class="header-section-number">4.10</span> Custom solutions</h2>
+<p>If none of the options satisfy your requirements, a custom setup or configuration may be possible. Contact the University RDM Support Desk (rdm@vu.nl) or the department RDM contacts Shuai Wang (shuai.wang@vu.nl) and Kees Verstoep (c.verstoep@vu.nl) to explore the options.</p>
+<p>For example, in our department there are currently two additional group-specific data storage options: The CI “rippers” and the LOD (Linked Open Data) server. The CI rippers are being used by researchers in the Computational Intelligence group. The LOD server is mostly used by researchers in the UCDS group and the former KRR group. The server has approximately 20TB of data storage. There are some valuable datasets on it that are not available via other data storage/archiving options. Also, the server provides LOD-specific tools to support a particular research domain.</p>
+<p>Another example is the storage attached to compute facilities like DAS-5 and DAS-6 and the SURF Snellius. These storage solutions enable storing local copies of original and derived datasets for purposes of efficient high performance computing. Still, the primary copies of the source and processed datasets should typically not be kept permanently on such resources, but on the suitable storage options discussed earlier.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/rdm-os-cs-vu\.github\.io\/open-handbook");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
+<p>CC0 Public Domain Dedication</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+<p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../editors-guide.html">
+<p>Editor’s guide</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://ghostcollective.github.io/games.html">
+<p>GHOST Collective</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/RDM-guidelines/VU-CS-RDM-Storage-Selection.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ By VU &amp; Liberate Science GmbH
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
