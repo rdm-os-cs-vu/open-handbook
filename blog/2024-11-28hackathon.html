@@ -6,8 +6,15 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lena Karvovskaya">
+<meta name="author" content="Jolien Scholten">
+<meta name="author" content="Kostas Vilkelis">
+<meta name="author" content="Tycho Hofstra">
+<meta name="author" content="Irene Martorelli">
+<meta name="author" content="Peter Vos">
+<meta name="dcterms.date" content="2024-11-28">
 
-<title>Editor’s guide – {{&lt; var title &gt;}}</title>
+<title>Fifth Handbook Hackathon – VU CS Department RDM and Open Science Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +30,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-543461330d1ab7c9290b28baa7d61037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-543461330d1ab7c9290b28baa7d61037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,8 +85,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -89,27 +96,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./topics.html"> 
+    <a class="nav-link" href="../topics.html"> 
 <span class="menu-text">Topics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./guides.html"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./RDM-guidelines.html"> 
+    <a class="nav-link" href="../RDM-guidelines.html"> 
 <span class="menu-text">CS RDM Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./group-guidelines.html"> 
+    <a class="nav-link" href="../group-guidelines.html"> 
 <span class="menu-text">CS Groups</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./news.html"> 
+    <a class="nav-link" href="../news.html"> 
 <span class="menu-text">CS News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
+    <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -129,37 +136,44 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-does-an-editor-do" id="toc-what-does-an-editor-do" class="nav-link active" data-scroll-target="#what-does-an-editor-do">What does an editor do?</a></li>
-  <li><a href="#quality-standards" id="toc-quality-standards" class="nav-link" data-scroll-target="#quality-standards">Quality standards</a>
-  <ul class="collapse">
-  <li><a href="#topics" id="toc-topics" class="nav-link" data-scroll-target="#topics">Topics</a></li>
-  <li><a href="#guides" id="toc-guides" class="nav-link" data-scroll-target="#guides">Guides</a></li>
-  </ul></li>
-  <li><a href="#how-to-keep-an-overview-of-everything" id="toc-how-to-keep-an-overview-of-everything" class="nav-link" data-scroll-target="#how-to-keep-an-overview-of-everything">How to keep an overview of everything?</a></li>
-  <li><a href="#etiquette" id="toc-etiquette" class="nav-link" data-scroll-target="#etiquette">Etiquette</a>
-  <ul class="collapse">
-  <li><a href="#github-etiquette" id="toc-github-etiquette" class="nav-link" data-scroll-target="#github-etiquette">GitHub etiquette</a></li>
-  </ul></li>
-  <li><a href="#protocols" id="toc-protocols" class="nav-link" data-scroll-target="#protocols">Protocols</a>
-  <ul class="collapse">
-  <li><a href="#hackathon-protocol" id="toc-hackathon-protocol" class="nav-link" data-scroll-target="#hackathon-protocol">Hackathon protocol</a></li>
-  </ul></li>
+  <li><a href="#hackathon-issues" id="toc-hackathon-issues" class="nav-link active" data-scroll-target="#hackathon-issues">Hackathon Issues</a></li>
+  <li><a href="#hackathon-pull-requests" id="toc-hackathon-pull-requests" class="nav-link" data-scroll-target="#hackathon-pull-requests">Hackathon Pull Requests</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/editors-guide.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/blog/2024-11-28hackathon.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Editor’s guide</h1>
-</div>
+<h1 class="title">Fifth Handbook Hackathon</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">hackathon</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lena Karvovskaya </p>
+             <p>Jolien Scholten </p>
+             <p>Kostas Vilkelis </p>
+             <p>Tycho Hofstra </p>
+             <p>Irene Martorelli </p>
+             <p>Peter Vos </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 28, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -169,133 +183,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome to the Editor’s guide to the Handbook! This page contains resources around how the editors work.</p>
-<p>The current editors are:</p>
-<ul>
-<li>Chris Hartgerink</li>
-<li>Elisa Rodenburg</li>
-<li>Jolien Scholten</li>
-</ul>
-<p>They can be pinged on GitHub as a team by using <code>@ubvu/editors</code> as the tag.</p>
-<section id="what-does-an-editor-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-does-an-editor-do">What does an editor do?</h2>
-<p>Editors tie together all the strings in this VU Amsterdam community handbook. We keep a bird’s eye view to ensure that what you read makes sense. Editors also help ensure the style and quality of the different pages are similar. Editors also help keep the content relevant to the entirety of VU Amsterdam (faculty specific information is not within scope).</p>
-<p>Each editor commits themselves to providing timely reviews of topics, guides, or both.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> This commitment is for a limited time and can be renewed. We also welcome more editors at any time, given that we do not expect all editors to review everything.</p>
-<p>As we go on this journey together, we may assign more specific responsibilities as they emerge.</p>
+<p>On November 28, 2024, all authors participated in the fifth hackathon for the Research Support Handbook. For this hackathon, we focused on adding new content and consolidating requests.</p>
+<p>We had a large number of contributions related to tools. The handbook now has information about Research Cloud, SciCloud and Yoda. These were long-standing issues and it is really nice that they turned into topics.</p>
+<p>Irene helped us to revise the metadata topic.</p>
+<p>Tycho is working on a page for ORCID, the <a href="vu.nl/orcid">ORCID Libguide page</a> will be adjusted to redirect to the handbook.</p>
+<p>Lena was working on a data backup topic, trying to make it generic and applicable to multiple tools.</p>
+<p>We had a discussion of an overview page. New colleagues also within support miss an overview of the services available. There are many pages that give some ideas: <a href="https://vu.nl/en/about-vu/divisions/university-library/more-about/rdm-tools">the RDS portal on Tools</a>, the <a href="https://deploy-preview-274--ubvu-open-handbook.netlify.app/guides/data-lifecycle">guide on available services</a> and <a href="https://vu.nl/en/research/portal/research-impact-support-portal">RISP</a> - but all these overviews have diverse struggles so we are still looking for a good way of doing it.</p>
+<p>ITvO colleagues noticed that they miss an official VU page which gives a summary of what ITvO is and does.</p>
+<p>Question that came up: how to add new contributors? Do they need access rights? Do they work with forks or branches?</p>
+<section id="hackathon-issues" class="level2">
+<h2 class="anchored" data-anchor-id="hackathon-issues">Hackathon Issues</h2>
+<p><a href="https://github.com/ubvu/open-handbook/issues/275" class="uri">https://github.com/ubvu/open-handbook/issues/275</a></p>
 </section>
-<section id="quality-standards" class="level2">
-<h2 class="anchored" data-anchor-id="quality-standards">Quality standards</h2>
-<p>As editors, we maintain a bunch of quality standards, both automated and not automated. If you are reading this as a contributor, you will greatly help us out by taking these into account.</p>
-<p>Here are some quality standards we maintain throughout the handbook:</p>
-<ul>
-<li>Writing must be primarily in active voice, both for consistent and engaging text across all pages</li>
-<li>Acronyms must be written in full at least once on the page where they are used</li>
-<li>All changes to the handbook are made via pull requests. Each change needs approval from two editors.
-<ul>
-<li>Pull requests may not be merged if the QA automations fail</li>
-</ul></li>
-<li>Links must be <code>https://</code></li>
-<li>All images must have alt text</li>
-<li>Links must be descriptive (no “click here” links)</li>
-<li>No writing in name of the handbook (for example, “we recommend repository X”)</li>
-<li>Where possible, pages with a DOI must link through the DOI (for example, <code>https://doi.org/10.4444/xxxx</code> instead of the direct link <code>https://nature.com/...</code>)</li>
-</ul>
-<p>We try to automate most of these rules, but this is not always possible or accurate enough.</p>
-<section id="topics" class="level3">
-<h3 class="anchored" data-anchor-id="topics">Topics</h3>
-<p>For topics we maintain an additional set of standards:</p>
-<ul>
-<li>Topics must be nouns or noun phrases</li>
-<li>Topics are self-contained and aim for brevity</li>
-<li>All topics must be title capitalized (see also the helpful tool <a href="https://capitalizemytitle.com/style/APA/">CapitalizeMyTitle.com</a>)</li>
-<li>No <code>include</code> statements are allowed in topics
-<ul>
-<li>Include statements must be prefaced with the relevant section heading, as the title of a topic is not reproduced.</li>
-</ul></li>
-<li>No use of special Quarto code is allowed. Only use regular markdown in topics.</li>
-</ul>
-</section>
-<section id="guides" class="level3">
-<h3 class="anchored" data-anchor-id="guides">Guides</h3>
-<p>For guides we maintain other standards:</p>
-<ul>
-<li>Guides must be phrased as questions that the reader will get answers to (for example, “how do I preserve data?”)</li>
-</ul>
-</section>
-</section>
-<section id="how-to-keep-an-overview-of-everything" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-keep-an-overview-of-everything">How to keep an overview of everything?</h2>
-<p>With so many issues and pull requests, it is easy to get lost as an editor. We have a project management board that can be helpful identifying what is going on at this time:</p>
-<ul>
-<li><a href="https://github.com/orgs/ubvu/projects/7/views/1">Topics</a></li>
-<li><a href="https://github.com/orgs/ubvu/projects/7/views/2">Guides</a></li>
-</ul>
-</section>
-<section id="etiquette" class="level2">
-<h2 class="anchored" data-anchor-id="etiquette">Etiquette</h2>
-<p>As editors, we may have to make tough calls at times. It is important for us to make people feel welcome and appreciated, even if their contribution is not immediately included. That being said, we reciprocate the consideration given to us. We operate under a generosity policy, and if reciprocated, we stay generous.</p>
-<section id="github-etiquette" class="level3">
-<h3 class="anchored" data-anchor-id="github-etiquette">GitHub etiquette</h3>
-<p>As editors, we also maintain a certain GitHub etiquette. It is necessary to make managing a project with so many moving pieces and contributors. Important is:</p>
-<ol type="1">
-<li>New topics or guides must be linked to the issue proposing it</li>
-<li>Each pull request should have a clear purpose and stick to it (for example, no editing a guide when proposing a topic)</li>
-</ol>
-<p>Item 2 also means changes should be branch specific, as pull requests are based off branches. It makes it much harder to review things if there are many different kinds of changes, as we editors will need to keep track of all of this.</p>
-<p>Simplicity is our friend. Simplicity helps us from making mistakes.</p>
-<!-- ### Deleting branches
-
-After merging Pull Requests, it is expected to clean up the branch by deleting it. We enable auto deletion upon merging, but if that for some reason does not happen, please go ahead and "Delete branch". We may periodically clean up branches in the repository. -->
-<!-- ### Closing pull requests
-
-Not all pull requests make it into the handbook, and that is okay. We want to ensure that pull requests are not closed at random, and provide some norms around doing so.
-
-Stale pull requests can be closed with a note for the contributor that they are welcome to request the pull request to be re-opened. We automatically mark pull requests as stale after 30 days.
-
-Pull requests that provide too much discussion and do not have a pathway to resolution may be closed for being disputed. This does not mean the content goes to waste – here we recommend an issue to be opened to continue the discussion. Please note that disputed topics can only be carried on if done so in a mutually constructive manner. -->
-</section>
-</section>
-<section id="protocols" class="level2">
-<h2 class="anchored" data-anchor-id="protocols">Protocols</h2>
-<section id="hackathon-protocol" class="level3">
-<h3 class="anchored" data-anchor-id="hackathon-protocol">Hackathon protocol</h3>
-<p>We sometimes run hackathons to create space to contribute. We run hackathons as follows:</p>
-<p>Preparation:</p>
-<ul>
-<li>Hackathons are two hours long</li>
-<li>Hackathons are run using Zoom</li>
-<li>Each hackathon has a theme (it helps focus people’s energy on something and can inspire participation)</li>
-<li>We use a collaborative note taking document that requires no logging in, which is the central place to navigate the hackathon</li>
-<li>Assign a host</li>
-</ul>
-<p>During:</p>
-<ul>
-<li>Open 10 breakout rooms in zoom, allowing participants to freely move around</li>
-<li>The host…
-<ul>
-<li>…Welcomes everyone with an icebreaker question</li>
-<li>…Shares the link to the note taking document when people join</li>
-<li>…Sets the stage for the hackathon when it starts</li>
-<li>…Announces a break at the halfway mark</li>
-</ul></li>
-<li>Keep track of all the issues and pull requests opened for the speed blog</li>
-</ul>
-<p>After:</p>
-<ul>
-<li>Finish up the speed blog for the hackathon within one week of the hackathon. It does not have to be perfect and is primarily to document that the hackathon happened and some of the things that were done.</li>
-</ul>
+<section id="hackathon-pull-requests" class="level2">
+<h2 class="anchored" data-anchor-id="hackathon-pull-requests">Hackathon Pull Requests</h2>
+<p><a href="https://github.com/ubvu/open-handbook/pull/277" class="uri">https://github.com/ubvu/open-handbook/pull/277</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/276" class="uri">https://github.com/ubvu/open-handbook/pull/276</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/140" class="uri">https://github.com/ubvu/open-handbook/pull/140</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/273" class="uri">https://github.com/ubvu/open-handbook/pull/273</a></p>
+<p>Merged <a href="https://github.com/ubvu/open-handbook/pull/270#pullrequestreview-2467652120" class="uri">https://github.com/ubvu/open-handbook/pull/270#pullrequestreview-2467652120</a></p>
 
 
 </section>
-</section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Each editor chooses which of these they want to focus on. Editors get auto-invited to review the changes. Timely means within a week.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -731,12 +642,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link active" href="./editors-guide.html" aria-current="page">
+    <a class="nav-link" href="../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -746,7 +657,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/editors-guide.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/blog/2024-11-28hackathon.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

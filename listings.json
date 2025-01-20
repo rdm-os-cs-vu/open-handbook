@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/2024-11-28hackathon.html",
       "/blog/2024-11-01hackathon.html",
       "/blog/2024-10-22post-mortem.html",
       "/blog/2024-09-30hackathon.html",
@@ -11,9 +12,15 @@
     ]
   },
   {
-    "listing": "/group-guidelines.html",
+    "listing": "/guides.html",
     "items": [
-      "/group-guidelines/UCDS.html"
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyze.html",
+      "/guides/document-and-preserve.html",
+      "/guides/plan-and-design.html",
+      "/guides/publish-and-share.html",
+      "/guides/data-lifecycle.html"
     ]
   },
   {
@@ -32,6 +39,7 @@
     "listing": "/topics.html",
     "items": [
       "/topics/cff.html",
+      "/topics/data-backup.html",
       "/topics/data-citation.html",
       "/topics/data-collection.html",
       "/topics/data-and-software-licensing.html",
@@ -66,15 +74,9 @@
     ]
   },
   {
-    "listing": "/guides.html",
+    "listing": "/group-guidelines.html",
     "items": [
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyze.html",
-      "/guides/document-and-preserve.html",
-      "/guides/plan-and-design.html",
-      "/guides/publish-and-share.html",
-      "/guides/data-lifecycle.html"
+      "/group-guidelines/UCDS.html"
     ]
   }
 ]
