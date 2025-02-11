@@ -1,6 +1,6 @@
 ---
 title: "VU Computer Science Data Storage Platforms"
-subtitle: version v0.4, November 5, 2024  
+subtitle: version v0.5, February 11, 2025
 authors:
 - name: Kees Verstoep
   email: c.verstoep@vu.nl
@@ -206,7 +206,10 @@ fragmentation and interoperability problems for projects.
 +----------------------------------+-----------------------------------------------------+
 +----------------------------------+-----------------------------------------------------+
 | SURFdrive                        | – Basically a more limited precursor of             |
-|                                  |    ResearchDrive, so use that instead.              |
+|                                  |   ResearchDrive, so for research purposes consider  |
+|                                  |   using that instead.                               |
+|                                  | - It has been announced to be deprecated and VU/IT  |
+|                                  |   will stop the contract July 1, 2025.              |
 +----------------------------------+-----------------------------------------------------+
 +----------------------------------+-----------------------------------------------------+
 | Custom solutions                 | – E.g., group/project-specific RAID systems.        |
@@ -222,19 +225,17 @@ fragmentation and interoperability problems for projects.
 In the past, some more storage options were available. They are not mentioned in the online storage selector, and their use should be limited as much as possible. Preferably they should be phased out, by migrating them to preferable options listed above.  New projects should not be started using these “legacy” storage options.
 
 +----------------------------------+-----------------------------------------------------+
-| Legacy Home folder, or “H drive” | - The old home folders are still accessible when    |
-|                                  | logging in to the SSH stepstone, or when accessing  |
-|                                  | the BAZIS cluster. However, capacity is limited,    |
-|                                  | costs are high, and it is not possible to share     |
-|                                  | this data directly with other users, at the VU      |
-|                                  | or elsewhere. It is currently (early 2024) actively |
-|                                  | being phased out, with VU/IT suggesting to use      |
-|                                  | OneDrive instead. For our department, SciStor will  |
-|                                  | actually be a more suitable alternative since it    |
-|                                  | preserves almost all the existing functionality.    |
+| Legacy Home folder, or “H drive” | - The original home folders are phased out and are  |
+|                                  | also no longer available via logging in to the SSH  |
+|                                  | stepstone.  In case the user has not migrated       |
+|                                  | the contents in time, they can be retrieved from    |
+|                                  | backup by contacting VU/IT.                         |
+|                                  | For our department, SciStor provides a suitable     |
+|                                  | alternative since it preserves almost all the       |
+|                                  | previous functionality.                             |
 +----------------------------------+-----------------------------------------------------+
 +----------------------------------+-----------------------------------------------------+
-| Legacy Group/Projects folder     | - The old group/projects folders are also still     |
+| Legacy Group/Projects folder     | - The old group/projects folders are still          |
 |                                  |  available via the SSH stepstone, but capacity is   |
 |                                  |  limited, and costs per gigabyte are high.          |
 |                                  | This data should also be migrated, and no projects  |
@@ -448,6 +449,7 @@ also disappear.
 ## SURFdrive
 
 SURFdrive is a personal cloud storage service for the Dutch education and research community, offering staff and researchers a secure and easy way to store, synchronize and share files in the SURF community cloud. Please note that SURFdrive is not available for students. However, it is possible to share files with students and others.
+***Note that SURFdrive will be phased out at the VU before 1 July 2025***
 
 +------------------------------------+--------------------------------------------------------+
 | SURFdrive details                  |                                                        |
