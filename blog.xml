@@ -9,8 +9,8 @@
 <link>https://rdm-os-cs-vu.github.io/open-handbook/blog.html</link>
 <atom:link href="https://rdm-os-cs-vu.github.io/open-handbook/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A place for all things open research at VU Amsterdam.</description>
-<generator>quarto-1.6.40</generator>
-<lastBuildDate>Thu, 28 Nov 2024 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.32</generator>
+<lastBuildDate>Wed, 27 Nov 2024 23:00:00 GMT</lastBuildDate>
 <item>
   <title>Fifth Handbook Hackathon</title>
   <dc:creator>Lena Karvovskaya</dc:creator>
@@ -51,7 +51,7 @@
  ]]></description>
   <category>hackathon</category>
   <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-11-28hackathon.html</guid>
-  <pubDate>Thu, 28 Nov 2024 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 27 Nov 2024 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Fourth Handbook Hackathon</title>
@@ -108,7 +108,7 @@
  ]]></description>
   <category>hackathon</category>
   <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-11-01hackathon.html</guid>
-  <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
+  <pubDate>Thu, 31 Oct 2024 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Why was rdm.vu.nl down for ten hours?</title>
@@ -168,7 +168,7 @@
 </section></div> ]]></description>
   <category>downtime</category>
   <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-10-22post-mortem.html</guid>
-  <pubDate>Tue, 22 Oct 2024 00:00:00 GMT</pubDate>
+  <pubDate>Mon, 21 Oct 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Third Handbook Hackathon</title>
@@ -214,7 +214,7 @@ Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">
 </div>
 </div></section></div> ]]></description>
   <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-09-30hackathon.html</guid>
-  <pubDate>Mon, 30 Sep 2024 00:00:00 GMT</pubDate>
+  <pubDate>Sun, 29 Sep 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Second Handbook Hackathon</title>
@@ -269,7 +269,7 @@ Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">
 
  ]]></description>
   <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-09-05hackathon.html</guid>
-  <pubDate>Thu, 05 Sep 2024 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 04 Sep 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>First Handbook Hackathon</title>
@@ -302,7 +302,7 @@ Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">
 
  ]]></description>
   <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-06-27hackathon.html</guid>
-  <pubDate>Thu, 27 Jun 2024 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 26 Jun 2024 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Hello world!</title>
@@ -319,7 +319,7 @@ Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">
 
  ]]></description>
   <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2024-05-23welcome.html</guid>
-  <pubDate>Thu, 23 May 2024 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 22 May 2024 22:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
