@@ -2,6 +2,7 @@
 title: What data assets should you publish and what data assets should you archive?
 image: '/public/cover-images/DALLE_sharing-research-data.jpg'
 description: "Archival must happen, publishing can happen."
+categories: ["Publish & Share"]
 ---
 
 ## Selecting an Archive
@@ -108,14 +109,15 @@ Instead of archiving research data in a data repository, you may choose to publi
 * [Journal of Open Archaeology Data](https://openarchaeologydata.metajnl.com/)
 * [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/)
 
-#### Persistent Identifier
-
-```{.include shift-heading-level-by=3}
-../topics/persistent-identifier.qmd
-```
+## Persistent Identifier
 
 ```{.include shift-heading-level-by=2}
-../topics/data-and-software-licensing.qmd
+../topics/persistent-identifier.qmd
+```
+## Licensing data and software
+
+```{.include shift-heading-level-by=2}
+../topics/data-licensing.qmd
 ```
 
 ```{.include shift-heading-level-by=2}
@@ -124,6 +126,6 @@ Instead of archiving research data in a data repository, you may choose to publi
 
 ## Dataset Registration
 
-```{.include shift-heading-level-by=1}
+```{.include shift-heading-level-by=2}
 ../topics/dataset-and-software-registration.qmd
 ```
