@@ -1,15 +1,28 @@
 [
   {
-    "listing": "/RDM-guidelines.html",
+    "listing": "/blog.html",
     "items": [
-      "/RDM-guidelines/VU-CS-RDM-Storage-Selection.html",
-      "/RDM-guidelines/RDM-resources.html"
+      "/blog/2024-11-28hackathon.html",
+      "/blog/2024-11-01hackathon.html",
+      "/blog/2024-10-22post-mortem.html",
+      "/blog/2024-09-30hackathon.html",
+      "/blog/2024-09-05hackathon.html",
+      "/blog/2024-06-27hackathon.html",
+      "/blog/2024-05-23welcome.html"
     ]
   },
   {
-    "listing": "/OS-guidelines.html",
+    "listing": "/guides.html",
     "items": [
-      "/OS-guidelines/open-science-resources.html"
+      "/guides/publish-and-share.html",
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyze.html",
+      "/guides/document-and-preserve.html",
+      "/guides/publishing-fair-software.html",
+      "/guides/plan-and-design.html",
+      "/guides/policies-supporting-vision-open-science.html",
+      "/guides/data-lifecycle.html"
     ]
   },
   {
@@ -19,23 +32,9 @@
     ]
   },
   {
-    "listing": "/group-guidelines.html",
+    "listing": "/OS-guidelines.html",
     "items": [
-      "/group-guidelines/AIB.html",
-      "/group-guidelines/Bioinformatics.html",
-      "/group-guidelines/CI.html",
-      "/group-guidelines/DISE.html",
-      "/group-guidelines/FES.html",
-      "/group-guidelines/HPDC.html",
-      "/group-guidelines/KAI.html",
-      "/group-guidelines/LR.html",
-      "/group-guidelines/MCS.html",
-      "/group-guidelines/QDA.html",
-      "/group-guidelines/SAI.html",
-      "/group-guidelines/S2.html",
-      "/group-guidelines/VUSEC.html",
-      "/group-guidelines/TCS.html",
-      "/group-guidelines/UCDS.html"
+      "/OS-guidelines/open-science-resources.html"
     ]
   },
   {
@@ -82,29 +81,30 @@
     ]
   },
   {
-    "listing": "/guides.html",
+    "listing": "/RDM-guidelines.html",
     "items": [
-      "/guides/publish-and-share.html",
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyze.html",
-      "/guides/document-and-preserve.html",
-      "/guides/publishing-fair-software.html",
-      "/guides/plan-and-design.html",
-      "/guides/policies-supporting-vision-open-science.html",
-      "/guides/data-lifecycle.html"
+      "/RDM-guidelines/VU-CS-RDM-Storage-Selection.html",
+      "/RDM-guidelines/RDM-resources.html"
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/group-guidelines.html",
     "items": [
-      "/blog/2024-11-28hackathon.html",
-      "/blog/2024-11-01hackathon.html",
-      "/blog/2024-10-22post-mortem.html",
-      "/blog/2024-09-30hackathon.html",
-      "/blog/2024-09-05hackathon.html",
-      "/blog/2024-06-27hackathon.html",
-      "/blog/2024-05-23welcome.html"
+      "/group-guidelines/AIB.html",
+      "/group-guidelines/Bioinformatics.html",
+      "/group-guidelines/CI.html",
+      "/group-guidelines/DISE.html",
+      "/group-guidelines/FES.html",
+      "/group-guidelines/HPDC.html",
+      "/group-guidelines/KAI.html",
+      "/group-guidelines/LR.html",
+      "/group-guidelines/MCS.html",
+      "/group-guidelines/QDA.html",
+      "/group-guidelines/SAI.html",
+      "/group-guidelines/S2.html",
+      "/group-guidelines/VUSEC.html",
+      "/group-guidelines/TCS.html",
+      "/group-guidelines/UCDS.html"
     ]
   }
 ]
