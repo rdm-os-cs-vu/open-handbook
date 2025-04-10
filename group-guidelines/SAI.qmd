@@ -3,4 +3,8 @@ title: Social AI
 RDM-contact: Koen Hindriks
 website: https://socialai.nl/
 ---
+## Group information
+
 RDM contact: Koen Hindriks
+
+[Website](https://socialai.nl/)

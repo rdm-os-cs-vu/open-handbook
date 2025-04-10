@@ -3,4 +3,8 @@ title: Theoretical Computer Science
 RDM-contact: Wan Fokkink
 website: https://www.cs.vu.nl/~tcs/
 ---
+## Group information
+
 RDM contact: Wan Fokkink
+
+[Website](https://www.cs.vu.nl/~tcs/)

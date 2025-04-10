@@ -3,4 +3,8 @@ title: Decentralized Information Society Engineering
 RDM-contact: Jaap Gordijn
 website: https://www.dise-lab.nl/
 ---
+## Group information
+
 RDM contact: Jaap Gordijn
+
+[Website](https://www.dise-lab.nl/)

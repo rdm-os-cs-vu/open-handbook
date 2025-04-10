@@ -3,4 +3,8 @@ title: Quantitative Data Analytics
 RDM-contact: Mark Hoogendoorn
 website: https://vu-qda.github.io/
 ---
+## Group information
+
 RDM contact: Mark Hoogendoorn
+
+[Website](https://vu-qda.github.io/)

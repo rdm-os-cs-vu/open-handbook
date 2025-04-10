@@ -3,4 +3,8 @@ title: Foundational and Experimental Security
 RDM-contact: Fabio Massacci
 website: https://vu.nl/en/about-vu/faculties/faculty-of-science/more-about/foundational-and-experimental-security-computer-science
 ---
+## Group information
+
 RDM contact: Fabio Massacci
+
+[Website](https://vu.nl/en/about-vu/faculties/faculty-of-science/more-about/foundational-and-experimental-security-computer-science)

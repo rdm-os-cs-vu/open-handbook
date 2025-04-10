@@ -3,4 +3,8 @@ title: Knowledge in AI
 RDM-contact: Romana Pernisch
 website: https://kai.cs.vu.nl/
 ---
+## Group information
+
 RDM contact: Romana Pernisch
+
+[Website](https://kai.cs.vu.nl/)

@@ -3,4 +3,8 @@ title: Learning and Reasoning
 RDM-contact: Peter Bloem
 website: https://lr.cs.vu.nl/
 ---
+## Group information
+
 RDM contact: Peter Bloem
+
+[Website](https://lr.cs.vu.nl/)

@@ -3,4 +3,8 @@ title: Massivizing Computer Systems
 RDM-contact: Tiziano De Matteis
 website: https://atlarge-research.com/
 ---
+## Group information
+
 RDM contact: Tiziano De Matteis
+
+[Website](https://atlarge-research.com/)
