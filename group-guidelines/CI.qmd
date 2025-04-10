@@ -1,0 +1,6 @@
+---
+title: Computational Intelligence
+RDM-contact: Karine Miras
+website: https://cs.vu.nl/ci/
+---
+RDM contact: Karine Miras

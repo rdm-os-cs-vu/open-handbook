@@ -1,0 +1,6 @@
+---
+title: Knowledge in AI
+RDM-contact: Romana Pernisch
+website: https://kai.cs.vu.nl/
+---
+RDM contact: Romana Pernisch

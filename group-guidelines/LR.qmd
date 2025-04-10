@@ -1,0 +1,6 @@
+---
+title: Learning and Reasoning
+RDM-contact: Peter Bloem
+website: https://lr.cs.vu.nl/
+---
+RDM contact: Peter Bloem

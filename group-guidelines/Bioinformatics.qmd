@@ -1,0 +1,6 @@
+---
+title: Bioinformatics
+RDM-contact: Anton Feenstra
+website: https://www.vubioinformatics.com/
+---
+RDM contact: Anton Feenstra
