@@ -1,0 +1,6 @@
+---
+title: High Performance Distributed Computing (HPDC)
+RDM-contact: Kees Verstoep
+website: https://www.vuhpdc.net/
+---
+RDM contact: Kees Verstoep
