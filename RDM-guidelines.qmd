@@ -2,22 +2,18 @@
 title: "RDM Guidelines"
 listing:
   contents: RDM-guidelines
-  type: grid
-  categories: true
-include-in-header:
-  text: |
-    <style type="text/css">
-    .quarto-grid-item .listing-item-img-placeholder {
-      background-color: #0080c9;
-    }
-    </style>
+  type: table
+  table-striped: true
+  table-hover: true
+  fields: [title]
 ---
 
 ::: {.callout-tip}
 
-## What is a guide?
+## General VU Computer Science RDM guidelines
 
-These guides help you find answers to questions that come up while doing research. They help guide you through various topics at once.
+These guidelines are default policies for Computer Science research in our department.
 
-Missing a guide? You can [submit questions you are dealing with using the Contribution portal](https://ez-github-contributor.netlify.app/).
+For group-specific guidelines, contact your group's RDM contact on [this link](https://rdm-os-cs-vu.github.io/open-handbook/group-guidelines.html).
+
 :::
