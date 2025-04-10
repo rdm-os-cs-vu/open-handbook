@@ -1,34 +1,9 @@
 [
   {
-    "listing": "/blog.html",
+    "listing": "/RDM-guidelines.html",
     "items": [
-      "/blog/2024-11-28hackathon.html",
-      "/blog/2024-11-01hackathon.html",
-      "/blog/2024-10-22post-mortem.html",
-      "/blog/2024-09-30hackathon.html",
-      "/blog/2024-09-05hackathon.html",
-      "/blog/2024-06-27hackathon.html",
-      "/blog/2024-05-23welcome.html"
-    ]
-  },
-  {
-    "listing": "/guides.html",
-    "items": [
-      "/guides/publish-and-share.html",
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyze.html",
-      "/guides/document-and-preserve.html",
-      "/guides/publishing-fair-software.html",
-      "/guides/plan-and-design.html",
-      "/guides/policies-supporting-vision-open-science.html",
-      "/guides/data-lifecycle.html"
-    ]
-  },
-  {
-    "listing": "/news.html",
-    "items": [
-      "/news/2024-06-04OSCAR.html"
+      "/RDM-guidelines/VU-CS-RDM-Storage-Selection.html",
+      "/RDM-guidelines/RDM-resources.html"
     ]
   },
   {
@@ -81,16 +56,42 @@
     ]
   },
   {
-    "listing": "/RDM-guidelines.html",
+    "listing": "/group-guidelines.html",
     "items": [
-      "/RDM-guidelines/VU-CS-RDM-Storage-Selection.html",
-      "/RDM-guidelines/RDM-resources.html"
+      "/group-guidelines/HPDC.html",
+      "/group-guidelines/UCDS.html"
     ]
   },
   {
-    "listing": "/group-guidelines.html",
+    "listing": "/news.html",
     "items": [
-      "/group-guidelines/UCDS.html"
+      "/news/2024-06-04OSCAR.html"
+    ]
+  },
+  {
+    "listing": "/guides.html",
+    "items": [
+      "/guides/publish-and-share.html",
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyze.html",
+      "/guides/document-and-preserve.html",
+      "/guides/publishing-fair-software.html",
+      "/guides/plan-and-design.html",
+      "/guides/policies-supporting-vision-open-science.html",
+      "/guides/data-lifecycle.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/2024-11-28hackathon.html",
+      "/blog/2024-11-01hackathon.html",
+      "/blog/2024-10-22post-mortem.html",
+      "/blog/2024-09-30hackathon.html",
+      "/blog/2024-09-05hackathon.html",
+      "/blog/2024-06-27hackathon.html",
+      "/blog/2024-05-23welcome.html"
     ]
   }
 ]
