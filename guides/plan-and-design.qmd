@@ -121,7 +121,7 @@ Some research projects involve more than one partner organisation. Be sure to in
 
 The agreement can include a section on who is ultimately responsible for the data and whether the data will be shared afterwards or whether certain restrictions on re-use apply. These restrictions can also be related to copyright issues or pending patent requests. [IXA](https://www.ixa.nl/for-researchers/legal-affairs/) can help you to draw up a consortium agreement. The [RDM Support Desk](mailto:rdm@vu.nl) at the University Library can also help with questions about legal matters.
 
-If you are working with personal data, GDPR requires that all parties working with the data sign a joint controller agreement. You can ask your 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) for advice about this. For multi-centre clinical research, a [Clinical Trial Agreement](https://www.ccmo.nl/onderzoekers/standaardonderzoeksdossier/k-overige-documenten/k3-onderzoekscontracten) is recommended.
+If you are working with personal data, GDPR requires that all parties working with the data sign a joint controller agreement. You can ask your 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) for advice about this. For multi-centre clinical research, a [Clinical Trial Agreement](https://english.ccmo.nl/investigators/standard-research-file-for-research-subject-to-the-dutch-wmo-act/k-other-documents/k3-clinical-trial-agreements) is recommended.
 
 For projects funded by the European Union, several sources are available:
 
@@ -140,6 +140,10 @@ Traditionally, this classification assesses the value of an entity (data or appl
 The reason that VU and its reseachers need to classify data is to understand the variety in risk that exists in order to assess if security measures are accurate.
 
 Data classification is about the level of sensitivity (low, medium or high) of your data assets so you can judge the risks to your research (group). This will help you when deciding what security and protection measures you need to take for handling the data or parts of the data.
+
+#### Policy Classification of Research Data
+
+The [Policy Classification of Research Data](../public/policies-regulations/Dataclassificatiebeleid-VU-NL-v1.0.pdf) addresses classification of research data in terms of availability, integrity and confidentiality, and how the classification process should be carried out. It is connected to the Research Data and Software Management Policy, because the latter states that data must be handled in a secure and reliable manner. The Research Data Classification Policy will determine what level of security measures are necessary to manage data securely.
 
 #### Data classification criteria
 
