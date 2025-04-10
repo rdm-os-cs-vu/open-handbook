@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-RDM-contact',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-title","listing-author"],
     };
@@ -260,97 +260,145 @@ What is this page about?
 <th>
 <a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
+<th>
+RDM-contact
+</th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="AI and Behaviour" data-listing-filename-sort="AIB.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="AI and Behaviour" data-listing-filename-sort="AIB.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/AIB.html" class="title listing-title">AI and Behaviour</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Michel Klein</span>
+</td>
 </tr>
-<tr data-index="1" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Bioinformatics" data-listing-filename-sort="Bioinformatics.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="1" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Bioinformatics" data-listing-filename-sort="Bioinformatics.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/Bioinformatics.html" class="title listing-title">Bioinformatics</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Anton Feenstra</span>
+</td>
 </tr>
-<tr data-index="2" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Computational Intelligence" data-listing-filename-sort="CI.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="2" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Computational Intelligence" data-listing-filename-sort="CI.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/CI.html" class="title listing-title">Computational Intelligence</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Karine Miras</span>
+</td>
 </tr>
-<tr data-index="3" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Decentralized Information Society Engineering" data-listing-filename-sort="DISE.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="3" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Decentralized Information Society Engineering" data-listing-filename-sort="DISE.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/DISE.html" class="title listing-title">Decentralized Information Society Engineering</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Jaap Gordijn</span>
+</td>
 </tr>
-<tr data-index="4" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Foundational and Experimental Security" data-listing-filename-sort="FES.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="4" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Foundational and Experimental Security" data-listing-filename-sort="FES.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/FES.html" class="title listing-title">Foundational and Experimental Security</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Fabio Massacci</span>
+</td>
 </tr>
-<tr data-index="5" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="High Performance Distributed Computing (HPDC)" data-listing-filename-sort="HPDC.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="5" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="High Performance Distributed Computing (HPDC)" data-listing-filename-sort="HPDC.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/HPDC.html" class="title listing-title">High Performance Distributed Computing (HPDC)</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Kees Verstoep</span>
+</td>
 </tr>
-<tr data-index="6" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Knowledge in AI" data-listing-filename-sort="KAI.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="6" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Knowledge in AI" data-listing-filename-sort="KAI.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/KAI.html" class="title listing-title">Knowledge in AI</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Romana Pernisch</span>
+</td>
 </tr>
-<tr data-index="7" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Learning and Reasoning" data-listing-filename-sort="LR.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="7" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Learning and Reasoning" data-listing-filename-sort="LR.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/LR.html" class="title listing-title">Learning and Reasoning</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Peter Bloem</span>
+</td>
 </tr>
-<tr data-index="8" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="5" data-listing-title-sort="Massivizing Computer Systems" data-listing-filename-sort="MCS.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="8" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="5" data-listing-title-sort="Massivizing Computer Systems" data-listing-filename-sort="MCS.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/MCS.html" class="title listing-title">Massivizing Computer Systems</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Tiziano De Matteis</span>
+</td>
 </tr>
-<tr data-index="9" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Quantitative Data Analytics" data-listing-filename-sort="QDA.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="9" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Quantitative Data Analytics" data-listing-filename-sort="QDA.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/QDA.html" class="title listing-title">Quantitative Data Analytics</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Mark Hoogendoorn</span>
+</td>
 </tr>
-<tr data-index="10" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Social AI" data-listing-filename-sort="SAI.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="10" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Social AI" data-listing-filename-sort="SAI.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/SAI.html" class="title listing-title">Social AI</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Koen Hindriks</span>
+</td>
 </tr>
-<tr data-index="11" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Software and Sustainability" data-listing-filename-sort="S2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="11" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Software and Sustainability" data-listing-filename-sort="S2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/S2.html" class="title listing-title">Software and Sustainability</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Ivano Malavolta</span>
+</td>
 </tr>
-<tr data-index="12" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="6" data-listing-title-sort="Systems and Network Security" data-listing-filename-sort="VUSEC.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="12" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="6" data-listing-title-sort="Systems and Network Security" data-listing-filename-sort="VUSEC.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/VUSEC.html" class="title listing-title">Systems and Network Security</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Erik van der Kouwe</span>
+</td>
 </tr>
-<tr data-index="13" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Theoretical Computer Science" data-listing-filename-sort="TCS.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="13" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Theoretical Computer Science" data-listing-filename-sort="TCS.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/TCS.html" class="title listing-title">Theoretical Computer Science</a>
 </td>
+<td>
+<span class="listing-RDM-contact">Wan Fokkink</span>
+</td>
 </tr>
-<tr data-index="14" data-listing-file-modified-sort="1744295151487" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="User-centric Data Science (UCDS)" data-listing-filename-sort="UCDS.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="14" data-listing-file-modified-sort="1744295666919" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="User-centric Data Science (UCDS)" data-listing-filename-sort="UCDS.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="./group-guidelines/UCDS.html" class="title listing-title">User-centric Data Science (UCDS)</a>
+</td>
+<td>
+<span class="listing-RDM-contact">Shuai Wang</span>
 </td>
 </tr>
 </tbody>
