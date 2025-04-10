@@ -2,21 +2,16 @@
 title: "Group-specific Guidelines"
 listing:
   contents: group-guidelines
-  type: grid
-  categories: true
-include-in-header:
-  text: |
-    <style type="text/css">
-    .quarto-grid-item .listing-item-img-placeholder {
-      background-color: #0080c9;
-    }
-    </style>
+  type: table
+  table-striped: true
+  table-hover: true
+  fields: [title]
 ---
 
 ::: {.callout-tip}
 
 ## What is this page about?
 
-The CS department is one of the largest departments of the VU featuring research of all kinds. Here you can find group-specific guidelines that the dept. data stewards wrote in collabration with the RDM contact person of each group. 
+The Computer Science department currently has 15 research groups.  Here you can find a listing of the RDM contact persons of the groups.  When a group has specific RDM guidelines (beyond the CS department data storage advisory), it will also be included here.
 
 :::
