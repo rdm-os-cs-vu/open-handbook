@@ -1,10 +1,10 @@
 ---
 title: User-centric Data Science (UCDS)
-RDM-contact: Shuai Wang 
+RDM-contact: Andre Valdestilhas
 website: https://ucds.cs.vu.nl/
 ---
 ## Group information
 
-RDM contact: Shuai Wang
+RDM contact: Andre Valdestilhas
 
 [Website](https://ucds.cs.vu.nl/)
