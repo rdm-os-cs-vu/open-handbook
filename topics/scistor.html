@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.43">
+<meta name="generator" content="quarto-1.6.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -70,10 +70,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-543461330d1ab7c9290b28baa7d61037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -181,7 +181,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#access-off-campus" id="toc-access-off-campus" class="nav-link" data-scroll-target="#access-off-campus">Access off-campus</a></li>
   <li><a href="#lab-instruments" id="toc-lab-instruments" class="nav-link" data-scroll-target="#lab-instruments">Lab instruments</a></li>
   <li><a href="#storage-space-for-scicloud-servers" id="toc-storage-space-for-scicloud-servers" class="nav-link" data-scroll-target="#storage-space-for-scicloud-servers">Storage space for SciCloud servers</a></li>
-  <li><a href="#bazis" id="toc-bazis" class="nav-link" data-scroll-target="#bazis">BAZIS</a></li>
+  <li><a href="#ada" id="toc-ada" class="nav-link" data-scroll-target="#ada">ADA</a></li>
   <li><a href="#sharing-data" id="toc-sharing-data" class="nav-link" data-scroll-target="#sharing-data">Sharing data</a></li>
   <li><a href="#data-life-cycle" id="toc-data-life-cycle" class="nav-link" data-scroll-target="#data-life-cycle">Data life-cycle</a></li>
   </ul></li>
@@ -231,7 +231,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="what-is-it" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
 <p>The storage service SciStor is intended for cheaply storing large amounts of research data.</p>
-<p>SciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the <a href="./bazis.qmd">BAZIS HPC cluster</a> and <a href="../topics/scicloud.html">SciCloud</a>. It can also be accessed off-campus.</p>
+<p>SciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the <a href="../topics/ada.html">ADA HPC cluster</a> and <a href="../topics/scicloud.html">SciCloud</a>. It can also be accessed off-campus.</p>
 <p>Your data is stored in a <strong>share</strong>, basically a folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one share could be used to host data from different projects.</p>
 <p>If desired, automatic <a href="#backups">backups</a> can be made of the data.</p>
 </section>
@@ -253,9 +253,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="storage-space-for-scicloud-servers">Storage space for SciCloud servers</h3>
 <p><a href="../topics/scicloud.html">SciCloud</a> virtual servers are provisioned with a 20 to 50GB local disk. A SciStor share can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.</p>
 </section>
-<section id="bazis" class="level3">
-<h3 class="anchored" data-anchor-id="bazis">BAZIS</h3>
-<p>The <a href="./bazis.qmd">BAZIS HPC cluster</a> is connected to SciStor via a high speed netwodrk. You can run your analysis software directly on your data and easily access the results on your laptop.</p>
+<section id="ada" class="level3">
+<h3 class="anchored" data-anchor-id="ada">ADA</h3>
+<p>The <a href="../topics/ada.html">ADA HPC cluster</a> is connected to SciStor via a high speed netwodrk. You can run your analysis software directly on your data and easily access the results on your laptop.</p>
 </section>
 <section id="sharing-data" class="level3">
 <h3 class="anchored" data-anchor-id="sharing-data">Sharing data</h3>
@@ -364,7 +364,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># nano</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="va">username</span><span class="op">=&lt;</span>vumail@vu.nl<span class="op">&gt;</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="va">password</span><span class="op">=&lt;</span>your-vunet-password<span class="op">&gt;</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo mkdir /data/VU/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span> </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo mkdir /data/VU/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo mount <span class="at">-t</span> cifs //scistor.vu.nl/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span> /data/VU/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span> -o credentials=/etc/credentials/<span class="op">&lt;</span>vunetID<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The scistor share will be mounted at location: <code>/data/VU/shares</code>. To unmount it, simply do:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo umount /data/VU/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -509,6 +509,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -619,6 +621,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

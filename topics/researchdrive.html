@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.43">
+<meta name="generator" content="quarto-1.6.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-543461330d1ab7c9290b28baa7d61037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -205,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="data-life-cycle" class="level3">
 <h3 class="anchored" data-anchor-id="data-life-cycle">Data life cycle</h3>
-<p>Research Drive is meant for data you are actively working with. We recommend archiving datasets that are no longer actively used, but can’t be deleted, in <a href="../topics/yoda.html">Yoda</a>. This ensures Research Drive is used optimally and costs are kept down for your research group and VU Amsterdam.</p>
+<p>Research Drive is meant for data you are actively working with. We recommend to archive datasets that are no longer actively used, but can’t be deleted, in a repository. Transferring data from Research Drive to a repository ensures Research Drive is used optimally and costs are kept down for your research group and VU Amsterdam. Repositories that are available at VU Amsterdam are <a href="../topics/yoda.html">Yoda</a> and <a href="https://dataverse.nl/dataverse/vuamsterdam">DataverseNL</a>. <a href="../topics/yoda.html">Yoda</a> is suitable for all types of data, including personal data and other types of confidential data. <a href="https://dataverse.nl/dataverse/vuamsterdam">DataverseNL</a> is only suitable for data that can be made available publicly.</p>
 </section>
 <section id="collaborative-tools" class="level3">
 <h3 class="anchored" data-anchor-id="collaborative-tools">Collaborative tools</h3>
@@ -324,6 +324,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -434,6 +436,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

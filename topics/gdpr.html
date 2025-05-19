@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.43">
+<meta name="generator" content="quarto-1.6.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-543461330d1ab7c9290b28baa7d61037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -183,13 +183,13 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><strong>Personal data</strong> refers to any information relating to an identified or identifiable natural person (‘data subject’). See also the <a href="https://www.privacy-regulation.eu/en/4.htm">definition of ’personal data</a>’ according to the official text of the GDPR.</li>
 <li><strong>Data processing</strong> refers to any action performed on data, such as collecting, storing, modifying, distributing, deleting data. See also the <a href="https://www.privacy-regulation.eu/en/4.htm">definition of ‘processing’</a> according the official text of the GDPR.</li>
-<li><strong>Direct and indirect identification</strong>: Some identifiers enable you to single out an indiviual directly, such as name, address, IP-address etc. Individuals can also be identifed indirectly through:
+<li><strong>Direct and indirect identification</strong>: Some identifiers enable you to identify an indiviual directly, such as name, day of birth and home address. Individuals can also be identifed indirectly. For example via:
 <ul>
 <li>a combination of information that uniquely singles out an individual (e.g.&nbsp;a male with breast cancer in a breast cancer registry, a pregnant individual over 50 etc.), this includes information in one record and information across different data files or datasets</li>
 <li>unique information or patterns that are specific to an individual (e.g.&nbsp;genomic data, a very specific occupation, such as the president of a large company, repeated physical measurements or movement patterns that create a unique profile of an individual or measurements that are extreme and could be linked to subjects such as high-level athletes)</li>
 <li>data that are linked to directly identifying information through a random identification code or number</li>
 </ul></li>
-<li><strong>Pseudonymous data</strong>: Data that are indirectly identifiable are generally considered to be pseudonymous; this means that they are NOT anonymous and still qualify as personal data. Therefore privacy laws, such as the GDPR, do in fact apply to these data. This is for example the case when direct identifiers are removed from the research data and put into a key file (or what is usually called a subject identification log in medical research) with which the direct identifiers can be mapped to the research data through unique codes, so that reidentification is possible. These data are therefore pseudonymous, and not anonymous. The LCRDM has made a <a href="https://lcrdm.nl/wp-content/uploads/2023/03/Anonymization-reference-card-for-researchers.pdf">reference card</a> that illustrates the difference between pseudonymous and anonymous data.</li>
+<li><strong>Pseudonymous data</strong>: Data that are indirectly identifiable are generally considered to be pseudonymous; this means that they are NOT anonymous and still qualify as personal data. Therefore, the GDPR applies to these data. This is for example the case when direct identifiers are removed from the research data and put into a key file (or what is usually called a subject identification log in medical research) with which the direct identifiers can be mapped to the research data through unique codes, so that reidentification is possible. These data are therefore considered to be pseudonymous data for the research institution and not anonymised data. LCRDM (National Coordination Point Research Data Management) has made a <a href="https://lcrdm.nl/wp-content/uploads/2023/03/Anonymization-reference-card-for-researchers.pdf">reference card</a> that illustrates the difference between pseudonymous and anonymous data.</li>
 </ul>
 </section>
 <section id="background-information" class="level2">
@@ -297,6 +297,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -407,6 +409,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.43">
+<meta name="generator" content="quarto-1.6.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-543461330d1ab7c9290b28baa7d61037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/react-17.0.2/react.min.js"></script>
 <script src="site_libs/quarto-contrib/react-dom-17.0.2/react-dom.min.js"></script>
 <script src="site_libs/quarto-contrib/babel-6.26.0/babel.min.js"></script>
@@ -150,16 +150,21 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
 
 
 
-<p></p><div id="react-Hero-kLMXgSxx"></div><p></p>
+<p></p><div id="react-Hero-jiETbY4O"></div><p></p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/-AaSNZzL_KQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p></p><div id="react-Cta-U5Y2fDYx"></div><p></p>
+<p></p><div id="react-Cta-Ww6hAeaq"></div><p></p>
+<section id="upcoming-events" class="level2">
+<h2 class="anchored" data-anchor-id="upcoming-events">Upcoming events</h2>
+<iframe src="https://api3-eu.libcal.com/embed_mini_calendar.php?mode=month&amp;iid=4019&amp;cal_id=7052&amp;l=5&amp;tar=0&amp;h=350&amp;audience=&amp;c=&amp;z=32116" style="border-width:0;margin: 0px auto 0px auto; width: 100%" width="270" height="225" frameborder="0" scrolling="no">
+</iframe>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -244,6 +249,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -354,6 +361,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -668,7 +676,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </>
   );
 }
-ReactDOM.render( <React.StrictMode>    <Hero/>  </React.StrictMode>,  document.getElementById("react-Hero-kLMXgSxx") );</script>
+ReactDOM.render( <React.StrictMode>    <Hero/>  </React.StrictMode>,  document.getElementById("react-Hero-jiETbY4O") );</script>
 <script type="text/babel" data-type="module" data-presets="env-plus,react,typescript">function Cta() {
   return (
     <>
@@ -707,10 +715,9 @@ ReactDOM.render( <React.StrictMode>    <Hero/>  </React.StrictMode>,  document.g
 
     </div>
     </>
-
   );
 }
-ReactDOM.render( <React.StrictMode>    <Cta/>  </React.StrictMode>,  document.getElementById("react-Cta-U5Y2fDYx") );</script>
+ReactDOM.render( <React.StrictMode>    <Cta/>  </React.StrictMode>,  document.getElementById("react-Cta-Ww6hAeaq") );</script>
 
 
 

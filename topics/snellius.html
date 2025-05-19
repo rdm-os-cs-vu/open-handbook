@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.43">
+<meta name="generator" content="quarto-1.6.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-543461330d1ab7c9290b28baa7d61037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -164,7 +164,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Snellius</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Tools</div>
+  </div>
+  </div>
 
 
 
@@ -223,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
 <p>The <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius">SURF User Knowledge Base</a> has lots of information to get you started.</p>
 <p>SURF organises regular “Introduction to Supercomputing” training sessions, these are free to attend for VU researchers. Please consult the <a href="https://www.surf.nl/en/agenda">SURF Agenda</a> for dates and registration.</p>
-<p>Note that there is a free community partition available on the <a href="./bazis.qmd">VU HPC cluser BAZIS</a>, where you can refine your analysis scripts before running them on the more expensive Snellius cluster. Experts at <a href="mailto:itvo.it@vu.nl">IT for Research</a> can help you optimise your code to run more efficiently.</p>
+<p>Note that there is a free community partition available on the <a href="../topics/ada.html">VU HPC cluser ADA</a>, where you can refine your analysis scripts before running them on the more expensive Snellius cluster. Experts at <a href="mailto:itvo.it@vu.nl">IT for Research</a> can help you optimise your code to run more efficiently.</p>
 </section>
 <section id="contact" class="level2">
 <h2 class="anchored" data-anchor-id="contact">Contact</h2>
@@ -316,6 +319,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -426,6 +431,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
