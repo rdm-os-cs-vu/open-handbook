@@ -1,0 +1,100 @@
+---
+title: "VU Computer Science Policy on Research Surverys"
+subtitle: version v0.2 (draft), February 11, 2025
+authors:
+- name: Peter Bloem
+  email: p.bloem@vu.nl
+format:
+  html:
+    toc: true
+    number-sections: true
+  docx:
+    toc: true
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+---
+
+*status: This is currently a draft policy.*  
+   
+Research surveys are a common and useful tool. Either to further our research, or to help us improve our educational programs and the functioning of the department. For example, there may be situations where:
+
+* You conduct a survey including personal information as part of your research. The data is stored carefully, but you want to combine it with that of an international collaborator. Is this allowed? Who do you check with?  
+* An MSc student wants to send out a research survey to all members of the department as an experiment for their thesis. Who sends out the survey? Who is responsible for the content?  
+* An external researcher asks for a survey to be sent out to all students in a particular study program. Who decides whether the survey is forwarded. Should we check it ourselves?  
+* A member of staff sends out a survey to all members of the department, to get an indication of any diversity issues. Should we be less concerned, because the survey is internal?
+
+
+In all such cases, the responsibility for carefully, legally and ethically gathering and storing the data rests with the department. It is very easy to ask a seemingly innocent question that actually counts as *sensitive information*, and thereby violate the GDPR and/or ethical guidelines. 
+
+*See below for answers.*
+
+In the past, such survey data has had to be deleted without being used due to GDPR violations, so it pays to be careful about the rules and guidelines.
+
+## Department Policy
+
+The policy proposed by this draft consists of two common-sense rules.
+
+1\) Any survey sent out to anybody in our name (with data managed by a department employee and/or on department hardware) should satisfy the legal and ethical requirements that the law and the university have for such surveys. 
+
+Surveys that are part of a student project should always be sent out by the supervisor, so the above rule applies.
+
+2\) For any survey sent out to our staff or students, for which the data is not managed by someone in the department, while we may not be *legally* responsible, we are still *morally* responsible that data is handled with care. Therefore, we will always check ourselves that a survey handles private data correctly before we allow it to be sent to students or staff. **We will not forward any survey that we would not be allowed to send out if it were our own.**
+
+If the survey originates with another department in the VU, we require an ethical self-check, and a check with a privacy champion, before a survey may be sent out to students.
+
+## Key principles and common mistakes
+
+There is no concise way to give a step-by-step guide, a flowchart or an exhaustive overview of everything that needs to be taken into account. The following is a summary of the most important considerations and most common mistakes.
+
+* Whether the survey is *legal* and whether it is *ethical* are separate questions.  
+  * The first should be checked by following [the privacy five-step plan](https://assets-us-01.kc-usercontent.com/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/ad3de0e7-b935-471a-8d31-51c06ba47c88/Privacy%20five-step%20plan.pdf), and if necessary, consulting a privacy champion.  
+  * The second should be checked by going through [the ethics review self-check](https://vu.nl/en/about-vu/faculties/faculty-of-science/more-about/research-ethics-review-committee-beta). The ethics review does *not* guard against GDPR violations.  
+* You should be able to answer the following questions about your survey:  
+  * Is any personal and or sensitive information collected? The [GDPR definition of sensitive data](https://commission.europa.eu/law/law-topic/data-protection/rules-business-and-organisations/legal-grounds-processing-data/sensitive-data/what-personal-data-considered-sensitive_en) is a good starting point.  
+  * Where and how is the data stored? Is sensitive data stored securely? How long will the data be stored? If this is "in the cloud" are the servers located in Europe? Is the storage encrypted? Who has access to the decryption keys?  
+  * What kinds of reports, and other aggregated data will be created and who will this information be shared with? If sensitive information is involved, can you guarantee that individual people will not be identifiable in the aggregate data?  
+* The ILA (Institutional and Legal Affairs) department should be informed of any survey that collects personal information. Consulting a privacy champion is sufficient.    
+* If informed consent is required, it should be obtained before the survey is started, and separately from the survey.  
+* A form of consent should be added to surveys, especially if personal data is collected. See the template from the faculty of the humanities [here](https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/184461f5-eab6-4f51-9daa-c223fe552f7f/Template_Informed%20Consent%20\(ENG\).docx).  
+  * The consent form should be separate from the survey, and come before it.    
+  * The consent form should explicitly state  
+    * the purpose for which the data will be used (e.g., to check that no superfluous data is collected).  
+    * The precise names and contact details of the person & organisations in charge of managing the rights of respondents.  
+    * How the data is anonymised.  
+    * Where the data is stored, how long it will be stored for, and how it will be deleted. More details about data storage can be found [here](https://docs.google.com/document/d/10mDEtwxGgHGhA5OzsD6BrCQkfEJ356z63qTVVHC_kWs/edit?usp=sharing). Solutions for data archiving can be found [here](https://libguides.vu.nl/rdm/selecting-archive).  
+* A *Privacy Statement* should be included, detailing what data is collected, for how long, where it's stored, who has access and so on. See step 4 of the five-step plan. If Informed consent is required, the privacy statement can be part of that form.  
+* Removing, or not asking for, identifying information is not sufficient to guarantee anonymization. For example, in a department-wide survey, removing a respondent's name, but keeping their religion and country of origin is likely still enough to identify them. In short [data anonymization](https://en.wikipedia.org/wiki/Data_re-identification) is a complex problem, and should not be taken lightly.
+
+## Resources and People
+
+The above is just a quick overview of the main concerns. Satisfying these is a good start, but not a guarantee that there are no problems with your survey. 
+
+For a more complete overview, see the following resources.
+
+* [Working with personal data](https://vu.nl/en/employee/privacy-and-information-security/working-with-personal-data)  
+* [The privacy five-step plan](https://assets-us-01.kc-usercontent.com/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/ad3de0e7-b935-471a-8d31-51c06ba47c88/Privacy%20five-step%20plan.pdf)  
+* [10 key rules for privacy in research](https://assets-us-01.kc-usercontent.com/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/b55f1a58-e848-4b92-8a74-b62c646d6590/10%20key%20Privacy%20rules%20in%20scientific%20research.pdf)
+
+Please find below a list of contact information. These roles change often so this information may be outdated.
+
+| Position | Person | Contact |
+| :---- | :---- | :---- |
+| Privacy Champion  | Kirsty Brachel- te Lintel Hekkert Dorien Verhoeven  | [https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) privacy.beta@vu.nl |
+| University legal team |  | legal@vu.nl |
+| Data Stewards | Kees Verstoep (ad interim) | c.verstoep@vu.nl |
+
+Different versions of this document were written by Shuai Wang, Kees Verstoep and Peter Bloem, in consultation with the university privacy champions. Any comments or recommendations can be addressed to Peter Bloem.
+
+## Answers
+
+* You conduct a survey including personal information as part of your research. The data is stored carefully, but you want to combine it with that of an international collaborator. Is this allowed? Who do you check with?  
+  * This is a complicated legal  issue, which should be discussed in detail with ILA representatives. Ideally, such concerns are considered during the formation of the consortium.   
+* An MSc student wants to send out a research survey to all members of the department as an experiment for their thesis. Who is responsible for the content?  
+  * By the policy above, the student should never send out a survey. The supervisor sends out the survey and is therefore responsible for all aspects of data management, ethics and privacy, as they would be for any other survey they sent out.  
+* An external researcher asks for a survey to be sent out to all students in a particular study program. Who decides whether the survey is forwarded. Should we check it ourselves?  
+  * By the policy above, the survey should be sent out by a department employee and satisfy all requirements that we set on our own surveys.  
+* A member of staff sends out a survey to all members of the department, to get an indication of any diversity issues. Should we be less concerned, because the survey is internal?  
+  * There is no difference between internal surveys and external surveys. Internal surveys should satisfy the same requirements as external ones.   
+  * *There is a small amount of gray area here: for example, asking for date availability for a meeting or for feedback on a department outing. Clearly such informal polls can be sent out without this kind of scrutiny. Common sense should be enough to distinguish surveys from informal, internal polls.*
