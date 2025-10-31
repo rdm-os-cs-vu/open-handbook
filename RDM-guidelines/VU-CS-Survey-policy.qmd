@@ -81,7 +81,7 @@ Please find below a list of contact information. These roles change often so thi
 
 | Position | Person | Contact |
 | :---- | :---- | :---- |
-| Privacy Champion  | Kirsty Brachel- te Lintel Hekkert Dorien Verhoeven  | [https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) privacy.beta@vu.nl |
+| Privacy Champion  | Beta faculty privacy champions | [https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) privacy.beta@vu.nl |
 | University legal team |  | legal@vu.nl |
 | Data Stewards | Kees Verstoep (ad interim) | c.verstoep@vu.nl |
 
