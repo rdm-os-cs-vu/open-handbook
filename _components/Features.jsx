@@ -1,7 +1,7 @@
 const features = [
   {
     name: <p className="tw-inline"><a href="https://rdm-os-cs-vu.github.io/open-handbook/topics.html">Topics</a></p>,
-    description: "Find all the topics about research data management and open science.",
+    description: "We learn each other's best practices.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"

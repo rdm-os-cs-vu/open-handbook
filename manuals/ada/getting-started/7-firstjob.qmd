@@ -1,0 +1,39 @@
+---
+title: Running your First Slurm Job
+date: last-modified
+---
+
+This page shows a simple Slurm job example to get started on ADA.
+
+## Slurm script:
+`mytestjob.slurm`
+
+```sh
+#!/bin/bash -l
+#SBATCH -J MyTestJob
+#SBATCH -N 1
+#SBATCH -p defq
+#SBATCH --output=MyTestJobResult.out
+#SBATCH --error=MyTestJobResult.err
+
+echo "== Starting run at $(date)"
+echo "== Job ID: ${SLURM_JOBID}"
+echo "== Node list: ${SLURM_NODELIST}"
+echo "== Submit dir: ${SLURM_SUBMIT_DIR}"
+echo "== Scratch dir: ${TMPDIR}"
+
+# Move to scratch space
+cd "$TMPDIR"
+
+# Run your application (example: print hostname)
+echo "== Running on: $(hostname)"
+echo "== Job completed at $(date)"
+```
+
+## Running the script
+
+Assuming you are inside your slurm submission directory, run the following:
+
+```sh
+$ sbatch mytestjob.slurm
+```

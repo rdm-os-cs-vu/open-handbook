@@ -3,7 +3,7 @@ project:
 
 website:
   site-url: "https://rdm-os-cs-vu.github.io/open-handbook"
-  title: "{{< var title >}}"
+  title: "Research Support Handbook"
   description: "A place for all things open research at VU Amsterdam."
   favicon: public/favicon.png
   repo-url: https://github.com/rdm-os-cs-vu/open-handbook
@@ -11,6 +11,36 @@ website:
   repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
+  sidebar:
+    - id: sb-ada
+      style: floating
+      search: true
+      contents:
+        - manuals/ada/index.qmd 
+        # - auto: manuals/ada/**/*.qmd # works, but is in the wrong order
+        - manuals/ada/login.qmd
+        - manuals/ada/quick-start.qmd
+        - manuals/ada/software.qmd
+        - manuals/ada/slurm.qmd
+        - manuals/ada/hardware.qmd
+        - manuals/ada/open-ondemand.qmd
+        - manuals/ada/yoda.qmd
+        - manuals/ada/help.qmd
+        - section: Code Examples
+          contents: manuals/ada/code-examples/**/*.qmd
+    - id: sb-scistor
+      style: floating
+      search: true
+      contents:
+        - manuals/scistor/index.qmd 
+        - auto: manuals/scistor/*.qmd
+    - id: sb-qualtrics
+      style: floating
+      search: true
+      contents:
+        - manuals/qualtrics/index.qmd
+        - auto: manuals/qualtrics/*.qmd 
+
   navbar:
     background: "#0080c9"
     logo: public/VU-logo-Dia-positief.png
@@ -23,10 +53,22 @@ website:
         menu:
           - text: All
             file: topics.qmd
+          - text: Policies and Legislation
+            href: /topics.html#category=Policies%20and%20Legislation
+          - text: Research Data
+            href: /topics.html#category=Research%20Data
+          - text: Research Software
+            href: /topics.html#category=Research%20Software
+          - text: Responsible Scholarship
+            href: /topics.html#category=Responsible%20Scholarship
           - text: Tools
             href: /topics.html#category=Tools
+          - text: Trainings and Knowledge Items
+            href: /topics.html#category=Trainings%20and%20Knowledge%20Items
       - text: Guides
         file: guides.qmd
+      - text: Manuals
+        file: manuals.qmd
       - text: "CS RDM Guides"
         file: RDM-guidelines.qmd
       - text: "CS Groups"
@@ -48,6 +90,7 @@ website:
     center:
       - text: "About"
         href: about.qmd
+      - href: technical-details.qmd
       - href: editors-guide.qmd
       - text: "GHOST Collective"
         href: https://ghostcollective.github.io/games.html
@@ -70,5 +113,9 @@ format:
 # from: "markdown+emoji"
 filters:
   - utils/include-files.lua
+  - utils/linktarget.lua
 execute:
   freeze: auto
+
+metadata-files: 
+  - manuals/yoda/_sidebar.yml
