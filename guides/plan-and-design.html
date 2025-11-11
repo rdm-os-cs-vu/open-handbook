@@ -8,7 +8,7 @@
 
 <meta name="description" content="A good plan is half the work.">
 
-<title>How can you set up research data management from the start? – VU CS Department RDM and Open Science Handbook</title>
+<title>How can you set up research data management from the start? – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-54359ed09ef3d2c7175c510e59da82ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e69c8a892bfebd52223cfedbd795a344.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,14 +102,38 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../topics.html#category=Policies and Legislation">
+ <span class="dropdown-text">Policies and Legislation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Research Data">
+ <span class="dropdown-text">Research Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Research Software">
+ <span class="dropdown-text">Research Software</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Responsible Scholarship">
+ <span class="dropdown-text">Responsible Scholarship</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Trainings and Knowledge Items">
+ <span class="dropdown-text">Trainings and Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../manuals.html"> 
+<span class="menu-text">Manuals</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../RDM-guidelines.html"> 
@@ -146,11 +170,12 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#research-proposal" id="toc-research-proposal" class="nav-link active" data-scroll-target="#research-proposal">Research Proposal</a>
   <ul class="collapse">
-  <li><a href="#research-proposal-grant-office" id="toc-research-proposal-grant-office" class="nav-link" data-scroll-target="#research-proposal-grant-office">Research Proposal / Grant Office</a></li>
+  <li><a href="#data-management-section" id="toc-data-management-section" class="nav-link" data-scroll-target="#data-management-section">Data Management Section</a></li>
+  <li><a href="#rdm-costs" id="toc-rdm-costs" class="nav-link" data-scroll-target="#rdm-costs">RDM Costs</a></li>
   </ul></li>
-  <li><a href="#rdm-costs" id="toc-rdm-costs" class="nav-link" data-scroll-target="#rdm-costs">RDM Costs</a>
+  <li><a href="#data-management-plan" id="toc-data-management-plan" class="nav-link" data-scroll-target="#data-management-plan">Data Management Plan</a>
   <ul class="collapse">
-  <li><a href="#costs-data-management" id="toc-costs-data-management" class="nav-link" data-scroll-target="#costs-data-management">Costs &amp; Data Management</a></li>
+  <li><a href="#choosing-the-right-template" id="toc-choosing-the-right-template" class="nav-link" data-scroll-target="#choosing-the-right-template">Choosing the right template</a></li>
   </ul></li>
   <li><a href="#rdm-requirements" id="toc-rdm-requirements" class="nav-link" data-scroll-target="#rdm-requirements">RDM Requirements</a>
   <ul class="collapse">
@@ -164,14 +189,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#data-classification" id="toc-data-classification" class="nav-link" data-scroll-target="#data-classification">Data classification</a></li>
   <li><a href="#data-protection-security" id="toc-data-protection-security" class="nav-link" data-scroll-target="#data-protection-security">Data Protection &amp; Security</a></li>
   </ul></li>
-  <li><a href="#gdpr-privacy" id="toc-gdpr-privacy" class="nav-link" data-scroll-target="#gdpr-privacy">GDPR &amp; Privacy</a>
-  <ul class="collapse">
-  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions">Definitions</a></li>
-  <li><a href="#background-information" id="toc-background-information" class="nav-link" data-scroll-target="#background-information">Background information</a></li>
-  <li><a href="#support-within-your-faculty-privacy-champions" id="toc-support-within-your-faculty-privacy-champions" class="nav-link" data-scroll-target="#support-within-your-faculty-privacy-champions">Support within your faculty: Privacy Champions</a></li>
-  <li><a href="#complete-a-data-protection-impact-assessment-dpia" id="toc-complete-a-data-protection-impact-assessment-dpia" class="nav-link" data-scroll-target="#complete-a-data-protection-impact-assessment-dpia">Complete a Data Protection Impact Assessment (DPIA)</a></li>
-  <li><a href="#data-breach-incident-report" id="toc-data-breach-incident-report" class="nav-link" data-scroll-target="#data-breach-incident-report">Data breach incident report</a></li>
-  </ul></li>
+  <li><a href="#gdpr-privacy" id="toc-gdpr-privacy" class="nav-link" data-scroll-target="#gdpr-privacy">GDPR &amp; Privacy</a></li>
   <li><a href="#policies-regulations" id="toc-policies-regulations" class="nav-link" data-scroll-target="#policies-regulations">Policies &amp; Regulations</a>
   <ul class="collapse">
   <li><a href="#vu-general-policies-and-regulations" id="toc-vu-general-policies-and-regulations" class="nav-link" data-scroll-target="#vu-general-policies-and-regulations">VU General Policies and Regulations</a></li>
@@ -214,42 +232,36 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="research-proposal" class="level2">
 <h2 class="anchored" data-anchor-id="research-proposal">Research Proposal</h2>
-<section id="research-proposal-grant-office" class="level3">
-<h3 class="anchored" data-anchor-id="research-proposal-grant-office">Research Proposal / Grant Office</h3>
 <p>Grant programmes from organisations like NWO, ZonMw and ERC require you to think about the method of data collection, the journey of the data in your research project and how to protect or share data during and after the research project. It is important to bear in mind the specific laws and regulations that apply to the kind of data that is collected. If a project involves data on individuals and organisations this impacts the design of the necessary IT infrastructure. A more detailed description of this will later be captured in the data management plan.</p>
 <p>When writing your research proposal the following items are important:</p>
 <ul>
 <li>Fill in the <a href="#data-management-section">Data Management Section</a> if your funder requires this</li>
-<li>Planning: One of the early deliverables will be a detailed <a href="../topics/data-management-plan.html">Data Management Plan</a></li>
+<li>Planning: One of the early deliverables will be a detailed <a href="../topics/data-management-plan.html">Data Management Plan</a>. Instructions for writing a DMP are available in the <a href="#data-management-plan">DMP section</a> below. You can find more information about aspects to be addressed in a DMP in <a href="#rdm-requirements">RDM requirements</a>, <a href="#collaboration">Collaboration</a>, <a href="#data-security">Data Security</a>, <a href="#gdpr-privacy">GDPR &amp; Privacy</a> and <a href="#policies-regulations">Policies &amp; Regulations</a>.</li>
 <li>Budget: Take into account the <a href="#rdm-costs">costs</a> (labour and material) for data storage during and data archiving after your project.</li>
-<li>Writing: Funders that distribute grants like to maximise the effectiveness of this investment. It is therefore highly recommended that the data will be made Findable, Accessible, Interoperable and Re-usable (<a href="../topics/fair-principles.html">FAIR Principles</a>). This does not mean that the data have to be open: Laws, licenses and contracts regarding personal and sensitive data may limit the possibility to share the data publicly.</li>
+<li>Writing: Funders that distribute grants like to maximise the effectiveness of this investment. It is therefore highly recommended that the data will be made Findable, Accessible, Interoperable and Re-usable (<a href="../topics/fair-principles.html">FAIR Principles</a>). For that reason, it is useful to make explicit in your proposal how you will aim to make your data FAIR. This does not mean that the data have to be open: Laws, licenses and contracts regarding personal and sensitive data may limit the possibility to share the data publicly.</li>
 </ul>
-<p>The [RDM Support Desk[(https://vu.nl/en/about-vu/more-about/rdm-support-desk) provides advice and help when writing a <a href="#data-management-section">Data Management Section</a> as part of the research proposal. Also make sure to reach out to VU Amsterdam <a href="https://vu.nl/en/about-vu/more-about/vu-grants-office">Grants Office</a> (IXA-GO) for advice and practical aid for your grant in general as early as possible.</p>
-<section id="data-management-section" class="level4">
-<h4 class="anchored" data-anchor-id="data-management-section">Data Management Section</h4>
+<p>The <a href="https://vu.nl/en/about-vu/more-about/rdm-support-desk" target="_blank">RDM Support Desk</a> provides advice and help when writing a <a href="#data-management-section">Data Management Section</a> as part of the research proposal. Also make sure to reach out to VU Amsterdam <a href="https://vu.nl/en/about-vu/more-about/vu-grants-office" target="_blank">Grants Office</a> (IXA-GO) for advice and practical aid for your grant in general as early as possible.</p>
+<section id="data-management-section" class="level3">
+<h3 class="anchored" data-anchor-id="data-management-section">Data Management Section</h3>
 <p>Many funders require researchers to include a section in their project proposal about Research Data Management, in which they explain whether existing data will be reused, whether new data will be collected or generated during the project, and how they plan to structure, archive and share their data. Depending on requirements of the funder, the paragraph can be short or more extensive.</p>
 <p>Funders may have different requirements for the data management section in the project proposal. Always check what your funder asks for. Below is a list of information on data management sections from main Dutch funding bodies.</p>
 <ul>
-<li><a href="https://www.nwo.nl/en/research-data-management">NWO</a></li>
-<li><a href="https://www.zonmw.nl/en/instructions-fair-data-management-grant-applicants">ZonMw</a></li>
+<li><a href="https://www.nwo.nl/en/research-data-management" target="_blank">NWO</a></li>
+<li><a href="https://www.zonmw.nl/en/instructions-fair-data-management-grant-applicants" target="_blank">ZonMw</a></li>
 </ul>
 <p>We recommend you to ask advice from the <a href="mailto:rdm@vu.nl">RDM Support Desk</a> when writing your data management section.</p>
 </section>
-</section>
-</section>
-<section id="rdm-costs" class="level2">
-<h2 class="anchored" data-anchor-id="rdm-costs">RDM Costs</h2>
-<section id="costs-data-management" class="level3">
-<h3 class="anchored" data-anchor-id="costs-data-management">Costs &amp; Data Management</h3>
+<section id="rdm-costs" class="level3">
+<h3 class="anchored" data-anchor-id="rdm-costs">RDM Costs</h3>
 <p>Many research funders encourage applicants to include data management and sharing costs in research proposals. Some funders will provide advice on costs related to data management. Some remarks on costs are provided here:</p>
 <ul>
 <li><a href="../topics/data-management-plan.html">The Data Management Plan</a> should describe the activities that incur costs and provide justification for the allocation of resources (example: acquisition of a programmer who will write software needed to capture the data).</li>
 <li>No expenditure can be ‘double funded’, i.e.&nbsp;a service that is centrally supported by indirect costs must not be included as a direct cost as well (example: computers that are already provided to employees and paid for by the university may not be included).</li>
 <li>The budget and justification should broadly indicate where RDM costs will be incurred, where possible. E.g. data capture and cleaning, data curation and preservation, data sharing.</li>
-<li>Include budget for long-term storage if data are expected to be deposited in a repository not funded by the university or external funders (VU repositories are: DataverseNL, Yoda). 🔒 <a href="https://vu.nl/en/employee/research-data-support/costs-research-en-archiving-storage">VU has an internal breakdown of costs for storage and archiving for VU-managed storage and repositories</a>.</li>
+<li>Include budget for long-term storage if data are expected to be deposited in a repository not funded by the university or external funders (VU repositories are: DataverseNL, Yoda). 🔒 <a href="https://vu.nl/en/employee/research-data-support/research-archiving-storage-cost-model" target="_blank">VU has an internal breakdown of costs for storage and archiving for VU-managed storage and repositories</a>.</li>
 </ul>
-<p>A practical costing tool is available from the <a href="https://www.ukdataservice.ac.uk/manage-data/plan/costing">UK Data Archive</a>. Based on this costing tool, Utrecht University has developed a <a href="https://www.uu.nl/en/research/research-data-management/guides/costs-of-data-management">guide to calculate the costs of data management</a>. You can use those guides as well to estimate the costs needed specifically for RDM.</p>
-<p>Most material costs of the storage solutions offered by VU Amsterdam are covered centrally (up to 500 GB), but if you need to specify the costs for your project, look at the 🔒 <a href="https://vu.nl/en/employee/research-data-support/costs-research-en-archiving-storage">Research &amp; Archiving Storage Cost Model</a></p>
+<p>A practical costing tool is available from the <a href="https://www.ukdataservice.ac.uk/manage-data/plan/costing" target="_blank">UK Data Archive</a>. Based on this costing tool, Utrecht University has developed a <a href="https://www.uu.nl/en/research/research-data-management/guides/costs-of-data-management" target="_blank">guide to calculate the costs of data management</a>. You can use those guides as well to estimate the costs needed specifically for RDM.</p>
+<p>Most material costs of the storage solutions offered by VU Amsterdam are covered centrally (up to 500 GB), but if you need to specify the costs for your project, look at the 🔒 <a href="https://vu.nl/en/employee/research-data-support/costs-research-en-archiving-storage" target="_blank">Research &amp; Archiving Storage Cost Model</a></p>
 <p>Examples to put in a data management plan:</p>
 <table class="caption-top table">
 <colgroup>
@@ -325,6 +337,202 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </section>
 </section>
+<section id="data-management-plan" class="level2">
+<h2 class="anchored" data-anchor-id="data-management-plan">Data Management Plan</h2>
+<p>If you receive funding from a funder, one of the early deliverables will be a <a href="../topics/data-management-plan.html">Data Management Plan</a>. In general, every research benefits from writing a data management plan. It will help you to address data management aspects in a systematic way, so that you can set up useful RDM practices for your research and identify potential things for which you need to arrange something, like sufficient storage space, a particular data collection methodology, etc.</p>
+<section id="what-is-a-dmp" class="level5">
+<h5 class="anchored" data-anchor-id="what-is-a-dmp">What is a DMP</h5>
+<p>A Data Management Plan (DMP) is a document outlining how research data will be handled throughout the research life cycle. A DMP is a structured way to address data collection, organization, storage, sharing, and preservation. It also outlines the measures taken to ensure data security and addresses how data will be preserved and made available for future use.</p>
+</section>
+<section id="dmponline" class="level5">
+<h5 class="anchored" data-anchor-id="dmponline">DMPonline</h5>
+<p>VU Amsterdam offers the online tool <a href="https://dmponline.vu.nl/" target="_blank">DMPonline</a> for writing Data Management Plans. DMPonline is a platform that offers a range of templates, ensuring that researchers can create DMPs to meet the standards of diverse funders and institutions associated with their projects. DMPonline makes it easy to work on a DMP together with colleagues, advisors, or other stakeholders. VU Amsterdam researchers can use the <code>request feedback</code> function of DMPonline to get their DMP reviewed by a faculty data steward or RDM Support Desk colleague.</p>
+<p>Instructions for selecting the right DMP template in DMPonline are available in the <a href="https://rdm.vu.nl/guides/plan-and-design.html" target="_blank">guide How can you set up research data management from the start?</a>.</p>
+<p>If you have questions about DMPonline, or encounter problems when using the tool, please get in touch with <a href="mailto:rdm@vu.nl">rdm@vu.nl</a>.</p>
+</section>
+<section id="what-is-data" class="level5">
+<h5 class="anchored" data-anchor-id="what-is-data">What is data</h5>
+<p>Research data is any information that has been collected, observed, generated or created to validate original research findings. Examples of data could be interview recordings, experiment results, physical measurement, notes from focus group’s meetings, notes from fieldwork, observations captured in photographs, film or audio, text files extracted from a corpus, image of archival items or artworks, scraped websites, responses to survey questions. Algorithms, simulations, code, scripts and software are often also considered as research data. There is also physical data: (biological) samples, collections, artifacts etc.</p>
+<p>Administrative documents, like informed consent forms and key files should be acknowledged as important elements of research data as well.</p>
+</section>
+<section id="data-assets" class="level5">
+<h5 class="anchored" data-anchor-id="data-assets">Data Assets</h5>
+<p>At VU Amsterdam, we sometimes use the term ‘Data Assets’. You can think of data assets as small ‘parcels’ of data that can change form or format throughout the research. For example, if you’re sending out surveys for your research, the survey responses are considered a data asset. If, in addition to the surveys, you’re also holding focus groups, the data collected from the focus group are also considered a data asset, separate from the survey results. Most projects will have more than one data asset per data stage. It is common to provide data assets based on the data stage such as raw, processed, or analysed. Raw Data refers to original data collected, Processed Data is data that has undergone some level of transformation or organisation. Processing involves cleaning, formatting, and structuring raw data to make them more understandable and suitable for analysis. Analysed Data usually results from statistical methods, detailed examination or interpretation.</p>
+<p>Here are some examples of data assets in research data management:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 41%">
+<col style="width: 24%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Data Stage</th>
+<th>Dataset description</th>
+<th>Type of data</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Raw data</td>
+<td>Interviews</td>
+<td>Audio files</td>
+<td>MP3</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Spectographic analysis</td>
+<td>Text files</td>
+<td>CSV</td>
+</tr>
+<tr class="odd">
+<td>Processed data</td>
+<td>Transcription of interviews</td>
+<td>Text files</td>
+<td>Docx</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Data spreadsheet</td>
+<td>SPSS files</td>
+<td>SAV</td>
+</tr>
+<tr class="odd">
+<td>Analysed data</td>
+<td>Regression graphic</td>
+<td>Graph</td>
+<td>PNG</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Data table</td>
+<td>Word file</td>
+<td>Docx</td>
+</tr>
+<tr class="odd">
+<td>Other</td>
+<td>Poster presentation</td>
+<td>Powerpoint</td>
+<td>PPS</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Project Website</td>
+<td>HTML</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Analysis code</td>
+<td>Text files</td>
+<td>Python</td>
+</tr>
+</tbody>
+</table>
+<p>Note that these data assets also change in the different phases of the research! While the interview data are audio files in the raw stage, they are transcribed and become text files in the processed stage.</p>
+</section>
+<section id="dmp-elements" class="level5">
+<h5 class="anchored" data-anchor-id="dmp-elements">DMP Elements</h5>
+<p>VU Amsterdam DMP template consists of seven sections with questions. In DMPonline, there is guidance available for all sections, as well as example answers. When you are writing your DMP, you can consult this information directly in DMPonline. Below we provide references to information and support available for various RDM-related aspects.</p>
+<section id="legal-and-ethical-requirements" class="level6">
+<h6 class="anchored" data-anchor-id="legal-and-ethical-requirements">Legal and ethical requirements</h6>
+<section id="working-with-personal-data" class="level7">
+<p class="heading">Working with personal data</p>
+<p>If you have questions about working with personal data in research, please get in touch with the Privacy Champion of your faculty. The 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information" target="_blank">overview of Privacy Champions</a> can be found on VU Amsterdam website. Make sure to contact your Privacy Champion in the following situations:</p>
+<ul>
+<li>If you need to carry out a DPIA, or if you’re unsure if you need to do one</li>
+<li>If you work with special category personal data, or otherwise very sensitive data</li>
+<li>If you are collaborating with other parties</li>
+<li>If you need software for which no licence is set up on behalf of VU Amsterdam</li>
+<li>If you wish to reuse existing data containing personal data</li>
+</ul>
+<p>It is impossible to provide an overview of tasks to be carried out to ensure compliance with the GDPR that fits all research projects. For that reason, it is important to contact your Privacy Champion. They will be able to identify what needs to be arranged to adhere to the GDPR.</p>
+</section>
+<section id="ethical-review" class="level7">
+<p class="heading">Ethical Review</p>
+<p>In cases where research involves human or animal participants, a research proposal may need to be reviewed by an ethics committee. VU Amsterdam and Amsterdam UMC (location VUmc), have several ethics committees, which are listed below. Please note that researchers at VU Amsterdam also have to go to the METc at VUmc if their research is <a href="https://english.ccmo.nl/investigators/legal-framework-for-medical-scientific-research/your-research-is-it-subject-to-the-wmo-or-not" target="_blank">subject to the WMO</a>, which is not restricted to research at VUmc.</p>
+<section id="ethics-committees" class="level9">
+<p class="heading">Ethics committees</p>
+<ul>
+<li>ACTA: <a href="https://acta.nl/en/research/more-about/ethics-review-board" target="_blank">ACTA Ethics Review Board</a> (ETC), Academisch Centrum Tandheelkunde Amsterdam</li>
+<li>Beta: <a href="https://vu.nl/en/about-vu/faculties/faculty-of-science/more-about/research-ethics-review-committee-beta" target="_blank">Research ethics review committee Faculty of Science</a> (BETHCIE), Faculty of Science</li>
+<li>FGB: 🔒 <a href="https://vu.nl/en/employee/behavioural-and-movement-sciences-getting-started/the-scientific-and-ethical-review-board-vcwe" target="_blank">Scientific and Ethical Review Board</a> (VCWE), Faculty of Behavioural and Movement Sciences</li>
+<li>FSG, Faculty of Social Sciences and Humanities:
+<ul>
+<li>SGW: <a href="https://vu.nl/en/about-vu/faculties/school-of-humanities/more-about/research-ethics-review-committee-and-research-integrity" target="_blank">Ethische Toetsingscommissie Onderzoek</a> (EtCO), School of Humanities</li>
+<li>SSW: 🔒 <a href="https://vu.nl/en/employee/social-sciences-getting-started/research-ethics-review-ssc" target="_blank">Research Ethics Review Committee</a> (RERC), School of Social Sciences</li>
+</ul></li>
+<li>RCH: <a href="https://vu.nl/en/employee/law-getting-started/ethics-committee" target="_blank">Ethics Committee</a>, Faculty of Law</li>
+<li>SBE: <a href="https://vu.nl/en/about-vu/faculties/school-of-business-and-economics/more-about/research-office" target="_blank">Ethical Review Board</a> (ERB), School of Business and Economics</li>
+<li>VUmc (Amsterdam UMC): <a href="https://metc.amsterdamumc.org/" target="_blank">Medical Ethical Review Committee</a> (METc)</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="storage-and-backup-during-the-research-process" class="level6">
+<h6 class="anchored" data-anchor-id="storage-and-backup-during-the-research-process">Storage and backup during the research process</h6>
+<p>An overview of storage facilities at VU Amsterdam is available in the <a href="https://vu.nl/en/research/storagefinder" target="_blank">Data Storage Finder</a>. You can use this as a starting point to navigate storage solutions.</p>
+<p>If you have questions about data storage and backup, send an email to <a href="mailto:rdm@vu.nl">rdm@vu.nl</a>.</p>
+</section>
+<section id="data-archiving-and-publishing" class="level6">
+<h6 class="anchored" data-anchor-id="data-archiving-and-publishing">Data archiving and publishing</h6>
+<p>If your research data contains personal data and you’re unsure about which data may be published, please contact your 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information" target="_blank">Privacy Champion</a>.</p>
+</section>
+</section>
+<section id="choosing-the-right-template" class="level3">
+<h3 class="anchored" data-anchor-id="choosing-the-right-template">Choosing the right template</h3>
+<p>Various templates exist in which you can set up your DMP. We strongly recommend that you use the VU template, which is called <code>VU DMP template 2021 (NWO &amp; ZonMw certified) v1.4</code>. Below you’ll find an explanation of how to access this template. If you need to write a DMP for funding agencies NWO, ZonMw or ERC, you can use the VU template as well.</p>
+<section id="vu-template" class="level4">
+<h4 class="anchored" data-anchor-id="vu-template">VU template</h4>
+<p>You can find the VU DMP template in <a href="https://dmponline.vu.nl/" target="_blank">DMPonline</a>. It includes concise guidance on how to complete your DMP.</p>
+<p>You can select the VU template by taking the following steps (see also the picture below).</p>
+<ol type="1">
+<li>On your dashboard, click on <code>Create plan</code>.</li>
+<li>Enter the title of your research project (you don’t have to select the check box for mock testing).</li>
+<li>Select the following template: ‘1 - VU DMP template 2021 (NWO &amp; ZonMw certified v1.4’).</li>
+<li>Click ‘Create’.</li>
+</ol>
+<p>Note: Follow these steps as well if you receive funding from NWO, ZonMw or ERC (see also below).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../public/DMPonline-CreatePlan-VU.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of a form for creating a data management plan, asking for the research project and what template you would like to use.</figcaption>
+</figure>
+</div>
+<p>If you’re aiming to write a full DMP based on VU Amsterdam DMP template, please make sure you don’t select the GDPR registration form.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../public/DMPonline-CreatePlan-VU-DONOTUSEGDPRform.png" class="img-fluid figure-img"></p>
+<figcaption>A screenshot highlighting to not use VU Amsterdam GDPR Registration form</figcaption>
+</figure>
+</div>
+</section>
+<section id="funder-template" class="level4">
+<h4 class="anchored" data-anchor-id="funder-template">Funder template</h4>
+<p>We recommend researchers to use VU Amsterdam DMP template whenever possible, especially for researchers who work with personal data. The VU DMP template includes questions that serve as input for the GDPR record of processing activities. This means that when you write a DMP based on the VU DMP template, you simultaneousely comply with the VU requirement to register the personal data you use in your research.</p>
+<p>However, it is also possible to use other templates in DMPonline. If your funder or partner organisation requires you to use a certain template, it is possible to select that template in DMPonline. Please follow the steps below to select a funder’s template.</p>
+<ol type="1">
+<li>On your dashboard, click on <code>Create plan</code>.</li>
+<li>Enter the title of your research project (you don’t have to select the check box for mock testing).</li>
+<li>Select the template of your funder from the list.</li>
+<li>Click ‘Create’.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../public/public/DMPonline-CreatePlan-Empty.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of a filled out form for creating a data management plan, with example data included.</figcaption>
+</figure>
+</div>
+<p>Researchers who don’t work with personal data and who wish to use another DMP template than the VU template, can also follow the steps above.</p>
+</section>
+<section id="gdpr-registration-form" class="level4">
+<h4 class="anchored" data-anchor-id="gdpr-registration-form">GDPR registration form</h4>
+<p>If you work with personal data, you need to <a href="https://rdm.vu.nl/guides/comply-with-gdpr.html#register-your-processing-activities" target="_blank">register your processing activities</a>. If you don’t need to write a (new) DMP, you can use the <code>VU GDPR registration form for research v1.1</code>. Your faculty’s 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information" target="_blank">Privacy Champion</a> can help you with your registration.</p>
+</section>
+</section>
+</section>
 <section id="rdm-requirements" class="level2">
 <h2 class="anchored" data-anchor-id="rdm-requirements">RDM Requirements</h2>
 <p>If you do research at VU Amsterdam, you may be subject to the requirements for Research Data Management formulated by various parties. Please check which requirements apply to your research project.</p>
@@ -335,20 +543,20 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="data-management-section-in-project-proposal">Data management section in project proposal</h4>
 <p>At a grant application, some funders request a short data section in your project proposal or an outline of a Data Management Plan. Without these your proposal will not be eligible for review.</p>
 <ul>
-<li>NWO: <a href="https://www.nwo.nl/en/policies/open+science/data+management+chapter">Data management section</a></li>
-<li>ZonMw: <a href="https://www.zonmw.nl/en/research-and-results/fair-data-and-data-management/">Orientation of data management in project proposal</a></li>
+<li>NWO: <a href="https://www.nwo.nl/en/policies/open+science/data+management+chapter" target="_blank">Data management section</a></li>
+<li>ZonMw: <a href="https://www.zonmw.nl/en/research-and-results/fair-data-and-data-management/" target="_blank">Orientation of data management in project proposal</a></li>
 </ul>
 </section>
-<section id="data-management-plan" class="level4">
-<h4 class="anchored" data-anchor-id="data-management-plan">Data Management Plan</h4>
-<p>In a Data Management Plan (DMP; see also the section <a href="../topics/data-management-plan.html">Data Management Plan</a>) you explain how you will handle your research data. Check with your funder at what stage a DMP has to be submitted and how it should be composed. VU has a DMP template that has been acknowledged by NWO, ZonMw and ERC. We recommend you to use this VU template. See the <a href="../topics/data-management-plan.html#vu-template">DMP page</a> for more information and instructions on how to select this template in <a href="https://dmponline.vu.nl/?perform_check=false">DMPonline</a>.</p>
-<p>The tool <a href="https://dmponline.vu.nl/">DMPonline</a> can be used to access and fill in a DMP template. You can also write a DMP in collaboration and invite a third party to comment or give feedback on your DMP. You can use the button ‘Request feedback’ to ask for feedback from a data steward. In order to write a DMP, you need to create your own account.</p>
+<section id="data-management-plan-1" class="level4">
+<h4 class="anchored" data-anchor-id="data-management-plan-1">Data Management Plan</h4>
+<p>In a Data Management Plan (DMP; see also the section <a href="../topics/data-management-plan.html">Data Management Plan</a>) you explain how you will handle your research data. Check with your funder at what stage a DMP has to be submitted and how it should be composed. VU has a DMP template that has been acknowledged by NWO, ZonMw and ERC. We recommend you to use this VU template. See the <a href="../topics/data-management-plan.html#vu-template">DMP page</a> for more information and instructions on how to select this template in <a href="https://dmponline.vu.nl/?perform_check=false" target="_blank">DMPonline</a>.</p>
+<p>The tool <a href="https://dmponline.vu.nl/" target="_blank">DMPonline</a> can be used to access and fill in a DMP template. You can also write a DMP in collaboration and invite a third party to comment or give feedback on your DMP. You can use the button ‘Request feedback’ to ask for feedback from a data steward. In order to write a DMP, you need to create your own account.</p>
 </section>
 <section id="overview-of-funders-rdm-requirements-and-dmp-templates" class="level4">
 <h4 class="anchored" data-anchor-id="overview-of-funders-rdm-requirements-and-dmp-templates">Overview of funders’ RDM requirements and DMP templates</h4>
-<p>The Consortium of European Social Science Data Archives (CESSDA) presents a <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/1.-Plan/European-diversity">comprehensive overview of data management requirements and templates</a> of the main Dutch and European funding bodies. This is helpful if you want to quickly find more information. However, make sure you always check the details that you receive in the documentation of your actual funding agency, so that you are aware of all up-to-date requirements.</p>
+<p>The Consortium of European Social Science Data Archives (CESSDA) presents a <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/1.-Plan/European-diversity" target="_blank">comprehensive overview of data management requirements and templates</a> of the main Dutch and European funding bodies. This is helpful if you want to quickly find more information. However, make sure you always check the details that you receive in the documentation of your actual funding agency, so that you are aware of all up-to-date requirements.</p>
 <ul>
-<li>National: <a href="https://www.nwo.nl/beleid/open+science/datamanagement">NWO</a>, <a href="https://www.zonmw.nl/en/research-and-results/fair-data-and-data-management/data-management-in-your-project/">ZonMw</a></li>
+<li>National: <a href="https://www.nwo.nl/beleid/open+science/datamanagement" target="_blank">NWO</a>, <a href="https://www.zonmw.nl/en/research-and-results/fair-data-and-data-management/data-management-in-your-project/" target="_blank">ZonMw</a></li>
 </ul>
 </section>
 <section id="publishing-your-data-and-terms-of-use" class="level4">
@@ -387,11 +595,11 @@ ul.task-list li input[type="checkbox"] {
 <li>technical provisions (e.g.&nbsp;the tasks of each party and the project schedule, description of the <a href="../topics/data-collection.html#data-collection-in-collaboration">data collection responsibilities</a>);</li>
 <li>financial provisions (e.g.&nbsp;the distribution of funds among participants, the financial plan, etc).</li>
 </ul>
-<p>The agreement can include a section on who is ultimately responsible for the data and whether the data will be shared afterwards or whether certain restrictions on re-use apply. These restrictions can also be related to copyright issues or pending patent requests. <a href="https://www.ixa.nl/for-researchers/legal-affairs/">IXA</a> can help you to draw up a consortium agreement. The <a href="mailto:rdm@vu.nl">RDM Support Desk</a> at the University Library can also help with questions about legal matters.</p>
-<p>If you are working with personal data, GDPR requires that all parties working with the data sign a joint controller agreement. You can ask your 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> for advice about this. For multi-centre clinical research, a <a href="https://english.ccmo.nl/investigators/standard-research-file-for-research-subject-to-the-dutch-wmo-act/k-other-documents/k3-clinical-trial-agreements">Clinical Trial Agreement</a> is recommended.</p>
+<p>The agreement can include a section on who is ultimately responsible for the data and whether the data will be shared afterwards or whether certain restrictions on re-use apply. These restrictions can also be related to copyright issues or pending patent requests. <a href="https://www.ixa.nl/for-researchers/legal-affairs/" target="_blank">IXA</a> can help you to draw up a consortium agreement. The <a href="mailto:rdm@vu.nl">RDM Support Desk</a> at the University Library can also help with questions about legal matters.</p>
+<p>If you are working with personal data, GDPR requires that all parties working with the data sign a joint controller agreement. You can ask your 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information" target="_blank">Privacy Champion</a> for advice about this. For multi-centre clinical research, a <a href="https://english.ccmo.nl/investigators/standard-research-file-for-research-subject-to-the-dutch-wmo-act/k-other-documents/k3-clinical-trial-agreements" target="_blank">Clinical Trial Agreement</a> is recommended.</p>
 <p>For projects funded by the European Union, several sources are available:</p>
 <ul>
-<li>For Horizon 2020 projects a document is available, called “<a href="https://ec.europa.eu/research/participants/data/ref/h2020/other/gm/h2020-guide-cons-a_en.pdf">Guidance How to draw up your consortium agreement</a>”.</li>
+<li>For Horizon 2020 projects a document is available, called “<a href="https://ec.europa.eu/research/participants/data/ref/h2020/other/gm/h2020-guide-cons-a_en.pdf" target="_blank">Guidance How to draw up your consortium agreement</a>”.</li>
 </ul>
 </section>
 <section id="data-security" class="level2">
@@ -433,7 +641,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="data-classification-tool-for-researchers" class="level4">
 <h4 class="anchored" data-anchor-id="data-classification-tool-for-researchers">Data Classification tool for researchers</h4>
-<p>To help you to determine the data classification for your research data assets, VU Amsterdam has developed <a href="https://vu.nl/en/research/dataclassification"><strong>a tool</strong></a> that will help you to assess and classify the availability, integrity and confidentiality risks of these assets. Based on your results from using the tool, you may need to seek further advice from VU Security and Privacy Experts (see below). Some <a href="https://fgbto3-web.labs.vu.nl/rdm/staging/Security/SecurityBasics.html">basic security tips</a> were compiled by the data steward of the Faculty of Behavioural and Movement Sciences.</p>
+<p>To help you to determine the data classification for your research data assets, VU Amsterdam has developed <a href="https://vu.nl/en/research/dataclassification" target="_blank"><strong>a tool</strong></a> that will help you to assess and classify the availability, integrity and confidentiality risks of these assets. Based on your results from using the tool, you may need to seek further advice from VU Security and Privacy Experts (see below). Some <a href="https://fgbto3-web.labs.vu.nl/rdm/staging/Security/SecurityBasics.html" target="_blank">basic security tips</a> were compiled by the data steward of the Faculty of Behavioural and Movement Sciences.</p>
 </section>
 <section id="vu-security-and-privacy-experts" class="level4">
 <h4 class="anchored" data-anchor-id="vu-security-and-privacy-experts">VU Security and Privacy experts</h4>
@@ -456,70 +664,12 @@ ul.task-list li input[type="checkbox"] {
 <li>how to deal with sensitive information</li>
 <li>whether informed consent is required and how the forms will be accessed and stored</li>
 </ul>
-<p>On the 🔒 <a href="https://vu.nl/en/employee/emergencies/data-leaks-and-other-incidents">VU Intranet</a> information is available on Security, data loss and reporting incidents. Legal experts also can help you if you have questions about working with personal data and/or if you have to perform a <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/dpia.html#dpia">Data Protection Impact Assessment</a>. On VU Amsterdam website you can find more information about 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/working-with-personal-data">DPIAs at VU Amsterdam</a>. The data steward for the Faculty of Behavioural and Movement Sciences has also created a guide about <a href="https://fgb-rdm.nl/Security/Encryption.html">data encryption</a>.</p>
+<p>On the 🔒 <a href="https://vu.nl/en/employee/emergencies/data-leaks-and-other-incidents" target="_blank">VU Intranet</a> information is available on Security, data loss and reporting incidents. Legal experts also can help you if you have questions about working with personal data and/or if you have to perform a <a href="https://utrechtuniversity.github.io/dataprivacyhandbook/dpia.html#dpia" target="_blank">Data Protection Impact Assessment</a>. On VU Amsterdam website you can find more information about 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/working-with-personal-data" target="_blank">DPIAs at VU Amsterdam</a>. The data steward for the Faculty of Behavioural and Movement Sciences has also created a guide about <a href="https://fgb-rdm.nl/Security/Encryption.html" target="_blank">data encryption</a>.</p>
 </section>
 </section>
 <section id="gdpr-privacy" class="level2">
 <h2 class="anchored" data-anchor-id="gdpr-privacy">GDPR &amp; Privacy</h2>
-<section id="definitions" class="level3">
-<h3 class="anchored" data-anchor-id="definitions">Definitions</h3>
-<ul>
-<li><strong>Personal data</strong> refers to any information relating to an identified or identifiable natural person (‘data subject’). See also the <a href="https://www.privacy-regulation.eu/en/4.htm">definition of ’personal data</a>’ according to the official text of the GDPR.</li>
-<li><strong>Data processing</strong> refers to any action performed on data, such as collecting, storing, modifying, distributing, deleting data. See also the <a href="https://www.privacy-regulation.eu/en/4.htm">definition of ‘processing’</a> according the official text of the GDPR.</li>
-<li><strong>Direct and indirect identification</strong>: Some identifiers enable you to single out an indiviual directly, such as name, address, IP-address etc. Individuals can also be identifed indirectly through:
-<ul>
-<li>a combination of information that uniquely singles out an individual (e.g.&nbsp;a male with breast cancer in a breast cancer registry, a pregnant individual over 50 etc.), this includes information in one record and information across different data files or datasets</li>
-<li>unique information or patterns that are specific to an individual (e.g.&nbsp;genomic data, a very specific occupation, such as the president of a large company, repeated physical measurements or movement patterns that create a unique profile of an individual or measurements that are extreme and could be linked to subjects such as high-level athletes)</li>
-<li>data that are linked to directly identifying information through a random identification code or number</li>
-</ul></li>
-<li><strong>Pseudonymous data</strong>: Data that are indirectly identifiable are generally considered to be pseudonymous; this means that they are NOT anonymous and still qualify as personal data. Therefore privacy laws, such as the GDPR, do in fact apply to these data. This is for example the case when direct identifiers are removed from the research data and put into a key file (or what is usually called a subject identification log in medical research) with which the direct identifiers can be mapped to the research data through unique codes, so that reidentification is possible. These data are therefore pseudonymous, and not anonymous. The LCRDM has made a <a href="https://lcrdm.nl/wp-content/uploads/2023/03/Anonymization-reference-card-for-researchers.pdf">reference card</a> that illustrates the difference between pseudonymous and anonymous data.</li>
-</ul>
-</section>
-<section id="background-information" class="level3">
-<h3 class="anchored" data-anchor-id="background-information">Background information</h3>
-<section id="privacy-in-research---privacy-five-step-plan" class="level4">
-<h4 class="anchored" data-anchor-id="privacy-in-research---privacy-five-step-plan">Privacy in research - Privacy five-step plan</h4>
-<p>Where research requires the collection of personal data, the researcher has to follow the <a href="https://vu.nl/en/employee/privacy-and-information-security/working-with-personal-data">Privacy five-step plan</a> to make sure to carry out the research in line with the GDPR.</p>
-</section>
-<section id="vsnu-code-of-conduct-for-using-personal-data-in-research" class="level4">
-<h4 class="anchored" data-anchor-id="vsnu-code-of-conduct-for-using-personal-data-in-research">VSNU Code of Conduct for using personal data in research</h4>
-<p>The VSNU’s Code of Conduct for Research Integrity (<a href="https://www.nwo.nl/sites/nwo/files/documents/Nederlandse%2Bgedragscode%2Bwetenschappelijke%2Bintegriteit_2018_NL.pdf">Dutch</a>, <a href="https://www.nwo.nl/sites/nwo/files/documents/Netherlands%2BCode%2Bof%2BConduct%2Bfor%2BResearch%2BIntegrity_2018_UK.pdf">English</a>, 2018) includes a reference to the GDPR and its Dutch implementation law UAVG. An updated Code of Conduct for Using Personal Data in Research which complies with GDPR is still work in progress.</p>
-</section>
-</section>
-<section id="support-within-your-faculty-privacy-champions" class="level3">
-<h3 class="anchored" data-anchor-id="support-within-your-faculty-privacy-champions">Support within your faculty: Privacy Champions</h3>
-<p>Each faculty has one or more Privacy Champions, who are the first point of contact for questions relating to privacy and the GDPR. The Privacy Champions can help you with completing a Data Protection Impact Assessment, registering your research in the record of processing activities, designing informed consent forms and other questions relating to the GDPR. The 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">list of Privacy Champions</a> can be found on VU’s website. It is important that you make an overview of what data you are collecting. Your privacy champion can help you with this.</p>
-<p>An important issue in informed consent forms, is the possible future (re-)use of the data. The Privacy Champion of the Faculty of Behavioural and Movement Sciences prepared a <a href="https://fgb-rdm.nl/legal/ICFChecklist.html">checklist</a> for what to consider when creating an informed consent form. An important issue in informed consent forms, is the possible future (re-)use of the data. You should always ask your 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> for advice when drawing up an informed consent form.</p>
-</section>
-<section id="complete-a-data-protection-impact-assessment-dpia" class="level3">
-<h3 class="anchored" data-anchor-id="complete-a-data-protection-impact-assessment-dpia">Complete a Data Protection Impact Assessment (DPIA)</h3>
-<p>When scientific research includes the processing of personal data, conducting a Data Protection Impact Assessment (DPIA) may be a legal requirement under the GDPR. If it is not a legal requirement, conducting a DPIA is always a helpful exercise to make sure that you address all legal aspects that need to be addressed. It is the best way to GDPR-proof your research.</p>
-<section id="what-is-a-dpia" class="level4">
-<h4 class="anchored" data-anchor-id="what-is-a-dpia">What is a DPIA?</h4>
-<p>A DPIA is an assessment to identify the risks of processing personal data. It consists of a number of questions on the basis of which you determine whether the processing of personal data in your research project is legitimate and which measures should be taken to make sure this processing takes place within the boundaries of the GDPR. A DPIA doesn’t deliver an automatic report at the end, but it rather makes you think about all relevant topics you need to address before starting the processing of personal data. The outcome of a DPIA should be used to determine appropriate measures to mitigate the identified risks, such as data minimisation (not collecting more data than necessary), pseudonymising data, selecting appropriate tools for data storage and data sharing.</p>
-</section>
-<section id="when-is-a-dpia-required" class="level4">
-<h4 class="anchored" data-anchor-id="when-is-a-dpia-required">When is a DPIA required?</h4>
-<p>A DPIA is required when the processing of personal data is likely to result in a “high risk” for the participants of your research project. This is for example most likely the case when scientific research includes the processing of special categories of personal data, such as data concerning health, religious or philosophical beliefs, political opinions or criminal convictions and offences (see <a href="https://doi.org/10.25397/eur.12205019.v1">Privacy in Research - 10 key rules</a> for more information about special categories of personal data).</p>
-<p>There are two DPIA lists which describe situations in which a DPIA is required:</p>
-<ul>
-<li>The Dutch data protection authority (Autoriteit Persoonsgegevens) has published a <a href="https://www.autoriteitpersoonsgegevens.nl/nl/zelf-doen/data-protection-impact-assessment-dpia#voor-welke-soorten-verwerkingen-is-het-uitvoeren-van-een-dpia-verplicht-6667">list of 17 “high risk” situations</a> in which a DPIA is mandatory.</li>
-<li>The European data protection authorities have together published a <a href="https://www.autoriteitpersoonsgegevens.nl/nl/zelf-doen/data-protection-impact-assessment-dpia#wat-zijn-de-criteria-van-de-europese-privacytoezichthouders-6668">list of 9 criteria</a> which can be used to determine whether there is a “high risk”.</li>
-</ul>
-<p>You should consult your 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> to determine whether a PreDPIA is required in your situation.</p>
-</section>
-<section id="how-can-i-complete-a-dpia" class="level4">
-<h4 class="anchored" data-anchor-id="how-can-i-complete-a-dpia">How can I complete a DPIA?</h4>
-<p>VU Amsterdam has a DPIA template based on a form provided by the Dutch Government (see the <a href="https://www.rijksoverheid.nl/documenten/rapporten/2017/09/29/model-gegevensbeschermingseffectbeoordeling-rijksdienst-pia">original template</a> if you wish to have more background information, only available in Dutch).</p>
-<p>You should request the template from your 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a>.</p>
-<p>Please complete a DPIA at least before you start collecting personal data. In some cases, it might be useful to have a look at the DPIA template at the stage of writing a research proposal.</p>
-<p>If you are not sure whether it is required to conduct a DPIA or if you need help completing a DPIA, please contact your faculty’s 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a>. If needed they can contact the legal specialists of Institutional and Legal Affairs.</p>
-</section>
-</section>
-<section id="data-breach-incident-report" class="level3">
-<h3 class="anchored" data-anchor-id="data-breach-incident-report">Data breach incident report</h3>
-<p>From 2016 onwards, any data security breaches (particularly those that have, or are likely to have, serious adverse consequences to the protection of personal data) should be&nbsp;reported immediately to the <a href="mailto:servicedesk.it@vu.nl">IT Servicedesk</a>. Read the 🔒 <a href="https://vu.nl/en/employee/emergencies/data-leaks-and-other-incidents">protocol reporting a data breach</a>.</p>
-</section>
+<p>If you work with personal data in your research, you have to comply with the General Data Protection Regulation (GDPR). This will have implications for how you prepare your research. Please see the <a href="../topics/gdpr.html">GDPR topic</a> for more information about this legislation and the guide <a href="../guides/comply-with-gdpr.html">How can you comply with the GDPR?</a> for step-wise instructions to set up your research in a GDPR-compliant manner.</p>
 </section>
 <section id="policies-regulations" class="level2">
 <h2 class="anchored" data-anchor-id="policies-regulations">Policies &amp; Regulations</h2>
@@ -535,39 +685,45 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><a href="../public/policies-regulations/ACTA-RDM-policy-2020.pdf">ACTA RDM policy</a>, Academisch Centrum Tandheelkunde Amsterdam (2020, in Dutch)</li>
 <li><a href="../public/policies-regulations/BETA-RDM-policy-2022.pdf">Beta RDM policy</a>, Faculty of Science (2022)</li>
-<li><a href="https://fgb-rdm.nl/Policies/FGB_RDM_Policy.html">FGB RDM policy</a>, Faculty of Behavioural and Movement Sciences (2023)</li>
-<li><a href="../public/policies-regulations/FGW-RDM-policy-2023.pdf">FGW RDM policy</a> , Faculty of Humanities (2023)</li>
-<li><a href="../public/policies-regulations/FRT-RDM-policy-2024.pdf">FRT RDM policy</a>, Faculty of Religion and Theology (2024)</li>
-<li>🔒 <a href="https://vu.nl/en/employee/social-sciences-getting-started/fss-guidelines-for-data-management">FSW RDM policy</a>, Faculty of Social Sciences (2023)</li>
+<li><a href="https://fgb-rdm.nl/Policies/FGB_RDM_Policy.html" target="_blank">FGB RDM policy</a>, Faculty of Behavioural and Movement Sciences (2023)</li>
+<li>Faculty of Social Sciences and Humanities (FSG):
+<ul>
+<li><a href="../public/policies-regulations/FGW-RDM-policy-2023.pdf">School of Humanities RDM policy</a> , Faculty of Humanities (2023)</li>
+<li><a href="../public/policies-regulations/FRT-RDM-policy-2024.pdf">School of Religion and Theology RDM policy</a>, Faculty of Religion and Theology (2024)</li>
+<li><a href="https://vu.nl/en/employee/social-sciences-getting-started/ssc-guidelines-for-data-management" target="_blank">School of Social Sciences RDM policy</a>, Faculty of Social Sciences (2023)</li>
+</ul></li>
 <li><a href="../public/policies-regulations/RCH-RDM-policy-2021.pdf">RCH RDM policy</a>, Faculty of Law (2021)</li>
 <li><a href="../public/policies-regulations/SBE-RDM-policy-2023.pdf">SBE RDM policy</a>, School of Business and Economics (2023)</li>
 </ul>
-<p>For RDM policies and guidelines at Amsterdam UMC, location VUmc, please get in touch with <a href="https://www.amsterdamumc.org/en/research/support/services-facilities/data-management/contact.htm">Research Data Management Support</a> at Amsterdam UMC.</p>
+<p>For RDM policies and guidelines at Amsterdam UMC, location VUmc, please get in touch with <a href="https://www.amsterdamumc.org/en/research/support/services-facilities/data-management/contact.htm" target="_blank">Research Data Management Support</a> at Amsterdam UMC.</p>
 <p>If you have questions about the VU-central Research Data and Software Management Policy, please contact the <a href="mailto:rdm@vu.nl">RDM Support Desk</a>.</p>
 </section>
 <section id="domain-specific-guidelines-and-protocols" class="level4">
 <h4 class="anchored" data-anchor-id="domain-specific-guidelines-and-protocols">Domain-specific guidelines and protocols</h4>
 <p>Some faculties and departments have their own guidelines for RDM. You can find an overview of such guidelines below.</p>
 <ul>
-<li><a href="https://aph-qualityhandbook.org/">Amsterdam Public Health Quality Handbook</a></li>
-<li>FGB: <a href="https://nethics.nl/gedragscode-ethical-code">Code of Ethics for Research in the Social and Behavioural Sciences Involving Human Participants</a></li>
+<li><a href="https://aph-qualityhandbook.org/" target="_blank">Amsterdam Public Health Quality Handbook</a></li>
+<li>FGB: <a href="https://nethics.nl/gedragscode-ethical-code" target="_blank">Code of Ethics for Research in the Social and Behavioural Sciences Involving Human Participants</a></li>
 </ul>
 </section>
 </section>
 <section id="ethical-review" class="level3">
 <h3 class="anchored" data-anchor-id="ethical-review">Ethical Review</h3>
-<p>In cases where research involves human or animal participants, a research proposal may need to be reviewed by an ethics committee. VU Amsterdam and Amsterdam UMC (location VUmc), have several ethics committees, which are listed below. Please note that researchers at VU Amsterdam also have to go to the METc at VUmc if their research is <a href="https://english.ccmo.nl/investigators/legal-framework-for-medical-scientific-research/your-research-is-it-subject-to-the-wmo-or-not">subject to the WMO</a>, which is not restricted to research at VUmc.</p>
+<p>In cases where research involves human or animal participants, a research proposal may need to be reviewed by an ethics committee. VU Amsterdam and Amsterdam UMC (location VUmc), have several ethics committees, which are listed below. Please note that researchers at VU Amsterdam also have to go to the METc at VUmc if their research is <a href="https://english.ccmo.nl/investigators/legal-framework-for-medical-scientific-research/your-research-is-it-subject-to-the-wmo-or-not" target="_blank">subject to the WMO</a>, which is not restricted to research at VUmc.</p>
 <section id="ethics-committees" class="level5">
 <h5 class="anchored" data-anchor-id="ethics-committees">Ethics committees</h5>
 <ul>
-<li>ACTA: <a href="https://acta.nl/en/research/more-about/ethics-review-board">ACTA Ethics Review Board</a> (ETC)</li>
-<li>Beta: <a href="https://vu.nl/en/about-vu/faculties/faculty-of-science/more-about/research-ethics-review-committee-beta">Research ethics review committee Faculty of Science</a> (BETHCIE)</li>
-<li>FGB: 🔒 <a href="https://vu.nl/en/employee/behavioural-and-movement-sciences-getting-started/the-scientific-and-ethical-review-board-vcwe">Scientific and Ethical Review Board</a> (VCWE)</li>
-<li>FGW: <a href="https://vu.nl/en/about-vu/faculties/faculty-of-humanities/more-about/research-ethics-and-integrity">Ethische Toetsingscommissie Onderzoek</a> (EtCO)</li>
-<li>FSW: 🔒 <a href="https://vu.nl/en/employee/social-sciences-getting-started/research-ethics-review-fss">Research Ethics Review Committee</a> (RERC)</li>
-<li>RCH (Faculty of Law): <a href="https://vu.nl/en/employee/law-getting-started/ethics-committee">Ethics Committee</a></li>
-<li>SBE: <a href="https://vu.nl/en/about-vu/faculties/school-of-business-and-economics/more-about/research-office">Ethical Review Board</a> (ERB)</li>
-<li>VUmc (Amsterdam UMC): <a href="https://metc.amsterdamumc.org/">Medical Ethical Review Committee</a> (METc)</li>
+<li>ACTA: <a href="https://acta.nl/en/research/more-about/ethics-review-board" target="_blank">ACTA Ethics Review Board</a> (ETC), Academisch Centrum Tandheelkunde Amsterdam</li>
+<li>Beta: <a href="https://vu.nl/en/about-vu/faculties/faculty-of-science/more-about/research-ethics-review-committee-beta" target="_blank">Research ethics review committee Faculty of Science</a> (BETHCIE), Faculty of Science</li>
+<li>FGB: 🔒 <a href="https://vu.nl/en/employee/behavioural-and-movement-sciences-getting-started/the-scientific-and-ethical-review-board-vcwe" target="_blank">Scientific and Ethical Review Board</a> (VCWE), Faculty of Behavioural and Movement Sciences</li>
+<li>FSG, Faculty of Social Sciences and Humanities:
+<ul>
+<li>SGW: <a href="https://vu.nl/en/about-vu/faculties/school-of-humanities/more-about/research-ethics-review-committee-and-research-integrity" target="_blank">Ethische Toetsingscommissie Onderzoek</a> (EtCO), School of Humanities</li>
+<li>SSW: 🔒 <a href="https://vu.nl/en/employee/social-sciences-getting-started/research-ethics-review-ssc" target="_blank">Research Ethics Review Committee</a> (RERC), School of Social Sciences</li>
+</ul></li>
+<li>RCH: <a href="https://vu.nl/en/employee/law-getting-started/ethics-committee" target="_blank">Ethics Committee</a>, Faculty of Law</li>
+<li>SBE: <a href="https://vu.nl/en/about-vu/faculties/school-of-business-and-economics/more-about/research-office" target="_blank">Ethical Review Board</a> (ERB), School of Business and Economics</li>
+<li>VUmc (Amsterdam UMC): <a href="https://metc.amsterdamumc.org/" target="_blank">Medical Ethical Review Committee</a> (METc)</li>
 </ul>
 </section>
 </section>
@@ -575,7 +731,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="academic-integrity">Academic Integrity</h3>
 <section id="netherlands-code-of-conduct-for-research-integrity" class="level5">
 <h5 class="anchored" data-anchor-id="netherlands-code-of-conduct-for-research-integrity">Netherlands Code of Conduct for Research Integrity</h5>
-<p>Dutch scientists are required to comply with the <a href="https://www.universiteitenvannederland.nl/en/research-integrity">Netherlands Code of Conduct for Research Integrity</a> (VSNU, 2018). The principles of proper scientific and scholarly research, according to the Code of Conduct are:</p>
+<p>Dutch scientists are required to comply with the <a href="https://www.universiteitenvannederland.nl/en/research-integrity" target="_blank">Netherlands Code of Conduct for Research Integrity</a> (VSNU, 2018). The principles of proper scientific and scholarly research, according to the Code of Conduct are:</p>
 <ul>
 <li>Honesty</li>
 <li>Scrupulousness</li>
@@ -604,26 +760,26 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="academic-integrity-at-vu-amsterdam" class="level5">
 <h5 class="anchored" data-anchor-id="academic-integrity-at-vu-amsterdam">Academic integrity at VU Amsterdam</h5>
-<p>To protect academic integrity at VU Amsterdam and Amsterdam UMC (location VUmc) subscribe to the <a href="https://www.universiteitenvannederland.nl/en/research-integrity">Netherlands Code of Conduct for Research Integrity</a>. On the <a href="https://vu.nl/en/about-vu/more-about/academic-integrity">Academic Integrity page</a> on the VU website, you can find more information about how these organisations implement the duties of care for institutions to uphold the principles of academic integrity.</p>
+<p>To protect academic integrity at VU Amsterdam and Amsterdam UMC (location VUmc) subscribe to the <a href="https://www.universiteitenvannederland.nl/en/research-integrity" target="_blank">Netherlands Code of Conduct for Research Integrity</a>. On the <a href="https://vu.nl/en/about-vu/more-about/academic-integrity" target="_blank">Academic Integrity page</a> on the VU website, you can find more information about how these organisations implement the duties of care for institutions to uphold the principles of academic integrity.</p>
 <section id="confidential-counsellors" class="level6">
 <h6 class="anchored" data-anchor-id="confidential-counsellors">Confidential counsellors</h6>
-<p>VU Amsterdam has a number of <a href="https://vu.nl/en/about-vu/more-about/academic-integrity">confidential counsellors</a>&nbsp;who handle&nbsp;academic integrity issues.</p>
+<p>VU Amsterdam has a number of <a href="https://vu.nl/en/about-vu/more-about/academic-integrity" target="_blank">confidential counsellors</a>&nbsp;who handle&nbsp;academic integrity issues.</p>
 </section>
 <section id="academic-integrity-complaints-procedure" class="level6">
 <h6 class="anchored" data-anchor-id="academic-integrity-complaints-procedure">Academic integrity complaints procedure</h6>
-<p>VU Amsterdam and Amsterdam UMC, location VUmc employ a joint policy for the handling <a href="https://vu.nl/en/about-vu/more-about/academic-integrity">academic integrity complaints</a>. This&nbsp;<a href="https://assets-us-01.kc-usercontent.com/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/facfccb1-2b51-4f42-b32c-8bebfb29b89f/Academic%20Integrity%20Complaints%20Procedure%20Vrije%20Universiteit%20Amsterdam%20April%202022.pdf">policy</a>&nbsp;outlines the steps to be taken in the event of a complaint, the officers who play a role in this procedure, and what should be expected once a complaint has been lodged.</p>
+<p>VU Amsterdam and Amsterdam UMC, location VUmc employ a joint policy for the handling <a href="https://vu.nl/en/about-vu/more-about/academic-integrity" target="_blank">academic integrity complaints</a>. This&nbsp;<a href="https://assets-us-01.kc-usercontent.com/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/facfccb1-2b51-4f42-b32c-8bebfb29b89f/Academic%20Integrity%20Complaints%20Procedure%20Vrije%20Universiteit%20Amsterdam%20April%202022.pdf" target="_blank">policy</a>&nbsp;outlines the steps to be taken in the event of a complaint, the officers who play a role in this procedure, and what should be expected once a complaint has been lodged.</p>
 </section>
 </section>
 <section id="rios-center-for-research-integrity-and-open-science" class="level5">
 <h5 class="anchored" data-anchor-id="rios-center-for-research-integrity-and-open-science">RIOS: Center for Research Integrity and Open Science</h5>
-<p><a href="https://rios-vu.nl/">RIOS</a> connects initiatives related to research integrity, research ethics, responsible research and innovation, open science, and research culture at VU Amsterdam and Amsterdam UMC. The mission of RIOS is to strengthen the position of VU Amsterdam and Amsterdam UMC regarding research integrity and open science.</p>
+<p><a href="https://rios-vu.nl/" target="_blank">RIOS</a> connects initiatives related to research integrity, research ethics, responsible research and innovation, open science, and research culture at VU Amsterdam and Amsterdam UMC. The mission of RIOS is to strengthen the position of VU Amsterdam and Amsterdam UMC regarding research integrity and open science.</p>
 </section>
 </section>
 <section id="nwo-data-policy" class="level3">
 <h3 class="anchored" data-anchor-id="nwo-data-policy">NWO Data Policy</h3>
-<p>NWO aims to ensure that all the research it funds is openly accessible to everyone as part of it’s <a href="https://www.nwo.nl/en/open-science">Open Science policy</a>. Researchers are therefore expected to preserve the data resulting from their projects for at least ten years, unless legal provisions or discipline-specific guidelines dictate otherwise. As much as possible, research data should be made publicly available for re-use. As a minimum, NWO requires that the data underpinning research papers should be made available to other researchers at the time of the article’s publication, unless there are valid reasons not to do so.</p>
+<p>NWO aims to ensure that all the research it funds is openly accessible to everyone as part of it’s <a href="https://www.nwo.nl/en/open-science" target="_blank">Open Science policy</a>. Researchers are therefore expected to preserve the data resulting from their projects for at least ten years, unless legal provisions or discipline-specific guidelines dictate otherwise. As much as possible, research data should be made publicly available for re-use. As a minimum, NWO requires that the data underpinning research papers should be made available to other researchers at the time of the article’s publication, unless there are valid reasons not to do so.</p>
 <p>The guiding principle here is ‘as open as possible, as closed as necessary.’ Due consideration is given to aspects such as privacy, public security, ethical limitations, property rights and commercial interests. In relation to research data, NWO recognizes that software (algorithms, scripts and code developed by researchers in the course of their work) may be necessary to access and interpret data. In such cases, the data management plan will be expected to address how information about such items will be made available alongside the data.</p>
-<p>More information on Data Management is also available on the <a href="https://www.nwo.nl/en/research-data-management">NWO website</a> where a NWO Data Management Template is made available. The <a href="../topics/data-management-plan.html#vu-template">VU Data Management template in DMP Online</a> is certified by both NWO and ZonMW and can also be used by VU researchers for projects funded by both organizations.</p>
+<p>More information on Data Management is also available on the <a href="https://www.nwo.nl/en/research-data-management" target="_blank">NWO website</a> where a NWO Data Management Template is made available. The <a href="../topics/data-management-plan.html#vu-template">VU Data Management template in DMP Online</a> is certified by both NWO and ZonMW and can also be used by VU researchers for projects funded by both organisations.</p>
 
 
 </section>
@@ -1047,6 +1203,11 @@ ul.task-list li input[type="checkbox"] {
     <li class="nav-item">
     <a class="nav-link" href="../about.html">
 <p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../technical-details.html">
+<p>Technical details</p>
 </a>
   </li>  
     <li class="nav-item">

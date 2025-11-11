@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Documentation – VU CS Department RDM and Open Science Handbook</title>
+<title>Data Documentation – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-54359ed09ef3d2c7175c510e59da82ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e69c8a892bfebd52223cfedbd795a344.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -101,14 +101,38 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../topics.html#category=Policies and Legislation">
+ <span class="dropdown-text">Policies and Legislation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Research Data">
+ <span class="dropdown-text">Research Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Research Software">
+ <span class="dropdown-text">Research Software</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Responsible Scholarship">
+ <span class="dropdown-text">Responsible Scholarship</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Trainings and Knowledge Items">
+ <span class="dropdown-text">Trainings and Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../manuals.html"> 
+<span class="menu-text">Manuals</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../RDM-guidelines.html"> 
@@ -158,7 +182,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Data Documentation</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Research Data</div>
+  </div>
+  </div>
 
 
 
@@ -182,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="#unstructured-metadata">Guidelines for unstructured metadata</a>: mostly research domain-specific guidelines on how to create READMEs or Codebooks to describe data.</li>
 <li><a href="../topics/metadata.html">Standards for structured metadata</a>: generic or research domain-specific standards to describe data.</li>
 </ol>
-<p>The CESSDA has made very detailed guidance available for creating <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata">documentation and metadata</a> for your data.</p>
+<p>The CESSDA has made very detailed guidance available for creating <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata" target="_blank">documentation and metadata</a> for your data.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../public/data_documentation.png" class="img-fluid figure-img"></p>
@@ -202,9 +229,9 @@ ul.task-list li input[type="checkbox"] {
 <p>A README file provides information about data and is intended to ensure that data can be correctly interpreted, by yourself or by others. A README file is required whenever you are archiving or publishing data.</p>
 <p>Example of READMEs</p>
 <ul>
-<li><a href="https://data.4tu.nl/s/documents/Guidelines_for_creating_a_README_file.pdf">Guidelines for creating a README file – 4TU.ResearchData</a></li>
-<li><a href="https://data.research.cornell.edu/data-management/sharing/readme/">Guide to writing “readme”-style metatada - Cornell Data Services</a></li>
-<li><a href="https://fgb-rdm.nl/rdm/archiving/ArchivingGuidelinesFull.html#subsection9">Guidelines for researchers of VU Amsterdam Faculty of Behavioural and Movement Sciences on what a README file should contain</a></li>
+<li><a href="https://data.4tu.nl/s/documents/Guidelines_for_creating_a_README_file.pdf" target="_blank">Guidelines for creating a README file – 4TU.ResearchData</a></li>
+<li><a href="https://data.research.cornell.edu/data-management/sharing/readme/" target="_blank">Guide to writing “readme”-style metatada - Cornell Data Services</a></li>
+<li><a href="https://fgb-rdm.nl/rdm/archiving/ArchivingGuidelinesFull.html#subsection9" target="_blank">Guidelines for researchers of VU Amsterdam Faculty of Behavioural and Movement Sciences on what a README file should contain</a></li>
 </ul>
 </section>
 <section id="codebook" class="level3">
@@ -212,10 +239,10 @@ ul.task-list li input[type="checkbox"] {
 <p>A Codebook is another way to describe the contents, structure and layout of the data. A well documented codebook is intended to be complete and self-explanatory and contains information about each variable in a data file. A codebook must be submitted along with the data.</p>
 <p>There are several guides for creating a codebook available:</p>
 <ul>
-<li><a href="https://libguides.library.kent.edu/SPSS/Codebooks">Creating a codebook - Kent State University</a></li>
-<li><a href="https://fgb-rdm.nl/rdm/documentation/Codebooks.html">Creating a codebook - for researchers at VU Amsterdam Faculty for Behavioural and Movement Sciences</a></li>
-<li><a href="https://aph-qualityhandbook.org/set-up-conduct/methods-data-collection/2-2-quantitative-research/2-2-1-preparation/codebook/">Codebook - Amsterdam Public Health</a></li>
-<li><a href="https://ddialliance.org/ddi-codebook">DDI-Codebook - Data Documentation Initiative Alliance</a></li>
+<li><a href="https://libguides.library.kent.edu/SPSS/Codebooks" target="_blank">Creating a codebook - Kent State University</a></li>
+<li><a href="https://fgb-rdm.nl/rdm/documentation/Codebooks.html" target="_blank">Creating a codebook - for researchers at VU Amsterdam Faculty for Behavioural and Movement Sciences</a></li>
+<li><a href="https://aph-qualityhandbook.org/set-up-conduct/methods-data-collection/2-2-quantitative-research/2-2-1-preparation/codebook/" target="_blank">Codebook - Amsterdam Public Health</a></li>
+<li><a href="https://ddialliance.org/ddi-codebook" target="_blank">DDI-Codebook - Data Documentation Initiative Alliance</a></li>
 </ul>
 
 
@@ -640,6 +667,11 @@ ul.task-list li input[type="checkbox"] {
     <li class="nav-item">
     <a class="nav-link" href="../about.html">
 <p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../technical-details.html">
+<p>Technical details</p>
 </a>
   </li>  
     <li class="nav-item">

@@ -5,7 +5,7 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>{{&lt; var title &gt;}}</title>
+<title>Research Support Handbook</title>
 <link>https://rdm-os-cs-vu.github.io/open-handbook/news.html</link>
 <atom:link href="https://rdm-os-cs-vu.github.io/open-handbook/news.xml" rel="self" type="application/rss+xml"/>
 <description>A place for all things open research at VU Amsterdam.</description>
@@ -21,7 +21,7 @@
 
 <p>Through the OSCAWARDS, open science in Amsterdam is highlighted. All groups and projects with open science related aspects or challenges can be nominated for the awards.</p>
 <p>A project by Shuai Wang, Ronald Siebes, Jacco van Ossenbruggen, Tobias Kuhn, a bachelor student Navroop K Singh, together with colleagues from the Open Science team in the university library won the Open Science Community Amsterdam Awards (OSCA). They received a grant of 400 euros. In the project, they studied the use of FAIR Implementation Profiles for making suggestions while researchers write their Data Management Plans.</p>
-<p>The paper has been accepted for publication at the MTSR conference. A preprint is available <a href="https://shuai.ai/static/files/paper/mtsr-fip2dmp.pdf">here</a>.</p>
+<p>The paper has been accepted for publication at the MTSR conference. A preprint is available <a href="https://shuai.ai/static/files/paper/mtsr-fip2dmp.pdf" target="_blank">here</a>.</p>
 
 
 
