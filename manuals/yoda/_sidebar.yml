@@ -6,13 +6,13 @@ website:
       contents:
         - manuals/yoda/index.qmd
         - section: Yoda Portal
-          contents: 
+          contents:
+            - manuals/yoda/yoda_portal/index.qmd
             - manuals/yoda/yoda_portal/introduction.qmd
             - manuals/yoda/yoda_portal/notifications.qmd
             - manuals/yoda/yoda_portal/sram_invitations_eduid_activation.qmd
             - manuals/yoda/yoda_portal/logging_in.qmd
             - manuals/yoda/yoda_portal/group_manager.qmd
-            - manuals/yoda/yoda_portal/index.qmd
         - section: Using Yoda
           contents:
             - manuals/yoda/using_yoda/finding_restoring.qmd
@@ -20,6 +20,7 @@ website:
             - manuals/yoda/using_yoda/workflow_metadata.qmd
             - manuals/yoda/using_yoda/properties_and_explanation.qmd
             - manuals/yoda/using_yoda/workflow_metadata_license.qmd
+            - manuals/yoda/using_yoda/analysing_data.qmd
         - section: Securing and Distributing Data
           contents: 
             - manuals/yoda/securing_distribution/vault_archive.qmd
@@ -34,6 +35,7 @@ website:
             - manuals/yoda/data_access/yoda_using_cyberduck.qmd
             - manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.qmd
             - manuals/yoda/data_access/yoda_using_icommands.qmd
+            - manuals/yoda/data_access/yoda_using_python.qmd
             - manuals/yoda/data_access/yoda_using_rclone.qmd
             - manuals/yoda/data_access/yoda_using_webdrive.qmd
             - manuals/yoda/data_access/yoda_using_windowsexplorer.qmd
