@@ -1,11 +1,9 @@
 ---
 title: "VU Computer Science Data Storage Platforms"
-subtitle: version v0.5, February 11, 2025
+subtitle: version v0.6, February 19, 2026
 authors:
 - name: Kees Verstoep
   email: c.verstoep@vu.nl
-- name: Shuai Wang
-  email: shuai.wang@vu.nl
 format: 
   html: 
     toc: true
@@ -23,8 +21,8 @@ format:
 
 This document is created as a guideline for the selection of storage platform for the research projects
 in the Computer Science department of the Vrije Universiteit Amsterdam.
-This guideline makes concrete suggestions for our department based on the 2020
-university [RDM policy](https://drive.google.com/file/d/1f8wqi_PIsJTCjWooXPlR7V2Hy83XG-u2/view?usp=sharing)
+This guideline makes concrete suggestions for our department based on the 2024
+university [RDSM policy](https://rdm.vu.nl/topics/research-data-and-software-management-policy.html)
 and information provided by the UBVU (University Library) RDM team and VU/IT department.
 The guideline takes into account the current state of several ongoing and recently completed projects
 in our department, based on a department-wide survey held in 2023.
@@ -208,8 +206,8 @@ fragmentation and interoperability problems for projects.
 | SURFdrive                        | – Basically a more limited precursor of             |
 |                                  |   ResearchDrive, so for research purposes consider  |
 |                                  |   using that instead.                               |
-|                                  | - It has been announced to be deprecated and VU/IT  |
-|                                  |   will stop the contract July 1, 2025.              |
+|                                  | - Use of this service has been restricted to only   |
+|                                  |   limited use cases since July 1, 2025.             |
 +----------------------------------+-----------------------------------------------------+
 +----------------------------------+-----------------------------------------------------+
 | Custom solutions                 | – E.g., group/project-specific RAID systems.        |
@@ -449,7 +447,7 @@ also disappear.
 ## SURFdrive
 
 SURFdrive is a personal cloud storage service for the Dutch education and research community, offering staff and researchers a secure and easy way to store, synchronize and share files in the SURF community cloud. Please note that SURFdrive is not available for students. However, it is possible to share files with students and others.
-***Note that SURFdrive will be phased out at the VU before 1 July 2025***
+***Also note that SURFdrive hase been restricted to limited use cases at the VU since 1 July 2025***
 
 +------------------------------------+--------------------------------------------------------+
 | SURFdrive details                  |                                                        |
@@ -462,14 +460,14 @@ SURFdrive is a personal cloud storage service for the Dutch education and resear
 +------------------------------------+--------------------------------------------------------+
 | Location                           | SURFsara (NL)                                          |
 +------------------------------------+--------------------------------------------------------+
-| File recovery                      |  Via versioning or Deleted files                       |
+| File recovery                      | Via versioning or Deleted files                        |
 +------------------------------------+--------------------------------------------------------+
 | Data classification                | Medium                                                 |
 +------------------------------------+--------------------------------------------------------+
 
 ## Custom solutions
 
-If none of the options satisfy your requirements, a custom setup or configuration may be possible. Contact the University RDM Support Desk (rdm@vu.nl) or the department RDM contacts Shuai Wang (shuai.wang@vu.nl) and Kees Verstoep (c.verstoep@vu.nl) to explore the options.
+If none of the options satisfy your requirements, a custom setup or configuration may be possible. Contact the University RDM Support Desk (rdm@vu.nl) or the department RDM contact Kees Verstoep (c.verstoep@vu.nl) to explore the options.
 
 For example, in our department there are currently two additional group-specific data storage options: The CI “rippers” and the LOD (Linked Open Data) server. The CI rippers are being used by researchers in the Computational Intelligence group. The LOD server is mostly used by researchers in the UCDS group and the former KRR group. The server has approximately 20TB of data storage. There are some valuable datasets on it that are not available via other data storage/archiving options. Also, the server provides LOD-specific tools to support a particular research domain.
 
