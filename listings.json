@@ -1,22 +1,13 @@
 [
   {
-    "listing": "/group-guidelines.html",
+    "listing": "/manuals.html",
     "items": [
-      "/group-guidelines/AIB.html",
-      "/group-guidelines/Bioinformatics.html",
-      "/group-guidelines/CI.html",
-      "/group-guidelines/DISE.html",
-      "/group-guidelines/FES.html",
-      "/group-guidelines/HPDC.html",
-      "/group-guidelines/KAI.html",
-      "/group-guidelines/LR.html",
-      "/group-guidelines/MCS.html",
-      "/group-guidelines/QDA.html",
-      "/group-guidelines/SAI.html",
-      "/group-guidelines/S2.html",
-      "/group-guidelines/VUSEC.html",
-      "/group-guidelines/TCS.html",
-      "/group-guidelines/UCDS.html"
+      "/manuals/ada/index.html",
+      "/manuals/ithenticate/index.html",
+      "/manuals/pure/index.html",
+      "/manuals/qualtrics/index.html",
+      "/manuals/scistor/index.html",
+      "/manuals/yoda/index.html"
     ]
   },
   {
@@ -35,6 +26,112 @@
       "/guides/policies-supporting-vision-open-science.html",
       "/guides/data-lifecycle.html",
       "/guides/offboarding.html"
+    ]
+  },
+  {
+    "listing": "/OS-guidelines.html",
+    "items": [
+      "/OS-guidelines/open-science-resources.html"
+    ]
+  },
+  {
+    "listing": "/lifecycle/05-document-preserve.html",
+    "items": [
+      "/topics/data-archiving.html",
+      "/topics/data-documentation.html",
+      "/topics/dataversenl.html",
+      "/topics/fair-principles.html",
+      "/topics/metadata.html",
+      "/topics/persistent-identifier.html",
+      "/topics/software-archiving.html",
+      "/topics/selecting-data.html",
+      "/topics/yoda.html",
+      "/guides/document-and-preserve.html"
+    ]
+  },
+  {
+    "listing": "/lifecycle/06-publish-share.html",
+    "items": [
+      "/topics/data-licensing.html",
+      "/topics/data-publishing.html",
+      "/topics/dataversenl.html",
+      "/topics/fair-principles.html",
+      "/topics/osf.html",
+      "/topics/persistent-identifier.html",
+      "/topics/software-licensing.html",
+      "/topics/software-publishing.html",
+      "/topics/yoda.html",
+      "/manuals/pure/registration/data-registration.html",
+      "/manuals/pure/registration/software-registration.html",
+      "/guides/publish-and-share.html",
+      "/guides/publishing-fair-software.html",
+      "/guides/use-osf.html"
+    ]
+  },
+  {
+    "listing": "/lifecycle/01-discover-initiate.html",
+    "items": [
+      "/topics/finding-existing-data.html",
+      "/guides/discover-and-initiate.html",
+      "/guides/onboarding.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/2025-07-28manuals.html",
+      "/blog/2025-07-24hackathon.html",
+      "/blog/2025-07-29itvoblog.html",
+      "/blog/2025-05-15embed-iframe.html",
+      "/blog/2024-11-28hackathon.html",
+      "/blog/2024-11-01hackathon.html",
+      "/blog/2024-10-22post-mortem.html",
+      "/blog/2024-09-30hackathon.html",
+      "/blog/2024-09-05hackathon.html",
+      "/blog/2024-06-27hackathon.html",
+      "/blog/2024-05-23welcome.html"
+    ]
+  },
+  {
+    "listing": "/manuals/scistor/index.html",
+    "items": [
+      "/manuals/scistor/scistor-connection.html",
+      "/manuals/scistor/snapshots-data-recovery.html"
+    ]
+  },
+  {
+    "listing": "/manuals/ithenticate/index.html",
+    "items": [
+      "/manuals/ithenticate/getting_started/getting_started.html",
+      "/manuals/ithenticate/getting_started/log_in.html",
+      "/manuals/ithenticate/getting_started/key-users.html",
+      "/manuals/ithenticate/getting_started/first_scan.html",
+      "/manuals/ithenticate/getting_started/exporting_results.html",
+      "/manuals/ithenticate/similarity_report/similarity_report.html",
+      "/manuals/ithenticate/similarity_report/similarity_scores.html",
+      "/manuals/ithenticate/advanced_settings/folder_options.html",
+      "/manuals/ithenticate/advanced_settings/url_phrase_exclusion.html",
+      "/manuals/ithenticate/advanced_settings/doc_to_doc_comparison.html",
+      "/manuals/ithenticate/faq/faq.html"
+    ]
+  },
+  {
+    "listing": "/manuals/ada/index.html",
+    "items": [
+      "/manuals/ada/login.html",
+      "/manuals/ada/quick-start.html",
+      "/manuals/ada/software.html",
+      "/manuals/ada/slurm.html",
+      "/manuals/ada/hardware.html",
+      "/manuals/ada/hpc-101.html",
+      "/manuals/ada/open-ondemand.html",
+      "/manuals/ada/yoda.html",
+      "/manuals/ada/help.html",
+      "/manuals/ada/code-examples/Python/1-python-multithreading.html",
+      "/manuals/ada/code-examples/Python/2-python-multiprocessing.html",
+      "/manuals/ada/code-examples/Python/3-python-pytorch.html",
+      "/manuals/ada/code-examples/R/1-R-multiprocessing.html",
+      "/manuals/ada/code-examples/matlab.html"
     ]
   },
   {
@@ -95,63 +192,17 @@
     ]
   },
   {
-    "listing": "/lifecycle/05-document-preserve.html",
+    "listing": "/RDM-guidelines.html",
     "items": [
-      "/topics/data-archiving.html",
-      "/topics/data-documentation.html",
-      "/topics/dataversenl.html",
-      "/topics/fair-principles.html",
-      "/topics/metadata.html",
-      "/topics/persistent-identifier.html",
-      "/topics/software-archiving.html",
-      "/topics/selecting-data.html",
-      "/topics/yoda.html",
-      "/guides/document-and-preserve.html"
+      "/RDM-guidelines/VU-CS-RDM-Storage-Selection.html",
+      "/RDM-guidelines/VU-CS-Survey-policy.html",
+      "/RDM-guidelines/RDM-resources.html"
     ]
   },
   {
-    "listing": "/lifecycle/01-discover-initiate.html",
+    "listing": "/manuals/qualtrics/index.html",
     "items": [
-      "/topics/finding-existing-data.html",
-      "/guides/discover-and-initiate.html",
-      "/guides/onboarding.html"
-    ]
-  },
-  {
-    "listing": "/lifecycle/02-plan-design.html",
-    "items": [
-      "/topics/data-classification.html",
-      "/topics/data-management-plan.html",
-      "/topics/data-management-section.html",
-      "/topics/ethical-review.html",
-      "/topics/gdpr.html",
-      "/topics/research-data-and-software-management-policy.html",
-      "/guides/comply-with-gdpr.html",
-      "/guides/onboarding.html",
-      "/guides/plan-and-design.html"
-    ]
-  },
-  {
-    "listing": "/manuals/ithenticate/index.html",
-    "items": [
-      "/manuals/ithenticate/getting_started/getting_started.html",
-      "/manuals/ithenticate/getting_started/log_in.html",
-      "/manuals/ithenticate/getting_started/key-users.html",
-      "/manuals/ithenticate/getting_started/first_scan.html",
-      "/manuals/ithenticate/getting_started/exporting_results.html",
-      "/manuals/ithenticate/similarity_report/similarity_report.html",
-      "/manuals/ithenticate/similarity_report/similarity_scores.html",
-      "/manuals/ithenticate/advanced_settings/folder_options.html",
-      "/manuals/ithenticate/advanced_settings/url_phrase_exclusion.html",
-      "/manuals/ithenticate/advanced_settings/doc_to_doc_comparison.html",
-      "/manuals/ithenticate/faq/faq.html"
-    ]
-  },
-  {
-    "listing": "/manuals/scistor/index.html",
-    "items": [
-      "/manuals/scistor/scistor-connection.html",
-      "/manuals/scistor/snapshots-data-recovery.html"
+      "/manuals/qualtrics/qualtrics-faq.html"
     ]
   },
   {
@@ -187,53 +238,6 @@
     ]
   },
   {
-    "listing": "/news.html",
-    "items": [
-      "/news/2024-06-04OSCAR.html"
-    ]
-  },
-  {
-    "listing": "/manuals.html",
-    "items": [
-      "/manuals/ada/index.html",
-      "/manuals/ithenticate/index.html",
-      "/manuals/pure/index.html",
-      "/manuals/qualtrics/index.html",
-      "/manuals/scistor/index.html",
-      "/manuals/yoda/index.html"
-    ]
-  },
-  {
-    "listing": "/OS-guidelines.html",
-    "items": [
-      "/OS-guidelines/open-science-resources.html"
-    ]
-  },
-  {
-    "listing": "/blog.html",
-    "items": [
-      "/blog/2025-07-28manuals.html",
-      "/blog/2025-07-29itvoblog.html",
-      "/blog/2025-07-24hackathon.html",
-      "/blog/2025-05-15embed-iframe.html",
-      "/blog/2024-11-28hackathon.html",
-      "/blog/2024-11-01hackathon.html",
-      "/blog/2024-10-22post-mortem.html",
-      "/blog/2024-09-30hackathon.html",
-      "/blog/2024-09-05hackathon.html",
-      "/blog/2024-06-27hackathon.html",
-      "/blog/2024-05-23welcome.html"
-    ]
-  },
-  {
-    "listing": "/RDM-guidelines.html",
-    "items": [
-      "/RDM-guidelines/VU-CS-RDM-Storage-Selection.html",
-      "/RDM-guidelines/VU-CS-Survey-policy.html",
-      "/RDM-guidelines/RDM-resources.html"
-    ]
-  },
-  {
     "listing": "/manuals/pure/index.html",
     "items": [
       "/manuals/pure/registration/data-registration.html",
@@ -241,28 +245,23 @@
     ]
   },
   {
-    "listing": "/manuals/qualtrics/index.html",
+    "listing": "/group-guidelines.html",
     "items": [
-      "/manuals/qualtrics/qualtrics-faq.html"
-    ]
-  },
-  {
-    "listing": "/manuals/ada/index.html",
-    "items": [
-      "/manuals/ada/login.html",
-      "/manuals/ada/quick-start.html",
-      "/manuals/ada/software.html",
-      "/manuals/ada/slurm.html",
-      "/manuals/ada/hardware.html",
-      "/manuals/ada/hpc-101.html",
-      "/manuals/ada/open-ondemand.html",
-      "/manuals/ada/yoda.html",
-      "/manuals/ada/help.html",
-      "/manuals/ada/code-examples/Python/1-python-multithreading.html",
-      "/manuals/ada/code-examples/Python/2-python-multiprocessing.html",
-      "/manuals/ada/code-examples/Python/3-python-pytorch.html",
-      "/manuals/ada/code-examples/R/1-R-multiprocessing.html",
-      "/manuals/ada/code-examples/matlab.html"
+      "/group-guidelines/AIB.html",
+      "/group-guidelines/Bioinformatics.html",
+      "/group-guidelines/CI.html",
+      "/group-guidelines/DISE.html",
+      "/group-guidelines/FES.html",
+      "/group-guidelines/HPDC.html",
+      "/group-guidelines/KAI.html",
+      "/group-guidelines/LR.html",
+      "/group-guidelines/MCS.html",
+      "/group-guidelines/QDA.html",
+      "/group-guidelines/SAI.html",
+      "/group-guidelines/S2.html",
+      "/group-guidelines/VUSEC.html",
+      "/group-guidelines/TCS.html",
+      "/group-guidelines/UCDS.html"
     ]
   },
   {
@@ -293,22 +292,23 @@
     ]
   },
   {
-    "listing": "/lifecycle/06-publish-share.html",
+    "listing": "/lifecycle/02-plan-design.html",
     "items": [
-      "/topics/data-licensing.html",
-      "/topics/data-publishing.html",
-      "/topics/dataversenl.html",
-      "/topics/fair-principles.html",
-      "/topics/osf.html",
-      "/topics/persistent-identifier.html",
-      "/topics/software-licensing.html",
-      "/topics/software-publishing.html",
-      "/topics/yoda.html",
-      "/manuals/pure/registration/data-registration.html",
-      "/manuals/pure/registration/software-registration.html",
-      "/guides/publish-and-share.html",
-      "/guides/publishing-fair-software.html",
-      "/guides/use-osf.html"
+      "/topics/data-classification.html",
+      "/topics/data-management-plan.html",
+      "/topics/data-management-section.html",
+      "/topics/ethical-review.html",
+      "/topics/gdpr.html",
+      "/topics/research-data-and-software-management-policy.html",
+      "/guides/comply-with-gdpr.html",
+      "/guides/onboarding.html",
+      "/guides/plan-and-design.html"
+    ]
+  },
+  {
+    "listing": "/news.html",
+    "items": [
+      "/news/2024-06-04OSCAR.html"
     ]
   }
 ]
