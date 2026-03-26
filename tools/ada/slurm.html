@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-17">
+<meta name="dcterms.date" content="2026-03-19">
 
 <title>Slurm – Research Support Handbook</title>
 <style>
@@ -81,20 +81,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1edfab65976d75f42a057524a476e961.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-1b49d38cdf2649af7ffe2c2dda92f719.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
-  "type": "overlay",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -103,7 +102,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
+    "search-text-placeholder": "Search",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -121,8 +120,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo light-content">
-    <img src="../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo dark-content">
+    <img src="../../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="../../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -157,8 +156,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Trainings and Knowledge Items">
- <span class="dropdown-text">Trainings and Knowledge Items</span></a>
+    <a class="dropdown-item" href="../../topics.html#category=Knowledge Items">
+ <span class="dropdown-text">Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
@@ -184,11 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../contributing.html"> 
-<span class="menu-text">Contributing</span></a>
+<span class="menu-text">News</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -245,6 +240,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../../tools/ada/quick_start.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quick Start</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/hpc-updates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HPC Updates</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
@@ -387,6 +388,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+<div class="handbook-title">Research Support Handbook</div>
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/login.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/ada/slurm.html">Slurm</a></li></ol></nav>
 <div class="quarto-title">
@@ -401,7 +403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 17, 2026</p>
+      <p class="date">March 19, 2026</p>
     </div>
   </div>
   
@@ -444,7 +446,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --output=logs/%x-%j.out</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --error=logs/%x-%j.err</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Always use your scratch space:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the job-local temporary directory (/tmp on ADA):</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="va">$TMPDIR</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
@@ -470,7 +472,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>--time</code> – wall-clock limit for the job.</li>
 <li><code>--partition</code> – the queue to target (use your department partition where possible).</li>
 <li><code>--cpus-per-task</code> – threads your program uses.</li>
-<li><code>--mem</code> (or <code>--mem-per-cpu</code>) – memory request appropriate for your workload. If not set, might get killed for exceeding default memory limits.</li>
+<li><code>--mem</code> (or <code>--mem-per-cpu</code>) – memory request appropriate for your workload. On ADA, memory is scheduled explicitly, so request it deliberately.</li>
 </ul>
 </div>
 </div>
@@ -512,7 +514,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="interactive-runs-compute-nodes" class="level2">
 <h2 class="anchored" data-anchor-id="interactive-runs-compute-nodes">Interactive Runs (compute nodes)</h2>
 <p>For quick debugging on compute nodes, request an interactive shell via SLURM:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">srun</span> <span class="at">--pty</span> <span class="at">--partition</span><span class="op">=&lt;</span>partition<span class="op">&gt;</span> --time=01:00:00 <span class="at">--cpus-per-task</span><span class="op">=</span>2 bash</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">srun</span> <span class="at">--pty</span> <span class="at">--partition</span><span class="op">=&lt;</span>partition<span class="op">&gt;</span> --time=01:00:00 <span class="at">--cpus-per-task</span><span class="op">=</span>2 <span class="at">--mem</span><span class="op">=</span>4G bash</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Use this for short tests only. For heavier interactive development and remote editors, use ADA’s dedicated interactive nodes (<code>inter01</code>–<code>inter04</code>) as described in the Quick Start.</p>
 </section>
 <section id="arrays-and-dependencies" class="level2">
@@ -527,7 +529,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="storage-and-io-tips" class="level2">
 <h2 class="anchored" data-anchor-id="storage-and-io-tips">Storage and I/O Tips</h2>
-<p>Keep <code>$HOME</code> for configuration and small files; use <code>/scratch/&lt;VUNETID&gt;/</code> for working data on the nodes themselves.</p>
+<p>Keep <code>$HOME</code> for configuration and small files; use <code>$TMPDIR</code> for temporary working data and I/O-heavy computation on compute nodes. On ADA, <code>$TMPDIR</code> is backed by <code>/tmp</code>, which is local disk space on the node. This is usually faster than <code>$HOME</code> on <code>/home</code>, which is NFS-mounted. <code>$TMPDIR</code> is private per user and cleaned automatically after jobs finish.</p>
 </section>
 <section id="quick-reference" class="level2">
 <h2 class="anchored" data-anchor-id="quick-reference">Quick Reference</h2>
@@ -536,7 +538,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Queue: <code>squeue -u $USER</code></li>
 <li>Account: <code>sacct -j &lt;jobid&gt; --format=JobID,State,Elapsed,MaxRSS,CPUTime</code></li>
 <li>Cancel: <code>scancel &lt;jobid&gt;</code> (or all: <code>scancel -u $USER</code>)</li>
-<li>Interactive: <code>srun --pty --partition=&lt;p&gt; --time=01:00:00 bash</code></li>
+<li>Interactive: <code>srun --pty --partition=&lt;p&gt; --time=01:00:00 --mem=4G bash</code></li>
 </ul>
 
 
@@ -956,47 +958,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer page-columns page-full">
+  <div class="nav-footer page-columns page-full">
     <div class="nav-footer-left">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
-<p>CC0 Public Domain Dedication</p>
-</a>
-  </li>  
-</ul>
+      &nbsp;
     </div>   
-    <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
-<p>About</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="../../technical-details.html">
-<p>Technical details</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="../../editors-guide.html">
-<p>Editor’s guide</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="https://ghostcollective.github.io/games.html">
-<p>GHOST Collective</p>
-</a>
-  </li>  
-</ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/tools/ada/slurm.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-center page-columns page-full">
+<div class="pagebottom py-5 page-columns page-full">
+    <div class="column-page text-center">
+        <ul class="footer-items list-unstyled">
+            <li class="nav-item mx-md-5">
+                <p><img src="../../public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
+                    Missing something in the Handbook?<br>
+                    <a href="https://ez-github-contributor.netlify.app/" target="_blank">Let us know!</a>
+                </p>
+            </li>
+            <li class="nav-item mx-md-5">
+                <img src="../../public/question_icon.svg" class="img-fluid" style="width:6em"><br>
+                Question about your research data or research software?<br>
+                <a href="../../topics/rdm-support-desk.html">Contact the RDM Support Desk</a>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="column-page">
+    <ul class="footer-items list-unstyled">
+        <li class="nav-item">
+            <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
+                <p><img src="../../public/Cc.logo.circle.svg" class="img-fluid" style="width:1.3em">
+                <img src="../../public/Cc-zero.svg" class="img-fluid" style="width:1.3em"></p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="../../about.html">
+                <p>About</p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="../../contributing.html">
+                <p>Contributing</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/tools/ada/slurm.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
- By VU &amp; Liberate Science GmbH
-  </li>  
-</ul>
+      &nbsp;
     </div>
   </div>
 </footer>
