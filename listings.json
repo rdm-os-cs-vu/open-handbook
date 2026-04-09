@@ -1,49 +1,5 @@
 [
   {
-    "listing": "/tools.html",
-    "items": [
-      "/tools/ada/index.html",
-      "/tools/dataversenl/index.html",
-      "/tools/dmponline/index.html",
-      "/tools/ithenticate/index.html",
-      "/tools/nebula/index.html",
-      "/tools/osf/index.html",
-      "/tools/pure/index.html",
-      "/tools/qualtrics/index.html",
-      "/tools/researchcloud/index.html",
-      "/tools/researchdrive/index.html",
-      "/tools/scicloud/index.html",
-      "/tools/scistor/index.html",
-      "/tools/scisure/index.html",
-      "/tools/snellius/index.html",
-      "/tools/vucomputehub/index.html",
-      "/tools/yoda/index.html"
-    ]
-  },
-  {
-    "listing": "/news.html",
-    "items": [
-      "/news/2024-06-04OSCAR.html"
-    ]
-  },
-  {
-    "listing": "/guides.html",
-    "items": [
-      "/guides/publish-and-share.html",
-      "/guides/comply-with-gdpr.html",
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyse.html",
-      "/guides/document-and-preserve.html",
-      "/guides/onboarding.html",
-      "/guides/publishing-fair-software.html",
-      "/guides/plan-and-design.html",
-      "/guides/policies-supporting-vision-open-science.html",
-      "/guides/data-lifecycle.html",
-      "/guides/offboarding.html"
-    ]
-  },
-  {
     "listing": "/RDM-guidelines.html",
     "items": [
       "/RDM-guidelines/VU-CS-RDM-Storage-Selection.html",
@@ -70,23 +26,30 @@
     ]
   },
   {
-    "listing": "/group-guidelines.html",
+    "listing": "/news.html",
     "items": [
-      "/group-guidelines/AIB.html",
-      "/group-guidelines/Bioinformatics.html",
-      "/group-guidelines/CI.html",
-      "/group-guidelines/DISE.html",
-      "/group-guidelines/FES.html",
-      "/group-guidelines/HPDC.html",
-      "/group-guidelines/KAI.html",
-      "/group-guidelines/LR.html",
-      "/group-guidelines/MCS.html",
-      "/group-guidelines/QDA.html",
-      "/group-guidelines/SAI.html",
-      "/group-guidelines/S2.html",
-      "/group-guidelines/VUSEC.html",
-      "/group-guidelines/TCS.html",
-      "/group-guidelines/UCDS.html"
+      "/news/2024-06-04OSCAR.html"
+    ]
+  },
+  {
+    "listing": "/tools.html",
+    "items": [
+      "/tools/ada/index.html",
+      "/tools/dataversenl/index.html",
+      "/tools/dmponline/index.html",
+      "/tools/ithenticate/index.html",
+      "/tools/nebula/index.html",
+      "/tools/osf/index.html",
+      "/tools/pure/index.html",
+      "/tools/qualtrics/index.html",
+      "/tools/researchcloud/index.html",
+      "/tools/researchdrive/index.html",
+      "/tools/scicloud/index.html",
+      "/tools/scistor/index.html",
+      "/tools/scisure/index.html",
+      "/tools/snellius/index.html",
+      "/tools/vucomputehub/index.html",
+      "/tools/yoda/index.html"
     ]
   },
   {
@@ -137,6 +100,43 @@
       "/topics/software-publishing.html",
       "/topics/selecting-data.html",
       "/topics/transcription.html"
+    ]
+  },
+  {
+    "listing": "/guides.html",
+    "items": [
+      "/guides/publish-and-share.html",
+      "/guides/comply-with-gdpr.html",
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyse.html",
+      "/guides/document-and-preserve.html",
+      "/guides/onboarding.html",
+      "/guides/publishing-fair-software.html",
+      "/guides/plan-and-design.html",
+      "/guides/policies-supporting-vision-open-science.html",
+      "/guides/data-lifecycle.html",
+      "/guides/offboarding.html"
+    ]
+  },
+  {
+    "listing": "/group-guidelines.html",
+    "items": [
+      "/group-guidelines/AIB.html",
+      "/group-guidelines/Bioinformatics.html",
+      "/group-guidelines/CI.html",
+      "/group-guidelines/DISE.html",
+      "/group-guidelines/FES.html",
+      "/group-guidelines/HPDC.html",
+      "/group-guidelines/KAI.html",
+      "/group-guidelines/LR.html",
+      "/group-guidelines/MCS.html",
+      "/group-guidelines/QDA.html",
+      "/group-guidelines/SAI.html",
+      "/group-guidelines/S2.html",
+      "/group-guidelines/VUSEC.html",
+      "/group-guidelines/TCS.html",
+      "/group-guidelines/UCDS.html"
     ]
   }
 ]
