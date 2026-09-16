@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-09-04">
+
+<title>Working Securely – Research Support Handbook</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../tools/qualtrics/faq.html" rel="prev">
+<link href="../../public/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ed4c92c19631704d6394c5d547780aa1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "Search",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script defer="" src="https://umami.labs.vu.nl/script.js" data-website-id="d8c5a441-b2ab-4d33-ba3a-6647fd821974"></script>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="../../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-topics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
+        <li>
+    <a class="dropdown-item" href="../../topics.html">
+ <span class="dropdown-text">All</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../topics.html#category=Policies and Legislation">
+ <span class="dropdown-text">Policies and Legislation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../topics.html#category=Research Data">
+ <span class="dropdown-text">Research Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../topics.html#category=Research Software">
+ <span class="dropdown-text">Research Software</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../topics.html#category=Responsible Scholarship">
+ <span class="dropdown-text">Responsible Scholarship</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../topics.html#category=Knowledge Items">
+ <span class="dropdown-text">Knowledge Items</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../guides.html"> 
+<span class="menu-text">Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tools.html"> 
+<span class="menu-text">Tools</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../RDM-guidelines.html"> 
+<span class="menu-text">CS RDM Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../group-guidelines.html"> 
+<span class="menu-text">CS Groups</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../news.html"> 
+<span class="menu-text">CS News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/rdm-os-cs-vu/open-handbook" title="GitHub VU Open Handbook" class="quarto-navigation-tool px-1" aria-label="GitHub VU Open Handbook"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/qualtrics/index.html">Qualtrics</a></li><li class="breadcrumb-item"><a href="../../tools/qualtrics/working_securely.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/qualtrics/working_securely.html">Working Securely</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tools/qualtrics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Qualtrics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/qualtrics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What is Qualtrics?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/qualtrics/cost_access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Costs and Getting Access</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/qualtrics/contact_support.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Support and Contact</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/qualtrics/quick_start.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Start</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/qualtrics/faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Documentation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/qualtrics/working_securely.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Working Securely</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#working-with-personal-data-and-gdpr-compliance" id="toc-working-with-personal-data-and-gdpr-compliance" class="nav-link active" data-scroll-target="#working-with-personal-data-and-gdpr-compliance">Working with Personal Data and GDPR Compliance</a></li>
+  <li><a href="#qualtrics-features-and-gdpr-considerations" id="toc-qualtrics-features-and-gdpr-considerations" class="nav-link" data-scroll-target="#qualtrics-features-and-gdpr-considerations">Qualtrics Features and GDPR Considerations</a></li>
+  <li><a href="#after-collecting-your-data-consider-an-appropriate-data-storage-tool" id="toc-after-collecting-your-data-consider-an-appropriate-data-storage-tool" class="nav-link" data-scroll-target="#after-collecting-your-data-consider-an-appropriate-data-storage-tool">After Collecting Your Data: Consider an Appropriate Data Storage Tool</a></li>
+  <li><a href="#metadata-and-cookies-collection-in-qualtrics" id="toc-metadata-and-cookies-collection-in-qualtrics" class="nav-link" data-scroll-target="#metadata-and-cookies-collection-in-qualtrics">Metadata and Cookies Collection in Qualtrics</a></li>
+  <li><a href="#survey-security-and-response-anonymisation" id="toc-survey-security-and-response-anonymisation" class="nav-link" data-scroll-target="#survey-security-and-response-anonymisation">Survey Security and Response Anonymisation</a></li>
+  <li><a href="#survey-distribution-anonymous-survey-links-and-personal-data" id="toc-survey-distribution-anonymous-survey-links-and-personal-data" class="nav-link" data-scroll-target="#survey-distribution-anonymous-survey-links-and-personal-data">Survey Distribution: Anonymous Survey Links and Personal Data</a></li>
+  <li><a href="#survey-distribution-email-distribution-and-personal-data" id="toc-survey-distribution-email-distribution-and-personal-data" class="nav-link" data-scroll-target="#survey-distribution-email-distribution-and-personal-data">Survey Distribution: Email Distribution and Personal Data</a></li>
+  <li><a href="#sharing-surveys-and-collaboration-permissions" id="toc-sharing-surveys-and-collaboration-permissions" class="nav-link" data-scroll-target="#sharing-surveys-and-collaboration-permissions">Sharing Surveys and Collaboration Permissions</a></li>
+  <li><a href="#automatic-survey-translation-and-gdpr-considerations" id="toc-automatic-survey-translation-and-gdpr-considerations" class="nav-link" data-scroll-target="#automatic-survey-translation-and-gdpr-considerations">Automatic Survey Translation and GDPR Considerations</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/tools/qualtrics/working_securely.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<div class="handbook-title">Research Support Handbook</div>
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/qualtrics/index.html">Qualtrics</a></li><li class="breadcrumb-item"><a href="../../tools/qualtrics/working_securely.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/qualtrics/working_securely.html">Working Securely</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Working Securely</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">last modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 4, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="working-with-personal-data-and-gdpr-compliance" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-personal-data-and-gdpr-compliance">Working with Personal Data and GDPR Compliance</h2>
+<p>When conducting research with Qualtrics, you will often collect and process <a href="https://rdm.vu.nl/topics/gdpr.html#definitions" target="_blank">personal data</a>. Personal data is protected under the <a href="../../topics/gdpr.html">General Data Protection Regulation</a> (GDPR).</p>
+<p>When using Qualtrics to collect research data, GDPR compliance should be considered from the start of the project. Researchers must ensure that personal data are collected on a valid legal ground, that participants are properly informed, and that the subject’s rights are upheld. Depending on the study, additional requirements such as a DPIA or data sharing agreements may apply. Please refer to this <a href="https://rdm.vu.nl/guides/comply-with-gdpr.html" target="_blank">GDPR guidance page</a> for more information on how to comply with GDPR requirements in research.</p>
+</section>
+<section id="qualtrics-features-and-gdpr-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="qualtrics-features-and-gdpr-considerations">Qualtrics Features and GDPR Considerations</h2>
+<p>Qualtrics offers a wide range of features that can influence how personal data is collected, processed, stored, shared, or transferred.</p>
+<p>The sections below highlight several of the most commonly used features within the organisation and explain their potential GDPR implications. However, this overview is not exhaustive. Other Qualtrics functionality, settings, integrations, or design choices may also affect the processing of personal data.</p>
+<p>Researchers should therefore carefully consider the privacy implications of the features they enable, and the survey configurations they choose. As a general principle, privacy and data protection considerations should be assessed whenever selecting or configuring Qualtrics functionality for research purposes.</p>
+</section>
+<section id="after-collecting-your-data-consider-an-appropriate-data-storage-tool" class="level2">
+<h2 class="anchored" data-anchor-id="after-collecting-your-data-consider-an-appropriate-data-storage-tool">After Collecting Your Data: Consider an Appropriate Data Storage Tool</h2>
+<p>Qualtrics is intended for the collection and management of survey data and should not be used as a data storage platform.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../public/caution-no-storage.png" class="img-fluid figure-img"></p>
+<figcaption>Image stating that no storage is allowed.</figcaption>
+</figure>
+</div>
+<p>When data collection is completed, please delete all data from Qualtrics as soon as possible. It is strongly recommended that all research data is transferred three months after data collection is completed at the latest.</p>
+<p><strong>Transfer</strong> all data from Qualtrics to an appropriate <a href="https://rdm.vu.nl/topics/data-storage.html" target="_blank">data storage</a> solution and make sure to <strong>delete</strong> the data in Qualtrics as soon as the transfer is completed. The <a href="https://rdm.vu.nl/blog/2026-09-02-storagefinder-classificationtool-unavailable.html" target="_blank">Data Storage Finder</a> can assist you in finding appropriate storage platforms and you can contact your <a href="https://vu.nl/en/employee/research-data-support/contact-your-data-steward" target="_blank">Faculty Data Steward</a> or the <a href="mailto:rdm@vu.nl">RDM Support Desk</a> if you need more advice on this.</p>
+<p>Following the above, Qualtrics should never be used as an archive for long-term storage of your data after your research has been completed.</p>
+</section>
+<section id="metadata-and-cookies-collection-in-qualtrics" class="level2">
+<h2 class="anchored" data-anchor-id="metadata-and-cookies-collection-in-qualtrics">Metadata and Cookies Collection in Qualtrics</h2>
+<p>Qualtrics uses a number of essential <a href="https://www.qualtrics.com/support/survey-platform/getting-started/browser-cookies/" target="_blank">cookies and browser storage items</a> to support core survey functionality, including maintaining survey sessions, authentication, and preventing duplicate submissions.</p>
+<p>Additional cookies and browser metadata may be used when optional features such as <strong>Prevent Multiple Submissions</strong>, <strong>Duplicate Detection</strong>, or <strong>Bot Detection</strong> are enabled. These features can process limited technical information, including browser, device, or IP-related data, to help improve data quality and identify potentially fraudulent responses.</p>
+<p>Researchers should therefore <strong>carefully consider whether these features are necessary for their study</strong> and ensure their use is consistent with the research purpose and GDPR requirements. See the Qualtrics page on <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-checker/fraud-detection/" target="_blank">Fraud Detection</a>.</p>
+<p>For further details, see the Qualtrics documentation on <a href="https://www.qualtrics.com/support/survey-platform/getting-started/browser-cookies/" target="_blank">Browser Compatibility &amp; Cookies</a> and <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-checker/fraud-detection/" target="_blank">Fraud Detection</a>.</p>
+</section>
+<section id="survey-security-and-response-anonymisation" class="level2">
+<h2 class="anchored" data-anchor-id="survey-security-and-response-anonymisation">Survey Security and Response Anonymisation</h2>
+<p>For studies involving personal data, researchers can enable <strong>Anonymize Responses</strong>, which removes identifying information such as IP addresses, location data, and other metadata from responses before they are stored, contributing to GDPR compliance and participant confidentiality. Researchers should carefully review these settings and select the options that are appropriate for their study design and data protection requirements.</p>
+<p>For further details on the available security settings, see the Qualtrics <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-options/survey-protection/" target="_blank"><strong>Security Survey Options</strong></a> <strong>documentation</strong>.</p>
+</section>
+<section id="survey-distribution-anonymous-survey-links-and-personal-data" class="level2">
+<h2 class="anchored" data-anchor-id="survey-distribution-anonymous-survey-links-and-personal-data">Survey Distribution: Anonymous Survey Links and Personal Data</h2>
+<p>Qualtrics allows for a survey distribution method called “Anonymous Survey” or “Anonymous Links”. “You can distribute your survey by pasting this link into an email, onto a website, or into any mode of communication you use with your recipients. Anyone who clicks on the link will be able to take the survey.</p>
+<p>It’s called the “anonymous” link because it does not collect identifying information such as name or email address, unless you specifically ask for it in the survey. However, by default, the anonymous link will collect the user’s IP Address and location data based on that IP Address” (see the <a href="https://www.qualtrics.com/support/survey-platform/distributions-module/web-distribution/anonymous-link/" target="_blank">Qualtrics Knowledge Base</a>).</p>
+<p>From a GDPR perspective, an “anonymous” survey should not automatically be considered anonymous, as the processing of personal data depends on the survey design, the questions asked, and the privacy settings selected. Researchers should therefore review their survey configuration carefully and enable safeguards such as <strong>Anonymize Responses</strong> where appropriate. For further information on the behaviour, limitations, and privacy implications of anonymous survey links, please consult the Qualtrics <a href="https://www.qualtrics.com/support/survey-platform/distributions-module/web-distribution/anonymous-link/" target="_blank"><strong>Anonymous Link</strong> documentation</a>.</p>
+</section>
+<section id="survey-distribution-email-distribution-and-personal-data" class="level2">
+<h2 class="anchored" data-anchor-id="survey-distribution-email-distribution-and-personal-data">Survey Distribution: Email Distribution and Personal Data</h2>
+<p>When using <a href="https://www.qualtrics.com/support/survey-platform/distributions-module/email-distribution/email-distribution-management/" target="_blank">Qualtrics email distributions</a>, researchers should be aware that email invitations are linked to identifiable recipient information and can be associated with survey participation and response status. Distribution histories may also contain email addresses, individual survey links, and participation metrics, which means that personal data can be processed even when survey responses themselves do not contain direct identifiers.</p>
+<p>To reduce privacy risks and support GDPR compliance, surveys should be configured to minimise the collection and retention of personal information where possible. As a best practice, enable <strong>Prevent Indexing</strong>, <strong>Secure Participants’ Files</strong>, and <strong>Anonymize Response</strong> in the Survey Options. In addition, add an <strong>End of Survey</strong> element and select <strong>Do NOT record any personal information and remove panel association</strong>. These settings help to limit the link between respondents and their survey responses and reduce the amount of personal data retained within Qualtrics.</p>
+<p>Researchers should nevertheless assess whether email distributions are appropriate for their specific study and ensure that any processing of participant contact details has a valid legal basis and appropriate safeguards; see <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-options/survey-options-overview/" target="_blank">Survey Options Overview</a> and <a href="https://www.qualtrics.com/support/survey-platform/distributions-module/email-distribution/email-distribution-management/" target="_blank">Email Distribution Management</a> for details.</p>
+<p>A method to distribute surveys without the Qualtrics built-in email distribution functionality is explained with <a href="https://fgb-rdm.nl/rdm/tools/SecureUseOfQuestionnaireTools.html#qNoEmails" target="_blank">detailed instructions</a> provided by FGB’s Research and Policy Support Team.</p>
+</section>
+<section id="sharing-surveys-and-collaboration-permissions" class="level2">
+<h2 class="anchored" data-anchor-id="sharing-surveys-and-collaboration-permissions">Sharing Surveys and Collaboration Permissions</h2>
+<p>Qualtrics allows survey owners to <a href="https://www.qualtrics.com/support/survey-platform/my-projects/sharing-a-project/" target="_blank">share surveys with collaborators</a> and define what they can view, edit, or access. Researchers should grant only the permissions necessary for a collaborator’s role. Access can be restricted to specific survey content, settings, or response data.</p>
+<p>By default, when enabling <a href="https://www.qualtrics.com/support/survey-platform/my-projects/sharing-a-project/" target="_blank">Collaborations</a>, Qualtrics will grant all available access rights to the selected survey. Hence, sharing surveys may expose personal data, survey responses, and contact information to additional users. Researchers should therefore limit access to authorised individuals, regularly review permissions, and exercise particular caution when collaborating with external partners or users outside the institution, as additional resources such as contact lists or libraries may also become accessible depending on the sharing configuration.</p>
+<p><strong>Key points of attention when sharing surveys</strong>:</p>
+<ul>
+<li>Limit access to response data and personal information to collaborators who genuinely require it.</li>
+<li>Restrict editing permissions for survey questions, flow, and survey options to avoid unintended changes that could affect data quality, privacy, or compliance.</li>
+<li>Exercise particular caution when collaborating outside your organisation, as external sharing may provide access to additional surveys, libraries, or contact lists.</li>
+</ul>
+<p>The Qualtrics documentation on Collaboration Permissions is available through <a href="https://www.qualtrics.com/support/survey-platform/my-projects/sharing-a-project/" target="_blank">Qualtrics Knowledge Base</a>.</p>
+</section>
+<section id="automatic-survey-translation-and-gdpr-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="automatic-survey-translation-and-gdpr-considerations">Automatic Survey Translation and GDPR Considerations</h2>
+<p>Qualtrics offers an <strong>Automatic Survey Translation</strong> feature that can translate survey questions, blocks, or entire surveys using third-party services by <strong>Amazon Translate</strong> and <strong>Google Translate</strong>.</p>
+<p>When this feature is used, the text of the survey questions is transmitted to the selected external translation provider and returned in the target language. Qualtrics states that only the survey text is sent for translation and that respondent data is not transferred as part of this process, see the <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-tools/translate-survey/" target="_blank">Qualtrics Knowledge Base</a>.</p>
+<p>Researchers should therefore carefully assess whether <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-tools/translate-survey/" target="_blank">automatic translation</a> is appropriate for their project and ensure that any transfer of information complies with applicable GDPR requirements and institutional policies. Where necessary, consider using manual translation methods instead.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/rdm-os-cs-vu\.github\.io\/open-handbook");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../tools/qualtrics/faq.html" class="pagination-link" aria-label="FAQ">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">FAQ</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<div class="pagebottom py-5 page-full">
+    <div class="text-center">
+        <ul class="footer-items list-unstyled">
+            <li class="nav-item mx-md-5">
+                <p><img src="../../public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
+                    Missing something in the Handbook?<br>
+                    <a href="https://ez-github-contributor.netlify.app/" target="_blank">Let us know!</a>
+                </p>
+            </li>
+            <li class="nav-item mx-md-5">
+                <img src="../../public/question_icon.svg" class="img-fluid" style="width:6em"><br>
+                Question about your research data or research software?<br>
+                <a href="../../topics/rdm-support-desk.html">Contact the RDM Support Desk</a>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer-links-bar">
+    <ul class="footer-items list-unstyled">
+        <li class="nav-item">
+            <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
+                <p><img src="../../public/Cc.logo.circle.svg" class="img-fluid" style="width:1.3em">
+                <img src="../../public/Cc-zero.svg" class="img-fluid" style="width:1.3em"></p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="../../about.html">
+                <p>About</p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="../../contributing.html">
+                <p>Contributing</p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="../../privacy.html">
+                <p>Privacy</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/tools/qualtrics/working_securely.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

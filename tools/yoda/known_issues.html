@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-04-15">
+<meta name="dcterms.date" content="2026-07-13">
 <meta name="description" content="Known bugs and issues in the current Yoda version.">
 
 <title>Known Issues – Research Support Handbook</title>
@@ -50,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-da7d59fb591e26e644d6da88ab1929d0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ed4c92c19631704d6394c5d547780aa1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,6 +77,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script defer="" src="https://umami.labs.vu.nl/script.js" data-website-id="d8c5a441-b2ab-4d33-ba3a-6647fd821974"></script>
 
 
 </head>
@@ -256,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/sram_invitations_eduid_activation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SRAM Invitations and eduID Activation</span></a>
+ <span class="menu-text">External users - SRAM Invitations and eduID Activation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -466,7 +467,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 15, 2026</p>
+      <p class="date">July 13, 2026</p>
     </div>
   </div>
   
@@ -478,7 +479,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>Yoda version 2.0</em></p>
+<p><em>Yoda version 2.1</em></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -490,40 +491,34 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Authentication errors using <a href="../../tools/yoda/yoda_using_gocommands.html">Gocommands</a> version 0.11.x</td>
-<td>The 0.11.x versions of Gocommands are incompatible with Yoda 2.0</td>
-<td>Use version 0.10.26</td>
-<td>Expected to be fixed in Yoda 2.1</td>
+<td>External users cannot login until they accept a new SRAM invitation</td>
+<td>During the Yoda 2.1 upgrade on July 20 2026, all external users received a new invitation by email. They must accept this invitation to be able to login.</td>
+<td></td>
+<td>This is due to a change in the Yoda-SRAM connection, see <a href="../../tools/yoda/sram_invitations_eduid_activation.html">the documentation</a>.</td>
 </tr>
 <tr class="even">
-<td>Securing datasets in the Vault fails with folders containing special characters</td>
-<td>When a datamanager accepts a Vault submission it is copied to the Vault folder. This process sometimes fails if a foldername in the dataset contains special characters (this includes the diaeresis sign, e.g.&nbsp;<code>ö</code>).</td>
-<td>Ensure folder names do not contain special characters before submitting.</td>
-<td>Expected to be fixed in Yoda 2.1</td>
-</tr>
-<tr class="odd">
-<td>Connecting using icommands fails due to changes in <code>irods_environment.json</code></td>
-<td>Following the Yoda 2.0 upgrade the contents of <code>irods_environment.json</code> need to be updated, see <a href="../../tools/yoda/yoda_using_icommands.html#environment-file">the manual</a>. This is due to an upgrade to the underlying irods system.</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Icon of new user does not reflect role</td>
-<td>When a Group Manager changes the role of a recently added user, the icon is not changed. The correct icon will be visible after the user has accepted the SRAM invitation.</td>
-<td>Try to change the role of the user again, the system will show a notification stating the user already has this role.</td>
-<td>Expected to be fixed in Yoda 2.1</td>
-</tr>
-<tr class="odd">
 <td>Revisions not available</td>
 <td>The option to “Search revisions by name” in the Search Bar does not return any results.</td>
 <td>If you need to restore an older version of a file from backup please <a href="../../tools/yoda/contact_support.html">contact the Research Support Desk</a></td>
 <td>This feature is intentionally disabled to reduce storage costs.</td>
 </tr>
+<tr class="odd">
+<td><em>Securing datasets in the Vault fails with folders containing special characters</em></td>
+<td></td>
+<td></td>
+<td><em>Fixed in Yoda 2.1</em></td>
+</tr>
 <tr class="even">
-<td><em>Dataset can be archived and published with a missing ORCID field</em></td>
+<td><em>Authentication errors using <a href="../../tools/yoda/yoda_using_gocommands.html">Gocommands</a> version 0.11.x</em></td>
 <td></td>
 <td></td>
-<td><em>Fixed in Yoda 2.0</em></td>
+<td><em>Fixed in Yoda 2.1</em></td>
+</tr>
+<tr class="odd">
+<td><em>Icon of new user does not reflect role</em></td>
+<td><em>When a Group Manager changes the role of a recently added user, the icon is not changed. The correct icon will be visible after the user has accepted the SRAM invitation.</em></td>
+<td></td>
+<td><em>Fixed in Yoda 2.1</em></td>
 </tr>
 </tbody>
 </table>
@@ -957,14 +952,14 @@ Tip
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer page-columns page-full">
-  <div class="nav-footer page-columns page-full">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center page-columns page-full">
-<div class="pagebottom py-5 page-columns page-full">
-    <div class="column-page text-center">
+    <div class="nav-footer-center">
+<div class="pagebottom py-5 page-full">
+    <div class="text-center">
         <ul class="footer-items list-unstyled">
             <li class="nav-item mx-md-5">
                 <p><img src="../../public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
@@ -981,7 +976,7 @@ Tip
         </ul>
     </div>
 </div>
-<div class="column-page">
+<div class="footer-links-bar">
     <ul class="footer-items list-unstyled">
         <li class="nav-item">
             <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
@@ -997,6 +992,11 @@ Tip
         <li class="nav-item">
             <a class="nav-link" href="../../contributing.html">
                 <p>Contributing</p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="../../privacy.html">
+                <p>Privacy</p>
             </a>
         </li>
     </ul>

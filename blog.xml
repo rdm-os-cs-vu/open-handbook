@@ -10,7 +10,114 @@
 <atom:link href="https://rdm-os-cs-vu.github.io/open-handbook/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A place for all things open research at VU Amsterdam.</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Thu, 19 Mar 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 02 Sep 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Data Storage Finder and Data Classification Tool unavailable</title>
+  <dc:creator>Jolien Scholten</dc:creator>
+  <link>https://rdm-os-cs-vu.github.io/open-handbook/blog/2026-09-02-storagefinder-classificationtool-unavailable.html</link>
+  <description><![CDATA[ 
+<div class="handbook-title">Research Support Handbook</div>
+
+
+
+
+<p>The Data Storage Finder and the Data Classification Tool are currently unavailable. Communication and Marketing is aware of the situation. They will make sure that these resources will be available again on September 24.</p>
+<p>In the Data Storage Finder, you can find information about data storage tools available at VU Amsterdam. With various filters you can find the storage platform that is most suitable for your research data. It’s very unfortunate that this support is unavailable at the moment, but note that extensive information about the tools we support is also available in the VU CS Department RDM and Open Science Handbook. You can find this information per tool (Research Drive, SciStor, Yoda) in the <a href="https://rdm.vu.nl/tools.html#category=Data%20Storage" target="_blank">Tools section</a>. If you need help with finding the right storage platform, please reach out to the <a href="mailto:rdm@vu.nl">RDM Support Desk</a>.</p>
+<p>In the Data Classification Tool, you can determine the classification of your data for the criteria of availability, integrity and confidentiality. If you wish to classify your data in the short term, you can estimate this with the help of the <a href="https://rdm.vu.nl/public/policies-regulations/Dataclassificatiebeleid-VU-NL-v1.0.pdf" target="_blank">Data Classification Policy</a> (in Dutch), which includes a table (“Bijlage 1”) giving examples for the classification levels for each criterion. If you need help with this, please reach out to the <a href="mailto:rdm@vu.nl">RDM Support Desk</a>.</p>
+<p>We’re sorry for the inconvenience.</p>
+<p>Other URLs may have changed as well. We’re trying our best to update these as soon as we can. If you see any dead links related to RDM information, you can help us by letting us know at <a href="mailto:rdm@vu.nl">rdm@vu.nl</a> or by <a href="https://rdm.vu.nl/contributing.html" target="_blank">suggesting an edit</a>. Thank you very much in advance!</p>
+
+
+
+ ]]></description>
+  <category>Handbook</category>
+  <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2026-09-02-storagefinder-classificationtool-unavailable.html</guid>
+  <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Yoda 2.1 upgrade</title>
+  <dc:creator>Peter Vos</dc:creator>
+  <dc:creator>Diógenes Cruz de Arcelino</dc:creator>
+  <link>https://rdm-os-cs-vu.github.io/open-handbook/blog/2026-07-20yoda21.html</link>
+  <description><![CDATA[ 
+<div class="handbook-title">Research Support Handbook</div>
+
+
+
+
+<p>The Yoda team has updated the <a href="../tools/yoda/index.html">documentation</a> to reflect changes in the new Yoda 2.1 version (<a href="https://utrechtuniversity.github.io/yoda/release-notes/release-2.1.html" target="_blank">Release Notes</a>).</p>
+<p>Main changes for researchers:</p>
+<ul>
+<li><a href="../tools/yoda/invitation_workflow.qmd">Invitation workflow</a> only for external users.</li>
+<li>Works with latest version of<a href="../tools/yoda/yoda_using_gocommands.html">GoCommands</a>.</li>
+<li>Option to <a href="../tools/yoda/vault_archive.html#how-to-submitting-a-data-package-to-the-vault">move datasets to the Vault</a> instead of copying them.</li>
+</ul>
+<p>Please note the <a href="../tools/yoda/known_issues.html">Known Issues</a>.</p>
+<p>During the upgrade new functionality was added to be able to move datasets in the Vault from disk storage to the <a href="https://www.surf.nl/en/services/storage-data-management/data-archive" target="_blank">SURF Data Archive</a>, a form of tape storage. The Yoda team will extensively test this functionality in the coming period. Note that this change is only visible to members of a Datamanager Group.</p>
+
+
+
+ ]]></description>
+  <category>Yoda</category>
+  <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2026-07-20yoda21.html</guid>
+  <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>8th Handbook Hackathon</title>
+  <dc:creator>Elisa Rodenburg</dc:creator>
+  <dc:creator>Jolien Scholten</dc:creator>
+  <dc:creator>Peter Vos</dc:creator>
+  <dc:creator>Morgan Taylor Peterson</dc:creator>
+  <dc:creator>Dania Dukmak</dc:creator>
+  <dc:creator>Dimitri Unger</dc:creator>
+  <dc:creator>Irene Martorelli</dc:creator>
+  <dc:creator>Charlie Greene</dc:creator>
+  <link>https://rdm-os-cs-vu.github.io/open-handbook/blog/2026-07-07hackathon.html</link>
+  <description><![CDATA[ 
+<div class="handbook-title">Research Support Handbook</div>
+
+
+
+
+<p>On July 7, 2026, all authors participated in the eighth hackathon for the Research Support Handbook. For this hackathon, our initial plan was to focus on <strong>Tools documentation</strong>, but we worked on other parts of the website as well.</p>
+<section id="overview-of-results" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-results">Overview of results</h2>
+<p>With respect to tools, we did the following:</p>
+<ul>
+<li>We updated Yoda documentation (see below for specifics)</li>
+<li>We did small updates in the Snellius and Research Drive information</li>
+</ul>
+<p>We <a href="https://github.com/ubvu/open-handbook/pull/861" target="_blank">checked external links</a> and found a number of broken links, which have all been repaired now.</p>
+<p>We published two new topics: <a href="../topics/research-software-management.html">Research Software Management</a> and <a href="../topics/version-control.html">Version Control</a>.</p>
+<p>A group of colleagues is working on information about AI and LLMs, including advice on how to use AI tools responsibly. This is work in progress, it has not been published yet. We’ll keep you posted.</p>
+</section>
+<section id="hackathon-issues-and-pull-requests" class="level2">
+<h2 class="anchored" data-anchor-id="hackathon-issues-and-pull-requests">Hackathon Issues and Pull Requests</h2>
+<ul>
+<li>Broken link fixes: PRs <a href="https://github.com/ubvu/open-handbook/pull/861" target="_blank">861</a>, <a href="https://github.com/ubvu/open-handbook/pull/866" target="_blank">866</a>, <a href="https://github.com/ubvu/open-handbook/pull/868" target="_blank">868</a>, <a href="https://github.com/ubvu/open-handbook/pull/870" target="_blank">870</a>, <a href="https://github.com/ubvu/open-handbook/pull/871" target="_blank">871</a> and <a href="https://github.com/ubvu/open-handbook/pull/872" target="_blank">872</a></li>
+<li>Topic Research Software Management: <a href="https://github.com/ubvu/open-handbook/issues/490" target="_blank">Issue 490</a>, <a href="https://github.com/ubvu/open-handbook/pull/856" target="_blank">PR 856</a></li>
+<li>Topic Version Control: <a href="https://github.com/ubvu/open-handbook/issues/613" target="_blank">Issue 613</a>, <a href="https://github.com/ubvu/open-handbook/pull/877" target="_blank">PR 877</a></li>
+<li>Updated Yoda documentation:
+<ul>
+<li><a href="https://github.com/ubvu/open-handbook/issues/858" target="_blank">Issue 858</a>, <a href="https://github.com/ubvu/open-handbook/pull/878" target="_blank">PR 878</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/874" target="_blank">Issue 874</a>, <a href="https://github.com/ubvu/open-handbook/pull/881" target="_blank">PR 881</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/876" target="_blank">Issue 876</a>, <a href="https://github.com/ubvu/open-handbook/pull/883" target="_blank">PR 883</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/885" target="_blank">Issue 885</a>, <a href="https://github.com/ubvu/open-handbook/pull/886" target="_blank">PR 886</a></li>
+</ul></li>
+<li>Updated Snellius documentation: <a href="https://github.com/ubvu/open-handbook/pull/852" target="_blank">PR 852</a></li>
+<li>Updated Research Drive documentation: <a href="https://github.com/ubvu/open-handbook/issues/867" target="_blank">Issue 867</a>, <a href="https://github.com/ubvu/open-handbook/pull/879" target="_blank">PR 879</a></li>
+<li>Technical maintenance: <a href="https://github.com/ubvu/open-handbook/pull/882" target="_blank">PR 882</a>, <a href="https://github.com/ubvu/open-handbook/pull/865" target="_blank">PR 865</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>Handbook</category>
+  <category>Hackathon</category>
+  <guid>https://rdm-os-cs-vu.github.io/open-handbook/blog/2026-07-07hackathon.html</guid>
+  <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Restructuring and redesign</title>
   <dc:creator>Jolien Scholten</dc:creator>

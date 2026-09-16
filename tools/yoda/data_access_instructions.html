@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-19">
+<meta name="dcterms.date" content="2026-07-09">
 
 <title>Before Getting Started – Research Support Handbook</title>
 <style>
@@ -49,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-da7d59fb591e26e644d6da88ab1929d0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ed4c92c19631704d6394c5d547780aa1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,6 +76,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script defer="" src="https://umami.labs.vu.nl/script.js" data-website-id="d8c5a441-b2ab-4d33-ba3a-6647fd821974"></script>
 
 
 </head>
@@ -255,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/sram_invitations_eduid_activation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SRAM Invitations and eduID Activation</span></a>
+ <span class="menu-text">External users - SRAM Invitations and eduID Activation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -440,8 +441,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#access-via-webdav" id="toc-access-via-webdav" class="nav-link active" data-scroll-target="#access-via-webdav">Access via WebDAV</a></li>
+  <li><a href="#access-via-irods" id="toc-access-via-irods" class="nav-link" data-scroll-target="#access-via-irods">Access via iRODS</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/tools/yoda/data_access_instructions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -460,7 +468,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 19, 2026</p>
+      <p class="date">July 9, 2026</p>
     </div>
   </div>
   
@@ -473,22 +481,41 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>There are three main ways to transfer data to and from Yoda. Note that creating a data access password is necessary to transfer data from and to Yoda.</p>
-<p>You can transfer files to and from Yoda dependent on the size of the file:</p>
+<p>You can transfer files to and from Yoda dependent on the size and number of files:</p>
 <ul>
-<li>For small amounts of data you can upload files via the Drag &amp; Drop via de Yoda Portal.</li>
-<li>For transferring larger amounts of data (tens of GB) it is better to use the WebDAV interface.</li>
+<li>For small amounts of data (typically up to 10GB, up to 100 files) you can upload files via the Drag &amp; Drop via de Yoda Portal.</li>
+<li>For larger amounts of data (typically up to 100GB, up to 1000 files) it is better to use the WebDAV interface.</li>
+<li>For very large amounts of data you can connect directly to iRODS.</li>
 </ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For practical tips on working with your data, check the <a href="../../tools/yoda/analysing_data.html">Analysing Data</a> page.</p>
+</div>
+</div>
+<section id="access-via-webdav" class="level2">
+<h2 class="anchored" data-anchor-id="access-via-webdav">Access via WebDAV</h2>
 <p>There are several methods to access Yoda data via WebDAV, they depend on the Operating System you are using:</p>
 <ul>
-<li>Windows (link)</li>
-<li>MacOS (link)</li>
-<li>Linux (Link)</li>
+<li><a href="../../tools/yoda/data_access_windows.html">Windows</a></li>
+<li><a href="../../tools/yoda/data_access_macos.html">MacOS</a></li>
+<li><a href="../../tools/yoda/data_access_linux.html">Linux</a></li>
 </ul>
-<p>Note that performance of WebDAV is limited, especially when transferring a large amount of files.</p>
+</section>
+<section id="access-via-irods" class="level2">
+<h2 class="anchored" data-anchor-id="access-via-irods">Access via iRODS</h2>
 <p>For transferring large amounts of data (&gt;100GB) consider using direct access to iRODS. A direct iRODS connection offers better performance by enabling multi-threaded transfers and the option to compare checksums.</p>
 <p>Power users who are comfortable with command line tools can use the <a href="yoda_using_icommands.html">iRODS iCommands</a> to interact with the iRODS backend of Yoda directly. If iCommands are not available on your OS, <a href="../../tools/yoda/yoda_using_gocommands.html">Gocommands</a> can be used as an alternative.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -904,14 +931,14 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer page-columns page-full">
-  <div class="nav-footer page-columns page-full">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center page-columns page-full">
-<div class="pagebottom py-5 page-columns page-full">
-    <div class="column-page text-center">
+    <div class="nav-footer-center">
+<div class="pagebottom py-5 page-full">
+    <div class="text-center">
         <ul class="footer-items list-unstyled">
             <li class="nav-item mx-md-5">
                 <p><img src="../../public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
@@ -928,7 +955,7 @@ ul.task-list li input[type="checkbox"] {
         </ul>
     </div>
 </div>
-<div class="column-page">
+<div class="footer-links-bar">
     <ul class="footer-items list-unstyled">
         <li class="nav-item">
             <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
@@ -945,10 +972,15 @@ ul.task-list li input[type="checkbox"] {
             <a class="nav-link" href="../../contributing.html">
                 <p>Contributing</p>
             </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="../../privacy.html">
+                <p>Privacy</p>
+            </a>
         </li>
     </ul>
 </div>
-<div class="toc-actions"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/tools/yoda/data_access_instructions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/tools/yoda/data_access_instructions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

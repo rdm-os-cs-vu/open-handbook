@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-09-07">
+
+<title>How Do I Download Data from SURFfilesender to SciStor? – Research Support Handbook</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../tools/ada/yoda.html" rel="next">
+<link href="../../tools/ada/open-ondemand.html" rel="prev">
+<link href="../../public/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ed4c92c19631704d6394c5d547780aa1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "Search",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script defer="" src="https://umami.labs.vu.nl/script.js" data-website-id="d8c5a441-b2ab-4d33-ba3a-6647fd821974"></script>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="../../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-topics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
+        <li>
+    <a class="dropdown-item" href="../../topics.html">
+ <span class="dropdown-text">All</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../topics.html#category=Policies and Legislation">
+ <span class="dropdown-text">Policies and Legislation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../topics.html#category=Research Data">
+ <span class="dropdown-text">Research Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../topics.html#category=Research Software">
+ <span class="dropdown-text">Research Software</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../topics.html#category=Responsible Scholarship">
+ <span class="dropdown-text">Responsible Scholarship</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../topics.html#category=Knowledge Items">
+ <span class="dropdown-text">Knowledge Items</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../guides.html"> 
+<span class="menu-text">Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tools.html"> 
+<span class="menu-text">Tools</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../RDM-guidelines.html"> 
+<span class="menu-text">CS RDM Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../group-guidelines.html"> 
+<span class="menu-text">CS Groups</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../news.html"> 
+<span class="menu-text">CS News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/rdm-os-cs-vu/open-handbook" title="GitHub VU Open Handbook" class="quarto-navigation-tool px-1" aria-label="GitHub VU Open Handbook"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/login.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/ada/surffilesender.html">How Do I Download Data from SURFfilesender to SciStor?</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tools/ada/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ADA</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What is ADA?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/cost_access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Costs and Getting Access</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/contact_support.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Support and Contact</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/quick_start.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Start</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/hpc-updates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HPC Updates</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/hpc-training.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HPC Training Courses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Documentation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/login.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Login</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/slurm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slurm</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/software.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Software</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/hardware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hardware</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/dedicated-nodes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Buying dedicated nodes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/open-ondemand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open OnDemand</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/surffilesender.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">How Do I Download Data from SURFfilesender to SciStor?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/yoda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data transfer to and from Yoda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Code Examples</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/matlab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MATLAB</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Python</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth4 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/1-python-multithreading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multithreading</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/2-python-multiprocessing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiprocessing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/3-python-pytorch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PyTorch</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/4-python-huggingface-pixi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hugging Face models with Pixi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">R</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth4 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/1-R-multiprocessing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiprocessing</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/hpc-101.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HPC 101</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#network-access" id="toc-network-access" class="nav-link active" data-scroll-target="#network-access">Network Access</a></li>
+  <li><a href="#check-your-available-space" id="toc-check-your-available-space" class="nav-link" data-scroll-target="#check-your-available-space">Check Your Available Space</a></li>
+  <li><a href="#prepare-the-transfer-in-surffilesender" id="toc-prepare-the-transfer-in-surffilesender" class="nav-link" data-scroll-target="#prepare-the-transfer-in-surffilesender">Prepare the Transfer in SURFfilesender</a>
+  <ul class="collapse">
+  <li><a href="#collaborating-with-external-users" id="toc-collaborating-with-external-users" class="nav-link" data-scroll-target="#collaborating-with-external-users">Collaborating with External Users</a></li>
+  </ul></li>
+  <li><a href="#option-1-use-the-surffilesender-app-in-open-ondemand" id="toc-option-1-use-the-surffilesender-app-in-open-ondemand" class="nav-link" data-scroll-target="#option-1-use-the-surffilesender-app-in-open-ondemand">Option 1: Use the SURFfilesender App in Open OnDemand</a></li>
+  <li><a href="#option-2-download-directly-from-an-ada-terminal" id="toc-option-2-download-directly-from-an-ada-terminal" class="nav-link" data-scroll-target="#option-2-download-directly-from-an-ada-terminal">Option 2: Download Directly from an ADA Terminal</a>
+  <ul class="collapse">
+  <li><a href="#get-the-client-and-credentials" id="toc-get-the-client-and-credentials" class="nav-link" data-scroll-target="#get-the-client-and-credentials">1. Get the Client and Credentials</a></li>
+  <li><a href="#choose-the-destination" id="toc-choose-the-destination" class="nav-link" data-scroll-target="#choose-the-destination">2. Choose the Destination</a></li>
+  <li><a href="#download-the-transfer" id="toc-download-the-transfer" class="nav-link" data-scroll-target="#download-the-transfer">3. Download the Transfer</a></li>
+  <li><a href="#optional-save-the-surffilesender-configuration" id="toc-optional-save-the-surffilesender-configuration" class="nav-link" data-scroll-target="#optional-save-the-surffilesender-configuration">Optional: Save the SURFfilesender Configuration</a></li>
+  </ul></li>
+  <li><a href="#large-transfers" id="toc-large-transfers" class="nav-link" data-scroll-target="#large-transfers">Large Transfers</a></li>
+  <li><a href="#package-or-split-a-dataset" id="toc-package-or-split-a-dataset" class="nav-link" data-scroll-target="#package-or-split-a-dataset">Package or Split a Dataset</a></li>
+  <li><a href="#verify-the-files" id="toc-verify-the-files" class="nav-link" data-scroll-target="#verify-the-files">Verify the Files</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#authentication-failed-check-api-token" id="toc-authentication-failed-check-api-token" class="nav-link" data-scroll-target="#authentication-failed-check-api-token"><code>Authentication failed, check API token</code></a></li>
+  <li><a href="#typeerror-nonetype-object-is-not-iterable" id="toc-typeerror-nonetype-object-is-not-iterable" class="nav-link" data-scroll-target="#typeerror-nonetype-object-is-not-iterable"><code>TypeError: 'NoneType' object is not iterable</code></a></li>
+  <li><a href="#permission-denied" id="toc-permission-denied" class="nav-link" data-scroll-target="#permission-denied"><code>Permission denied</code></a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/tools/ada/surffilesender.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<div class="handbook-title">Research Support Handbook</div>
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/login.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/ada/surffilesender.html">How Do I Download Data from SURFfilesender to SciStor?</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">How Do I Download Data from SURFfilesender to SciStor?</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">last modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 7, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This page explains how to place files received through <a href="https://filesender.surf.nl/" target="_blank">SURFfilesender</a> in SciStor. You can use the graphical Open OnDemand portal or download files directly from an ADA terminal.</p>
+<section id="network-access" class="level2">
+<h2 class="anchored" data-anchor-id="network-access">Network Access</h2>
+<p>To open <code>ada.labs.vu.nl</code> or <a href="https://ondemand.labs.vu.nl/" target="_blank">Open OnDemand</a> directly from your computer, you must be on the VU campus network or connected through the eduVPN virtual private network (VPN).</p>
+<p>You can also connect to ADA through the public stepstone <code>ssh.data.vu.nl</code>. If you configured it as a <code>ProxyJump</code> according to the <a href="../../tools/ada/login.html">ADA login instructions</a>, you do not need eduVPN.</p>
+</section>
+<section id="check-your-available-space" class="level2">
+<h2 class="anchored" data-anchor-id="check-your-available-space">Check Your Available Space</h2>
+<p>Your ADA home directory (<code>$HOME</code>) is on SciStor, and all ADA nodes share it. Guest users have up to <strong>200 gigabytes (GB)</strong> in their home directory. Existing data, Python environments, notebooks, software, and results also count toward this limit.</p>
+<p>Check your current usage before downloading:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">du</span> <span class="at">-sh</span> <span class="st">"</span><span class="va">$HOME</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>To find large top-level directories:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">du</span> <span class="at">-sh</span> <span class="st">"</span><span class="va">$HOME</span><span class="st">"</span>/<span class="pp">*</span> <span class="dv">2</span><span class="op">&gt;</span>/dev/null <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-h</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<blockquote class="blockquote">
+<p><strong>Warning</strong></p>
+<p>A 150 GB download will not fit if 70 GB of your 200 GB allowance is already occupied. Use a SciStor project directory with sufficient capacity or contact IT for Research.</p>
+</blockquote>
+</section>
+<section id="prepare-the-transfer-in-surffilesender" class="level2">
+<h2 class="anchored" data-anchor-id="prepare-the-transfer-in-surffilesender">Prepare the Transfer in SURFfilesender</h2>
+<p>SURFfilesender can host individual files or complete directories. Avoid creating unnecessarily large single archives. For example, split a 2TB dataset into several parts because SURFfilesender currently supports individual files up to <strong>1 TB</strong>. See <a href="#package-or-split-a-dataset">Package or Split a Dataset</a> for an example.</p>
+<p>After selecting the files, you can copy the transfer link or send it to specific recipients. You need this link to download the data from SURFfilesender to ADA. You can find existing transfers and their links under <strong>My transfers</strong> in SURFfilesender.</p>
+<section id="collaborating-with-external-users" class="level3">
+<h3 class="anchored" data-anchor-id="collaborating-with-external-users">Collaborating with External Users</h3>
+<p>SURFfilesender is useful when you collaborate with researchers who do not have a VUnetID or access to ADA and SciStor. For example, an external collaborator can upload raw measurements, sequencing data, microscopy images, or simulation results through a temporary guest link. You can then download the files directly to SciStor.</p>
+<section id="receive-files-from-an-external-collaborator" class="level4">
+<h4 class="anchored" data-anchor-id="receive-files-from-an-external-collaborator">Receive Files from an External Collaborator</h4>
+<ol type="1">
+<li>Sign in to <a href="https://filesender.surf.nl/" target="_blank">SURFfilesender</a> with your VU account.</li>
+<li>Open the <strong>Guests</strong> tab and select <strong>New invitation</strong>.</li>
+<li>Enter the collaborator’s email address and, if available, choose an expiry date.</li>
+<li>Send the invitation.</li>
+<li>The collaborator receives an email containing a guest upload link. They can open this link in a web browser, add the files, and send the transfer to you.</li>
+<li>When the upload is complete, you receive a standard SURFfilesender download link. Use the Open OnDemand or terminal instructions below to download the files to SciStor.</li>
+</ol>
+<p>The external collaborator does not need a VUnetID, an ADA account, eduVPN, or access to the VU campus network. They need only an internet connection and a valid guest link.</p>
+</section>
+</section>
+</section>
+<section id="option-1-use-the-surffilesender-app-in-open-ondemand" class="level2">
+<h2 class="anchored" data-anchor-id="option-1-use-the-surffilesender-app-in-open-ondemand">Option 1: Use the SURFfilesender App in Open OnDemand</h2>
+<p>The SURFfilesender app in <a href="https://ondemand.labs.vu.nl/" target="_blank">Open OnDemand</a> can transfer files between SURFfilesender and ADA storage without an SSH (Secure Shell) client.</p>
+<blockquote class="blockquote">
+<p><strong>Important</strong></p>
+<p>The <strong>Username</strong> field refers to the <strong>Identifiant</strong> shown in your SURFfilesender profile. It is not your VUnetID or email address.</p>
+</blockquote>
+<p>To receive files from SURFfilesender:</p>
+<ol type="1">
+<li>In step 1, select <strong>Send files</strong>.</li>
+<li>In step 2, enter the credentials from <strong>SURFfilesender &gt; My profile</strong>. You can enter them manually or use a Python command-line interface (CLI) configuration file stored in <code>~/.filesender/</code>. The configuration-file option is convenient for frequent transfers.</li>
+<li>In step 3, paste the SURFfilesender download link. Enter your email address and select a destination in your home or shared project storage.</li>
+<li>Start the transfer. A successful transfer shows <strong>Success</strong>. If the transfer fails, open <strong>Live Output</strong> to inspect the error.</li>
+</ol>
+<p>Open OnDemand sessions run as Slurm jobs. The session continues until its walltime expires, even if you close the browser tab. You can reopen it from <strong>My Interactive Sessions</strong>. See the <a href="../../tools/ada/open-ondemand.html">Open OnDemand documentation</a>.</p>
+</section>
+<section id="option-2-download-directly-from-an-ada-terminal" class="level2">
+<h2 class="anchored" data-anchor-id="option-2-download-directly-from-an-ada-terminal">Option 2: Download Directly from an ADA Terminal</h2>
+<section id="get-the-client-and-credentials" class="level3">
+<h3 class="anchored" data-anchor-id="get-the-client-and-credentials">1. Get the Client and Credentials</h3>
+<p>Sign in to <a href="https://filesender.surf.nl/" target="_blank">SURFfilesender</a> and open your profile page from your local machine.</p>
+<ol type="1">
+<li>Go to <strong>SURFfilesender &gt; My profile</strong>, scroll down, and download the Python CLI client, normally named <code>filesender.py</code>.</li>
+<li>Copy your <strong>Identifiant</strong>.</li>
+<li>Create an <strong>API key</strong> if you do not already have one.</li>
+</ol>
+<p>Copy it to ADA:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> filesender.py ada-login:~/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="choose-the-destination" class="level3">
+<h3 class="anchored" data-anchor-id="choose-the-destination">2. Choose the Destination</h3>
+<p>To download to your home directory, select an existing folder or create one:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> ~/filesender-downloads</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For shared research data, use the SciStor project directory assigned to your group. Check that the exact destination exists and is writable:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">test</span> <span class="at">-d</span> <span class="st">'/scistor/PATH/TO/PROJECT'</span> <span class="kw">&amp;&amp;</span> <span class="bu">echo</span> <span class="st">'Directory exists'</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">test</span> <span class="at">-w</span> <span class="st">'/scistor/PATH/TO/PROJECT'</span> <span class="kw">&amp;&amp;</span> <span class="bu">echo</span> <span class="st">'Directory is writable'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Create a destination only after confirming the correct project path:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> <span class="st">'/scistor/PATH/TO/PROJECT/incoming/filesender-transfer'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Do not change permissions on a shared project directory. Ask the project owner or IT for Research if you do not know the correct path.</p>
+</section>
+<section id="download-the-transfer" class="level3">
+<h3 class="anchored" data-anchor-id="download-the-transfer">3. Download the Transfer</h3>
+<p>Copy the complete URL from the SURFfilesender email or download page. It normally resembles:</p>
+<pre class="text"><code>https://filesender.surf.nl/?s=download&amp;token=...</code></pre>
+<p>Read the API key into a temporary variable. This keeps the literal key out of your shell history. Repeat this in every new shell session. For frequent transfers, consider the configuration-file method described below.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">read</span> <span class="at">-rsp</span> <span class="st">'SURFfilesender API key: '</span> <span class="va">FS_APIKEY</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<blockquote class="blockquote">
+<p><strong>Note</strong></p>
+<p>Keep the login node for light tasks. For a long command-line transfer, connect to <code>ondemand</code> and use <code>tmux</code>, as described under <a href="#large-transfers">Large Transfers</a>.</p>
+</blockquote>
+<p>Download to your home directory:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> ~/filesender.py <span class="dt">\</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">-b</span> <span class="st">'https://filesender.surf.nl/rest.php'</span> <span class="dt">\</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">-f</span> <span class="st">'YOUR.NAME@vu.nl'</span> <span class="dt">\</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">-u</span> <span class="st">'YOUR_FILESENDER_IDENTIFIER'</span> <span class="dt">\</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">-a</span> <span class="st">"</span><span class="va">$FS_APIKEY</span><span class="st">"</span> <span class="dt">\</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">-d</span> <span class="st">'COMPLETE_FILESENDER_DOWNLOAD_URL'</span> <span class="dt">\</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">-o</span> ~/filesender-downloads <span class="dt">\</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">--progress</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Replace the email address, identifier, and download URL. Do not change <code>-a "$FS_APIKEY"</code>, it reads the key from the temporary variable. Always keep the URL in single quotes because it contains the special Bash character <code>&amp;</code>.</p>
+<p>For a project folder, replace the output option with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-o</span> <span class="st">'/scistor/PATH/TO/PROJECT/incoming/filesender-transfer'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Clear the API key afterward:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">unset</span> <span class="va">FS_APIKEY</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="optional-save-the-surffilesender-configuration" class="level3">
+<h3 class="anchored" data-anchor-id="optional-save-the-surffilesender-configuration">Optional: Save the SURFfilesender Configuration</h3>
+<p>If you transfer files regularly, store the identifier and API key in a private configuration file instead of entering them each time:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> ada-login</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> ~/.filesender</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> 700 ~/.filesender</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Download the Python CLI configuration from <strong>SURFfilesender &gt; My profile</strong> to your computer. Copy the configuration file to ADA and save it as <code>~/.filesender/filesender.py.ini</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> filesender.py.ini ada-login:~/.filesender/filesender.py.ini</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> ada-login <span class="st">'chmod 600 ~/.filesender/filesender.py.ini'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The download command is then shorter:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> ~/filesender.py <span class="dt">\</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">-f</span> <span class="st">'YOUR.NAME@vu.nl'</span> <span class="dt">\</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">-d</span> <span class="st">'COMPLETE_FILESENDER_DOWNLOAD_URL'</span> <span class="dt">\</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">-o</span> ~/filesender-downloads <span class="dt">\</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">--progress</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="large-transfers" class="level2">
+<h2 class="anchored" data-anchor-id="large-transfers">Large Transfers</h2>
+<p>SURF currently advertises support for individual files up to <strong>1 TB</strong>. This is the FileSender limit, not the available space in SciStor. A 1 TB file cannot fit in a guest user’s 200 GB home directory.</p>
+<p>Run a long download on <code>ondemand</code> inside <code>tmux</code>. This lets it continue if the browser closes or the SSH connection is interrupted:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">tmux</span> new <span class="at">-s</span> filesender</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Run the download, then detach by pressing <code>Ctrl-B</code>, followed by <code>D</code>. Later, reconnect to the same node and restore the session:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> ondemand</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="ex">tmux</span> attach <span class="at">-t</span> filesender</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Record the node name. A <code>tmux</code> session stays on the node where it was started.</p>
+</section>
+<section id="package-or-split-a-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="package-or-split-a-dataset">Package or Split a Dataset</h2>
+<p>Splitting can help when a dataset is large and is necessary when an individual file exceeds the SURFfilesender limit.</p>
+<p>Split a compressed archive into numbered parts of at most 100 GB:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">split</span> <span class="at">-b</span> 100G <span class="at">-d</span> <span class="at">-a</span> 3 experiment-data.tar.gz experiment-data.tar.gz.part-</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Send all generated parts. After downloading them into the same SciStor directory, join and extract them:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> experiment-data.tar.gz.part-<span class="pp">*</span> <span class="op">&gt;</span> experiment-data.tar.gz</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-xzf</span> experiment-data.tar.gz</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<blockquote class="blockquote">
+<p><strong>Warning</strong></p>
+<p>Splitting does not reduce the total space needed. Joining and extracting may temporarily require space for the parts, the joined archive, and the extracted data. Check capacity first and delete the parts only after verifying the extracted files.</p>
+</blockquote>
+<p>To combine a directory containing many files into one compressed archive:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-czf</span> experiment-data.tar.gz experiment-data/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Formats such as <code>.fastq.gz</code>, <code>.vcf.gz</code>, <code>.bam</code>, <code>.cram</code>, and <code>.zip</code> are already compressed. Package them without trying to compress them again:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-cf</span> experiment-data.tar experiment-data/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="verify-the-files" class="level2">
+<h2 class="anchored" data-anchor-id="verify-the-files">Verify the Files</h2>
+<p>Check the downloaded files and total size:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> ~/filesender-downloads <span class="at">-maxdepth</span> 2 <span class="at">-type</span> f <span class="at">-ls</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">du</span> <span class="at">-sh</span> ~/filesender-downloads</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For a project directory, replace the path. Compare the file names and sizes with the SURFfilesender page. If the sender supplied Secure Hash Algorithm 256-bit (SHA-256) checksums, verify them:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sha256sum</span> <span class="st">'/path/to/downloaded/file'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<section id="authentication-failed-check-api-token" class="level3">
+<h3 class="anchored" data-anchor-id="authentication-failed-check-api-token"><code>Authentication failed, check API token</code></h3>
+<p>Make sure <code>-u</code> contains the long SURFfilesender identifier, not your email address or VUnetID. Create the API key in the same account, read it into <code>FS_APIKEY</code>, and use exactly:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-a</span> <span class="st">"</span><span class="va">$FS_APIKEY</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Do not use <code>-a "$&lt;API_KEY&gt;"</code>.</p>
+</section>
+<section id="typeerror-nonetype-object-is-not-iterable" class="level3">
+<h3 class="anchored" data-anchor-id="typeerror-nonetype-object-is-not-iterable"><code>TypeError: 'NoneType' object is not iterable</code></h3>
+<p>The client did not receive an API key. Supply both <code>-u 'YOUR_FILESENDER_IDENTIFIER'</code> and <code>-a "$FS_APIKEY"</code>.</p>
+</section>
+<section id="permission-denied" class="level3">
+<h3 class="anchored" data-anchor-id="permission-denied"><code>Permission denied</code></h3>
+<p>The destination is not writable. Use your home directory or request access to the correct project folder.</p>
+<p>For unresolved problems, contact IT for Research. Include the node name and complete error message, but remove API keys, download tokens, passwords, and sensitive filenames.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/rdm-os-cs-vu\.github\.io\/open-handbook");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../tools/ada/open-ondemand.html" class="pagination-link" aria-label="Open OnDemand">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Open OnDemand</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../tools/ada/yoda.html" class="pagination-link" aria-label="Data transfer to and from Yoda">
+        <span class="nav-page-text">Data transfer to and from Yoda</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<div class="pagebottom py-5 page-full">
+    <div class="text-center">
+        <ul class="footer-items list-unstyled">
+            <li class="nav-item mx-md-5">
+                <p><img src="../../public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
+                    Missing something in the Handbook?<br>
+                    <a href="https://ez-github-contributor.netlify.app/" target="_blank">Let us know!</a>
+                </p>
+            </li>
+            <li class="nav-item mx-md-5">
+                <img src="../../public/question_icon.svg" class="img-fluid" style="width:6em"><br>
+                Question about your research data or research software?<br>
+                <a href="../../topics/rdm-support-desk.html">Contact the RDM Support Desk</a>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer-links-bar">
+    <ul class="footer-items list-unstyled">
+        <li class="nav-item">
+            <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
+                <p><img src="../../public/Cc.logo.circle.svg" class="img-fluid" style="width:1.3em">
+                <img src="../../public/Cc-zero.svg" class="img-fluid" style="width:1.3em"></p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="../../about.html">
+                <p>About</p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="../../contributing.html">
+                <p>Contributing</p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="../../privacy.html">
+                <p>Privacy</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/edit/main/tools/ada/surffilesender.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rdm-os-cs-vu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
