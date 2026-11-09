@@ -17,7 +17,7 @@ Here you can find a listing of the RDM contact persons of the groups.
 When a group has specific RDM guidelines (beyond the CS department data storage advisory), it will also be included here.
 
 For running projects, your group's RDM contact person will typically be the first to contact.
-For advice on new projects, e.g., feedback on draft Data Managament Plans,
+For advice on new projects, e.g., feedback on draft Data Management Plans,
 you can also contact Ronald Siebes <r.m.siebes@vu.nl> or Kees Verstoep <c.verstoep@vu.nl>.
 
 :::
