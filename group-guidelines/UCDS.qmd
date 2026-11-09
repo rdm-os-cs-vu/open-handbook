@@ -1,10 +1,10 @@
 ---
 title: User-centric Data Science (UCDS)
-RDM-contact: Andre Valdestilhas
+RDM-contact: Ronald Siebes 
 website: https://ucds.cs.vu.nl/
 ---
 ## Group information
 
-RDM contact: Andre Valdestilhas
+RDM contact: Ronald Siebes 
 
 [Website](https://ucds.cs.vu.nl/)
