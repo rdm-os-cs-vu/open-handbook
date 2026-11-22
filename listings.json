@@ -1,11 +1,5 @@
 [
   {
-    "listing": "/news.html",
-    "items": [
-      "/news/2024-06-04OSCAR.html"
-    ]
-  },
-  {
     "listing": "/tools.html",
     "items": [
       "/tools/ada/index.html",
@@ -27,23 +21,20 @@
     ]
   },
   {
-    "listing": "/group-guidelines.html",
+    "listing": "/guides.html",
     "items": [
-      "/group-guidelines/AIB.html",
-      "/group-guidelines/Bioinformatics.html",
-      "/group-guidelines/CI.html",
-      "/group-guidelines/DISE.html",
-      "/group-guidelines/FES.html",
-      "/group-guidelines/HPDC.html",
-      "/group-guidelines/KAI.html",
-      "/group-guidelines/LR.html",
-      "/group-guidelines/MCS.html",
-      "/group-guidelines/QDA.html",
-      "/group-guidelines/SAI.html",
-      "/group-guidelines/S2.html",
-      "/group-guidelines/VUSEC.html",
-      "/group-guidelines/TCS.html",
-      "/group-guidelines/UCDS.html"
+      "/guides/publish-and-share.html",
+      "/guides/comply-with-gdpr.html",
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyse.html",
+      "/guides/document-and-preserve.html",
+      "/guides/onboarding.html",
+      "/guides/publishing-fair-software.html",
+      "/guides/plan-and-design.html",
+      "/guides/policies-supporting-vision-open-science.html",
+      "/guides/data-lifecycle.html",
+      "/guides/offboarding.html"
     ]
   },
   {
@@ -52,12 +43,6 @@
       "/RDM-guidelines/VU-CS-RDM-Storage-Selection.html",
       "/RDM-guidelines/VU-CS-Survey-policy.html",
       "/RDM-guidelines/RDM-resources.html"
-    ]
-  },
-  {
-    "listing": "/OS-guidelines.html",
-    "items": [
-      "/OS-guidelines/open-science-resources.html"
     ]
   },
   {
@@ -111,20 +96,9 @@
     ]
   },
   {
-    "listing": "/guides.html",
+    "listing": "/news.html",
     "items": [
-      "/guides/publish-and-share.html",
-      "/guides/comply-with-gdpr.html",
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyse.html",
-      "/guides/document-and-preserve.html",
-      "/guides/onboarding.html",
-      "/guides/publishing-fair-software.html",
-      "/guides/plan-and-design.html",
-      "/guides/policies-supporting-vision-open-science.html",
-      "/guides/data-lifecycle.html",
-      "/guides/offboarding.html"
+      "/news/2024-06-04OSCAR.html"
     ]
   },
   {
@@ -146,6 +120,32 @@
       "/blog/2024-09-05hackathon.html",
       "/blog/2024-06-27hackathon.html",
       "/blog/2024-05-23welcome.html"
+    ]
+  },
+  {
+    "listing": "/OS-guidelines.html",
+    "items": [
+      "/OS-guidelines/open-science-resources.html"
+    ]
+  },
+  {
+    "listing": "/group-guidelines.html",
+    "items": [
+      "/group-guidelines/AIB.html",
+      "/group-guidelines/Bioinformatics.html",
+      "/group-guidelines/CI.html",
+      "/group-guidelines/DISE.html",
+      "/group-guidelines/FES.html",
+      "/group-guidelines/HPDC.html",
+      "/group-guidelines/KAI.html",
+      "/group-guidelines/LR.html",
+      "/group-guidelines/MCS.html",
+      "/group-guidelines/QDA.html",
+      "/group-guidelines/SAI.html",
+      "/group-guidelines/S2.html",
+      "/group-guidelines/VUSEC.html",
+      "/group-guidelines/TCS.html",
+      "/group-guidelines/UCDS.html"
     ]
   }
 ]
